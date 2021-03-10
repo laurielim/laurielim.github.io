@@ -20,11 +20,11 @@ let sessionStorage = window.sessionStorage;
 let highscore = sessionStorage.getItem("highscore")
   ? parseInt(sessionStorage.getItem("highscore"))
   : 0;
-
 // Display highscore
 displayHighscore.textContent = highscore;
 
-let soundOn = true;
+// Get sound option from session storage, unless sound is set to false, set sound on
+let soundOn = sessionStorage.getItem("sound") == "false" ? false : true;
 
 let btnSoundOn = document.getElementById("soundOn");
 let btnSoundOff = document.getElementById("soundOff");
@@ -194,6 +194,8 @@ function startGame() {
     finalScore.textContent = `Your final score is ${score}. ${endText}`;
     // Add event listener to close button
     btnClose.addEventListener("click", () => {
+      // Store sound setting
+      sessionStorage.setItem("sound", `${soundOn}`);
       // Store score if it's greater than current highscore
       if (score > highscore) sessionStorage.setItem("highscore", `${score}`);
       // Reload page
