@@ -158,3 +158,10 @@ function startGame() {
 
 // Add event listener to start button
 btnStart.addEventListener("click", startGame);
+
+// Toggle levels setting on click
+document
+  .getElementById("btnSettings")
+  .addEventListener("click", () =>
+    document.querySelector(".levels-setting").classList.toggle("responsive")
+  );
