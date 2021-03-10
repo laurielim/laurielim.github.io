@@ -14,6 +14,7 @@ let audioBadEnd = new Audio("./music/bad-end.mp3");
 let audioGoodEnd = new Audio("./music/good-end.mp3");
 let audioGreatEnd = new Audio("./music/great-end.mp3");
 let audioLvlChange = new Audio("./music/click.mp3");
+let audioSoundOn = new Audio("./music/sound-on.mp3");
 
 let sessionStorage = window.sessionStorage;
 // Get highscore from session storage
@@ -53,8 +54,8 @@ btnSoundOn.addEventListener("click", () => {
 // If sound if off...
 btnSoundOff.addEventListener("click", () => {
   soundOn = true;
-  // Resume bg music if paused
-  if (audioBg) audioBg.play();
+  // Resume bg music if paused else play audio indicating sound on;
+  audioBg ? audioBg.play() : audioSoundOn.play();
   // Show sound on btn
   btnSoundOn.style.display = "block";
   // Hide sound off btn
