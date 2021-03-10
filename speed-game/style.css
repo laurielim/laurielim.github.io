@@ -95,7 +95,7 @@ h1 {
 
 .circles {
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

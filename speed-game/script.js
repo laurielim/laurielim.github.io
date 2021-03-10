@@ -1,5 +1,6 @@
 let circles = document.querySelectorAll(".circle");
 let displayScore = document.getElementById("score");
+let displayHighscore = document.getElementById("highscore");
 let overlay = document.getElementById("overlay");
 let finalScore = document.getElementById("final-score");
 let btnClose = document.getElementById("close");
@@ -13,7 +14,15 @@ let audioBadEnd = new Audio("./music/bad-end.mp3");
 let audioGoodEnd = new Audio("./music/good-end.mp3");
 let audioGreatEnd = new Audio("./music/great-end.mp3");
 let audioLvlChange = new Audio("./music/click.mp3");
-let levels = document.querySelectorAll("input[type=radio]");
+
+let sessionStorage = window.sessionStorage;
+// Get highscore from session storage
+let highscore = sessionStorage.getItem("highscore")
+  ? parseInt(sessionStorage.getItem("highscore"))
+  : 0;
+
+// Display highscore
+displayHighscore.textContent = highscore;
 
 let soundOn = true;
 
@@ -51,6 +60,8 @@ btnSoundOff.addEventListener("click", () => {
   // Hide sound off btn
   btnSoundOff.style.display = "none";
 });
+
+let levels = document.querySelectorAll("input[type=radio]");
 
 // Play click sound whenever level is changed
 levels.forEach((level) => {
@@ -183,6 +194,8 @@ function startGame() {
     finalScore.textContent = `Your final score is ${score}. ${endText}`;
     // Add event listener to close button
     btnClose.addEventListener("click", () => {
+      // Store score if it's greater than current highscore
+      if (score > highscore) sessionStorage.setItem("highscore", `${score}`);
       // Reload page
       window.location.reload();
     });
