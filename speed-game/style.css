@@ -48,6 +48,11 @@ h1 {
   border: none;
 }
 
+#soundOn,
+#soundOff {
+  display: none;
+}
+
 .btn-icon-cog {
   transition: transform 0.2s ease-in-out;
   display: none;
