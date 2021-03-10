@@ -65,7 +65,9 @@ let levels = document.querySelectorAll("input[type=radio]");
 
 // Play click sound whenever level is changed
 levels.forEach((level) => {
-  level.addEventListener("change", () => audioLvlChange.play());
+  level.addEventListener("change", () => {
+    if (soundOn) audioLvlChange.play();
+  });
 });
 
 function startGame() {
