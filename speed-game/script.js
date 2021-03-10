@@ -13,8 +13,7 @@ let audioBgHard = new Audio("./music/bg-hard.mp3");
 let audioBadEnd = new Audio("./music/bad-end.mp3");
 let audioGoodEnd = new Audio("./music/good-end.mp3");
 let audioGreatEnd = new Audio("./music/great-end.mp3");
-let audioLvlChange = new Audio("./music/click.mp3");
-let audioSoundOn = new Audio("./music/sound-on.mp3");
+let audioClick = new Audio("./music/click.mp3");
 
 let sessionStorage = window.sessionStorage;
 // Get highscore from session storage
@@ -55,7 +54,7 @@ btnSoundOn.addEventListener("click", () => {
 btnSoundOff.addEventListener("click", () => {
   soundOn = true;
   // Resume bg music if paused else play audio indicating sound on;
-  audioBg ? audioBg.play() : audioSoundOn.play();
+  audioBg ? audioBg.play() : audioClick.play();
   // Show sound on btn
   btnSoundOn.style.display = "block";
   // Hide sound off btn
@@ -67,7 +66,7 @@ let levels = document.querySelectorAll("input[type=radio]");
 // Play click sound whenever level is changed
 levels.forEach((level) => {
   level.addEventListener("change", () => {
-    if (soundOn) audioLvlChange.play();
+    if (soundOn) audioClick.play();
   });
 });
 
