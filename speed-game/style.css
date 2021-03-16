@@ -162,13 +162,6 @@ button:focus {
 #stop {
   display: none;
 }
-/**************** Social Media Buttons ****************/
-
-.sm-share-buttons {
-  display: flex;
-  justify-content: space-around;
-  width: 200px;
-}
 
 /**************** Game Over Overlay ****************/
 
