@@ -221,9 +221,6 @@ let website = "https://laurielim.github.io/speed-game/";
 /** Sharing on Facebook; To replace player and score with variables from local storage*/
 let shareBtnFB = document.getElementById("shareBtnFB");
 shareBtnFB.addEventListener("click", function () {
-  document
-    .querySelector("meta[property='og:description']")
-    .setAttribute("content", `Try to beat my highscore of ${highscore}`);
   makePopupPage(
     `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       website
