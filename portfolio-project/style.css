@@ -273,11 +273,12 @@ progress[value] {
   height: 1.5rem;
 
   /* For IE10 */
-  color: blue;
+  color: var(--accent-color-2);
 
   flex: 8;
 }
 
+/* WebKit/Blink (Chrome/Safari/Opera) */
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2px;
@@ -286,6 +287,16 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   background: var(--accent-color-1);
   background-image: -webkit-linear-gradient(
+    150deg,
+    var(--accent-color-1) 50%,
+    var(--accent-color-2) 100%
+  );
+  border-radius: 2px;
+}
+
+/* Firefox */
+progress[value]::-moz-progress-bar {
+  background-image: -moz-linear-gradient(
     150deg,
     var(--accent-color-1) 50%,
     var(--accent-color-2) 100%
