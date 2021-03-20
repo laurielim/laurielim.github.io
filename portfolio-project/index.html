@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project showcasing learnings from REACT21K"
+    />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2c0f4df91.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolo Project</title>
+  </head>
+  <body>
+    <header>
+      <div id="header" class="header-container">
+        <div class="logo">
+          <a class="logo-link" href="./"
+            ><h1 class="glow" id="logo">#laurie-lim</h1></a
+          >
+        </div>
+        <button type="button" class="btn-menu" id="btnMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="./gallery.html#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="hero-banner">
+        <h2 class="glow">Welcome to my portfolio</h2>
+      </section>
+      <section id="work">
+        <div class="container">
+          <h2>Work</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img
+                src="./images/arcade-center.png"
+                alt="screenshot of arcade center website"
+              />
+              <div class="card-content">
+                <a href="https://bch-group-project-arcade-center.github.io/">
+                  <h3>What's your score?</h3>
+                  <p>Arcade Center</p></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/days-counter.png"
+                alt="screenshot of days counter app"
+              />
+              <div class="card-content">
+                <a href="#">
+                  <h3>How many days until?</h3>
+                  <p>Days Counter</p></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/speed-game.png"
+                alt="screenshot of speed game"
+              />
+              <div class="card-content">
+                <a href="https://laurielim.github.io/speed-game/">
+                  <h3>How fast are you?</h3>
+                  <p>Speed Game</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <img
+            class="float-left"
+            src="https://source.unsplash.com/w6KSwwnQyaE/1600x900"
+            alt="Finland"
+          />
+          <p>
+            Hi! I've been learning programming for 1.5 year now. I first did
+            some online courses, notably MIT 6.00.1x: Introduction to Computer
+            Science and Programming Using Python & Harvard CS50x: Introduction
+            to Computer Science. I am now enrolled in a full stack web developer
+            where I am learning HTML, CSS, JavaScript, React and PHP at Business
+            College Helsinki. Also, I have a Bachelor Degree in Business
+            Administration from ESADE.
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-container">
+            <div class="skill">
+              <label for="html5"><i class="fab fa-html5"></i> HTML</label>
+              <progress id="html5" value="70" max="100"></progress>
+              <p>70%</p>
+            </div>
+            <div class="skill">
+              <label for="css3"><i class="fab fa-css3"></i> CSS</label>
+              <progress id="css3" value="60" max="100"></progress>
+              <p>60%</p>
+            </div>
+            <div class="skill">
+              <label for="javascript"
+                ><i class="fab fa-js-square"></i> JavaScript</label
+              >
+              <progress id="javascript" value="50" max="100"></progress>
+              <p>50%</p>
+            </div>
+            <div class="skill">
+              <label for="react"><i class="fab fa-react"></i> React</label>
+              <progress id="react" value="0" max="100"></progress>
+              <p>0%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+          <div class="contact-details">
+            <div class="contact-info form-input">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="chakra-font" />
+            </div>
+            <div class="contact-info form-input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="chakra-font" />
+            </div>
+          </div>
+          <div class="form-input">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="chakra-font"
+            ></textarea>
+          </div>
+          <div class="form-input">
+            <button type="submit" class="chakra-font">Send</button>
+          </div>
+        </form>
+      </section>
+      <p class="copyright">Copyright</p>
+      <a href="#top">
+        <button class="back-to-top"></button>
+      </a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
