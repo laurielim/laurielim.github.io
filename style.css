@@ -2,10 +2,25 @@ body {
   background-color: #f8f6f1;
 }
 
-section {
-  width: 600px;
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-span {
-  display: none;
+.social-link {
+  text-decoration: none;
+}
+
+.svg-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.svg-icon path {
+  fill: red;
 }
