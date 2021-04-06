@@ -4,50 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laurie Lim's Landing Page</title>
-    <style>
-      .visually-hidden:not(:focus):not(:active) {
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-      }
-    </style>
+    <meta
+      name="description"
+      content="I'm a full stack developer that's constantly growing. I help make the web accessible to all one web app at a time."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Laurie Lim Sam - Full Stack Developer</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <h2>Check out my live projects</h2>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="./img/logo.png"
+            alt="Laurie's logo, which is a hash on top of 2 'l' that are seperated by a dash. It somehow looks like a tree, and it is so because Lim means forest in chinese."
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#porfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="lightMode">Light Mode</button>
+      <button id="darkMode">Dark Mode</button>
+    </header>
+    <main>
+      <div class="container">
+        <section id="about"><h1>Laurie Lim Sam</h1></section>
+        <section id="portfolio"><h2>Selected Projects</h2></section>
+        <section id="contact"><h2>Get In Touch</h2></section>
+      </div>
+    </main>
+    <footer>
+      <button id="backToTop">Back to top</button>
+      <div class="social-links"></div>
+      <div>
+        <p>2021 Laurie Lim Sam</p>
+      </div>
+    </footer>
 
-    <ul>
-      <li>
-        <p>
-          A days calculator / event countdown:
-          <a href="https://laurielim.github.io/days-calculator/"
-            ><span class="visually-hidden">Link to </span>How many days
-            until...?</a
-          >
-        </p>
-      </li>
-      <li>
-        <p>
-          A pokemon themed speed game:
-          <a href="https://laurielim.github.io/speed-game/"
-            ><span class="visually-hidden">Link to </span>Speed Game</a
-          >
-        </p>
-      </li>
-      <li>
-        <p>
-          A portfolio template showcasing different css/javascript elements I
-          learnt during my first semester at Business College Helsinki:
-          <a href="https://laurielim.github.io/portfolio-project/"
-            ><span class="visually-hidden">Link to </span>Porfolio Project</a
-          >
-        </p>
-      </li>
-    </ul>
+    <script src="script.js"></script>
   </body>
 </html>
