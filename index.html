@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top-of-site">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,12 +23,16 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#porfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <button id="lightMode">Light Mode</button>
-      <button id="darkMode">Dark Mode</button>
+      <div class="user-toggle">
+        <div role="status" class="visually-hidden js-mode-status"></div>
+        <button class="link-button js-mode-toggle">
+          <span class="js-mode-toggle-text">Enable dark mode</span>
+        </button>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -72,7 +76,7 @@
               Molestias ea provident et tempora quisquam obcaecati
               reprehenderit. Unde ex corporis necessitatibus?
             </p>
-            <button>
+            <button class="card-button">
               Read More
               <span class="visually-hidden"
                 >about my project for Performance Plastics Ltd</span
@@ -86,7 +90,7 @@
               Molestias ea provident et tempora quisquam obcaecati
               reprehenderit. Unde ex corporis necessitatibus?
             </p>
-            <button>
+            <button class="card-button">
               Read More
               <span class="visually-hidden"
                 >about my project Arcade Center</span
@@ -100,7 +104,7 @@
               Molestias ea provident et tempora quisquam obcaecati
               reprehenderit. Unde ex corporis necessitatibus?
             </p>
-            <button>
+            <button class="card-button">
               Read More
               <span class="visually-hidden">about my project Speed Game</span>
             </button>
@@ -117,7 +121,7 @@
       </div>
     </main>
     <footer>
-      <button id="backToTop">Back to top</button>
+      <a href="#top-of-site" class="nav-link">Back to top</a>
       <div class="social-links">
         <a
           class="social-link"

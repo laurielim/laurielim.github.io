@@ -1,5 +1,56 @@
+:root {
+  --color-mode: "light";
+  --color-dark: #211e1c;
+  --color-light: #f8f6f1;
+  --background: #f8f6f1;
+  --text-color: #211e1c;
+  --accent-color: #a00000;
+  --button-color: var(--color-light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f8f6f1;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 500ms ease-in-out, color 200ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+  }
+
+  :root:not([data-user-color-scheme]) {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+    --accent-color: #e3b74f;
+    --button-color: var(--color-dark);
+  }
+}
+
+[data-user-color-scheme="dark"] {
+  --background: var(--color-dark);
+  --text-color: var(--color-light);
+  --accent-color: #e3b74f;
+  --button-color: var(--color-dark);
+}
+
+/* Remove _all_ animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
+  }
+
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -12,6 +63,31 @@ body {
   width: 1px;
 }
 
+a {
+  color: var(--accent-color);
+}
+
+/********** Header **********/
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.link-button {
+  background-color: transparent;
+  border: transparent;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+/********** Main **********/
+
+.card-button {
+  color: var(--button-color);
+  background-color: var(--accent-color);
+}
+
+/********** Footer **********/
 .social-link {
   text-decoration: none;
 }
@@ -22,5 +98,5 @@ body {
 }
 
 .svg-icon path {
-  fill: red;
+  fill: var(--accent-color);
 }
