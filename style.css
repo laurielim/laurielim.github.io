@@ -25,10 +25,9 @@ body {
   background-color: var(--background);
   color: var(--text-color);
   transition: background-color 500ms ease-in-out, color 200ms ease;
-  max-width: 1200px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,18 +77,6 @@ body {
   margin: 1rem;
 }
 
-main {
-  /* scroll-snap-type: mandatory; */
-}
-
-main * + * {
-  margin-top: 2rem;
-}
-
-section {
-  scroll-snap-align: start;
-}
-
 h1 {
   font-size: 3.5rem;
 }
@@ -134,7 +121,7 @@ img {
   width: 100%;
 }
 
-/********** Header **********/
+/******************** Header ********************/
 
 header {
   display: flex;
@@ -160,16 +147,14 @@ nav li {
   margin-left: 2rem;
 }
 
-/********** Main **********/
+/******************** Main ********************/
 
 main {
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
 
-.content {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
+main * + * {
+  margin-top: 2rem;
 }
 
 #about {
@@ -186,17 +171,16 @@ main {
   flex: 1;
 }
 
+.about-img img {
+  width: auto;
+}
+
 .card-button {
   color: var(--button-color);
   background-color: var(--accent-color);
 }
 
-/********** Footer **********/
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+/******************** Footer ********************/
 
 .social-link {
   text-decoration: none;

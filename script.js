@@ -83,7 +83,12 @@ const setButtonLabelAndStatus = (currentSetting) => {
 /**
  * Set hero banner image depending on color mode
  */
-const setBannerImage = (currentSetting) => {};
+const setBannerImage = (currentSetting) => {
+  let img = document.getElementById("heroImg");
+  currentSetting === "dark"
+    ? img.setAttribute("src", "./img/dark-profile-picture.png")
+    : img.setAttribute("src", "./img/light-profile-picture.png");
+};
 
 /**
  * Clicking the button runs the apply setting method which grabs its parameter
