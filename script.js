@@ -39,8 +39,10 @@ const applySetting = (passedSetting) => {
       currentSetting
     );
     setButtonLabelAndStatus(currentSetting);
+    setBannerImage(currentSetting);
   } else {
     setButtonLabelAndStatus(getCSSCustomProp(COLOR_MODE_KEY));
+    setBannerImage(getCSSCustomProp(COLOR_MODE_KEY));
   }
 };
 
@@ -77,6 +79,11 @@ const setButtonLabelAndStatus = (currentSetting) => {
   } mode`;
   modeStatusElement.innerText = `Color mode is now "${currentSetting}"`;
 };
+
+/**
+ * Set hero banner image depending on color mode
+ */
+const setBannerImage = (currentSetting) => {};
 
 /**
  * Clicking the button runs the apply setting method which grabs its parameter
