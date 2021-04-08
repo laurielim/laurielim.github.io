@@ -1,3 +1,9 @@
+/**
+ * Remove no-js class from the html
+ * Reference: https://stackoverflow.com/questions/4665748/define-css-if-javascript-is-not-enabled
+ */
+document.documentElement.classList.remove("no-js");
+
 /************* Color Mode **************/
 // Reference: https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode
 
@@ -40,10 +46,8 @@ const applySetting = (passedSetting) => {
       currentSetting
     );
     setButtonLabelAndStatus(currentSetting);
-    setBannerImage(currentSetting);
   } else {
     setButtonLabelAndStatus(getCSSCustomProp(COLOR_MODE_KEY));
-    setBannerImage(getCSSCustomProp(COLOR_MODE_KEY));
   }
 };
 
@@ -82,16 +86,6 @@ const setButtonLabelAndStatus = (currentSetting) => {
 };
 
 /**
- * Set hero banner image depending on color mode
- */
-const setBannerImage = (currentSetting) => {
-  let img = document.getElementById("heroImg");
-  currentSetting === "dark"
-    ? img.setAttribute("src", "./img/dark-profile-picture.png")
-    : img.setAttribute("src", "./img/light-profile-picture.png");
-};
-
-/**
  * Clicking the button runs the apply setting method which grabs its parameter
  * from the toggle setting method.
  */
@@ -103,7 +97,7 @@ modeToggleButton.addEventListener("click", (evt) => {
 
 applySetting();
 
-/************* Expand text **************/
+/************* Expand hidden text **************/
 // Reference: https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
 
 const expandButton = document.getElementById("expandButton");

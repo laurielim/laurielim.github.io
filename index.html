@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="top-of-site">
+<html lang="en" id="top-of-site" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -48,6 +48,11 @@
                   aria-controls="hiddenText"
                 >
                   responsible web developer</button
+                ><noscript
+                  >responsible web developer, responsible as in I make
+                  <a href="https://responsibleweb.app/"
+                    >responsive and accessible web apps</a
+                  >, </noscript
                 ><span
                   id="hiddenText"
                   class="hidden-text"
@@ -76,13 +81,11 @@
                 <a href="https://www.linkedin.com/in/laurielim/">LinkedIn</a>.
               </p>
             </div>
-            <div class="about-img">
-              <img
-                id="heroImg"
-                src="./img/light-profile-picture2.png"
-                alt="Drawn outline of me on my laptop by my wonderful partner Cristina"
-              />
-            </div>
+            <div
+              class="about-img"
+              role="img"
+              aria-label="Drawn outline of me on my laptop by my wonderful partner Cristina"
+            ></div>
           </section>
           <section id="portfolio">
             <h2>Selected Projects</h2>

@@ -4,8 +4,14 @@
   --color-light: #f8f6f1;
   --background: #f8f6f1;
   --text-color: #211e1c;
-  --accent-color: #a00000;
+
+  --accent-color-light: #a00000;
+  --accent-color-dark: #e3b74f;
+  --accent-color: var(--accent-color-light);
   --button-color: var(--color-light);
+  --banner-image-light: url("./img/light-profile-picture.png");
+  --banner-image-dark: url("./img/dark-profile-picture.png");
+  --banner-image-source: var(--banner-image-light);
 }
 
 * {
@@ -38,16 +44,18 @@ body {
   :root:not([data-user-color-scheme]) {
     --background: var(--color-dark);
     --text-color: var(--color-light);
-    --accent-color: #e3b74f;
+    --accent-color: var(--accent-color-dark);
     --button-color: var(--color-dark);
+    --banner-image-source: var(--banner-image-dark);
   }
 }
 
 [data-user-color-scheme="dark"] {
   --background: var(--color-dark);
   --text-color: var(--color-light);
-  --accent-color: #e3b74f;
+  --accent-color: var(--accent-color-dark);
   --button-color: var(--color-dark);
+  --banner-image-source: var(--banner-image-dark);
 }
 
 /* Remove _all_ animations and transitions for people that prefer not to see them */
@@ -61,6 +69,10 @@ body {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.no-js .link-button {
+  display: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -159,11 +171,12 @@ main * + * {
 
 #about {
   display: flex;
+  padding-top: 4rem;
+  min-height: 36rem;
 }
 
 .about-text {
-  padding-top: 5rem;
-  flex: 2;
+  flex: 1;
   text-align: left;
 }
 
@@ -177,10 +190,10 @@ main * + * {
 
 .about-img {
   flex: 1;
-}
-
-.about-img img {
-  width: auto;
+  position: relative;
+  background-image: var(--banner-image-source);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-button {
@@ -204,6 +217,14 @@ main * + * {
 }
 
 @media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
   .about-img {
     display: none;
   }
