@@ -160,11 +160,6 @@ nav li {
 }
 
 /******************** Main ********************/
-
-main {
-  padding-bottom: 15rem;
-}
-
 main * + * {
   margin-top: 2rem;
 }
