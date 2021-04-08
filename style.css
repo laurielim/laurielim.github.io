@@ -159,12 +159,16 @@ main * + * {
 
 #about {
   display: flex;
-  align-items: center;
 }
 
 .about-text {
+  padding-top: 5rem;
   flex: 2;
   text-align: left;
+}
+
+#hiddenText {
+  display: none;
 }
 
 .about-img {

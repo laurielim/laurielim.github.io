@@ -1,4 +1,5 @@
-// https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode
+/************* Color Mode **************/
+// Reference: https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode
 
 const STORAGE_KEY = "user-color-scheme";
 const COLOR_MODE_KEY = "--color-mode";
@@ -101,3 +102,23 @@ modeToggleButton.addEventListener("click", (evt) => {
 });
 
 applySetting();
+
+/************* Expand text **************/
+// Reference: https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
+
+const expandButton = document.getElementById("expandButton");
+const hiddenText = document.getElementById("hiddenText");
+
+const showText = () => {
+  hiddenText.style.display = "inline";
+};
+
+/**
+ * Clicking the button runs the show text method which grabs its parameter
+ * from the toggle setting method.
+ */
+expandButton.addEventListener("click", (evt) => {
+  evt.preventDefault();
+
+  showText();
+});
