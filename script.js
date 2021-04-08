@@ -3,9 +3,9 @@
 
 const STORAGE_KEY = "user-color-scheme";
 const COLOR_MODE_KEY = "--color-mode";
-const modeToggleButton = document.querySelector(".js-mode-toggle");
-const modeToggleText = document.querySelector(".js-mode-toggle-text");
-const modeStatusElement = document.querySelector(".js-mode-status");
+const modeToggleButton = document.getElementById("modeToggleButton");
+const modeToggleText = document.getElementById("modeToggleText");
+const modeStatus = document.getElementById("modeStatus");
 
 /**
  * Pass in a custom prop key and this function will return its
@@ -78,7 +78,7 @@ const setButtonLabelAndStatus = (currentSetting) => {
   modeToggleText.innerText = `Enable ${
     currentSetting === "dark" ? "light" : "dark"
   } mode`;
-  modeStatusElement.innerText = `Color mode is now "${currentSetting}"`;
+  modeStatus.innerText = `Color mode is now "${currentSetting}"`;
 };
 
 /**
@@ -109,8 +109,16 @@ applySetting();
 const expandButton = document.getElementById("expandButton");
 const hiddenText = document.getElementById("hiddenText");
 
-const showText = () => {
-  hiddenText.style.display = "inline";
+/**
+ * Shows or hides hidden text and set the aria states accordingly
+ */
+const toggleHiddenText = () => {
+  let expanded = hiddenText.getAttribute("aria-expanded");
+  hiddenText.setAttribute(
+    "aria-expanded",
+    expanded === "false" ? "true" : "false"
+  );
+  hiddenText.classList.toggle("expanded");
 };
 
 /**
@@ -120,5 +128,5 @@ const showText = () => {
 expandButton.addEventListener("click", (evt) => {
   evt.preventDefault();
 
-  showText();
+  toggleHiddenText();
 });
