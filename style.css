@@ -167,12 +167,13 @@ main * + * {
   margin-top: 2rem;
 }
 
-/******************** About ********************/
-#about {
+section {
   display: flex;
-  padding-top: 4rem;
   min-height: 36rem;
+  padding-top: 3rem;
 }
+
+/******************** About ********************/
 
 .about-text {
   flex: 1;
@@ -195,7 +196,11 @@ main * + * {
   background-position: center;
 }
 
-/******************** Projects ********************/
+/******************** Portfolio ********************/
+
+#portfolio {
+  display: block;
+}
 
 .card-container {
   display: grid;
@@ -204,14 +209,17 @@ main * + * {
 }
 
 .card {
+  min-height: 25rem;
+  display: grid;
+  align-items: center;
   margin: 0;
-  padding: 2.5rem 2rem;
+  padding: 3rem 10%;
   width: 100%;
   position: relative;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.card * + * {
+.card-content * + * {
   margin-top: 1rem;
 }
 
@@ -262,20 +270,58 @@ main * + * {
   height: 100%;
 }
 
+.card-button:focus {
+  outline: none;
+}
+
+.card-button:focus::before {
+  outline: 5px dashed var(--accent-color);
+  outline-offset: -0.8rem;
+}
+
+#contact {
+  max-width: 70ch;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /******************** Footer ********************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .social-link {
   text-decoration: none;
+  margin: 0.5rem;
+  padding-top: 1rem;
+  background-color: red;
 }
 
 .svg-icon {
-  width: 3rem;
-  height: auto;
-  margin: 0 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
 }
 
 .svg-icon path {
   fill: var(--text-color);
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.copyright-text {
+  border-left: 2px solid var(--text-color);
+  padding-left: 0.8rem;
 }
 
 @media (max-width: 576px) {
@@ -293,5 +339,13 @@ main * + * {
 
   .small-card {
     grid-column: span 2;
+  }
+
+  footer {
+    display: block;
+  }
+
+  .footer-right {
+    display: block;
   }
 }
