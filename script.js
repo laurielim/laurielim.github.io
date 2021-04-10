@@ -16,7 +16,6 @@ const modeStatus = document.getElementById("modeStatus");
 /**
  * Pass in a custom prop key and this function will return its
  * computed value.
- * A reduced version of this: https://andy-bell.design/wrote/get-css-custom-property-value-with-javascript/
  */
 const getCSSCustomProp = (propKey) => {
   let response = getComputedStyle(document.documentElement).getPropertyValue(
