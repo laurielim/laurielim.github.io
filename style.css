@@ -176,7 +176,7 @@ main * + * {
 
 section {
   display: flex;
-  min-height: 36rem;
+  min-height: 38rem;
   padding-top: 3rem;
 }
 
