@@ -342,6 +342,11 @@ footer {
     margin-top: 2rem;
   }
 
+  .user-toggle {
+    min-width: 40%;
+    height: 2rem;
+  }
+
   .about-img {
     display: none;
   }
