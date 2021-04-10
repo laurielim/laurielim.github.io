@@ -11,7 +11,7 @@ This repo primarily hosts my portfolio which you can see live here: https://laur
 - JavaScript
 - Figma
 
-I've built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The page has a perfect score on Google Lighthouse. It even looks decent on Internet Explorer!
+I've built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The page has a perfect score on Google Lighthouse. It is responsive and works without JavaScript. And last but not least, it even looks decent on Internet Explorer!
 
 You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB4aOTKfUYTw2s/my-portfolio?node-id=0%3A1).
 

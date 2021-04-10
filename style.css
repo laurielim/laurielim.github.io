@@ -292,6 +292,8 @@ section {
 }
 
 #contact {
+  min-height: 26rem;
+  padding-bottom: 5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
