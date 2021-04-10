@@ -11,7 +11,9 @@ This repo primarily hosts my portfolio which you can see live here: https://laur
 - JavaScript
 - Figma
 
-I've built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB4aOTKfUYTw2s/my-portfolio?node-id=0%3A1).
+I've built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The page has a perfect score on Google Lighthouse. It even looks decent on Internet Explorer!
+
+You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB4aOTKfUYTw2s/my-portfolio?node-id=0%3A1).
 
 As I am currently learning React, I intend on building a React mode... you know, on top of light/dark mode.
 
