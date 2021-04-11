@@ -23,3 +23,4 @@ As I am currently learning React, I intend on building a React mode... you know,
 - [Recommendations from CSS Tricks](https://css-tricks.com)
 - [Accessible design pattern by Graham Armfield](https://www.hassellinclusion.com/blog/accessible-accordion-pattern/)
 - [Inspiration from Joost van der Schee's personal website](https://www.usecue.com/)
+- [SVG icons from Simple Icons](https://simpleicons.org)
