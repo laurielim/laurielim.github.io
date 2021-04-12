@@ -232,11 +232,6 @@ section {
   margin-top: 1rem;
 }
 
-.card:hover,
-.card:focus-within {
-  opacity: 0.9;
-}
-
 .card:nth-child(1) {
   background-color: #211e1c;
   color: #f8f6f1;
@@ -286,6 +281,7 @@ section {
   outline: none;
 }
 
+.card-button:hover::before,
 .card-button:focus::before {
   outline: 5px dashed var(--accent-color);
   outline-offset: -0.8rem;
