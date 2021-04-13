@@ -43,12 +43,16 @@ h1 {
 .icon {
   font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
-  cursor: pointer;
 }
 
 .btn-icon {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.btn-icon:hover {
+  transform: scale(0.9);
 }
 
 #soundOn,
@@ -67,7 +71,7 @@ h1 {
 
 .user-input {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .user-input label {
@@ -92,6 +96,16 @@ h1 {
   border-bottom: 8px solid transparent;
   right: 0;
   bottom: 0;
+}
+
+.info {
+  font-family: inherit;
+  padding-top: 0.2rem;
+  margin: 1rem;
+  border: 0.3rem solid;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /**************** Game Buttons ****************/
@@ -163,9 +177,9 @@ button:focus {
   display: none;
 }
 
-/**************** Game Over Overlay ****************/
+/**************** Overlay ****************/
 
-#overlay {
+.overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -175,27 +189,32 @@ button:focus {
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  z-index: 100;
+}
+
+#instructionsOverlay {
+  visibility: visible;
 }
 
 .popup {
   background-color: white;
   border-radius: 15px;
   width: 90vw;
-  height: 50vh;
+  min-height: 50vh;
   max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  padding: 2%;
+  padding: 5%;
 }
 
 h2 {
   margin-bottom: 1rem;
 }
 
-#close {
+.close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;

@@ -15,14 +15,22 @@
     <title>Speed Game</title>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0"
-      nonce="TA0G6YbE"
-    ></script>
+    <section class="overlay" id="instructionsOverlay">
+      <div class="popup">
+        <button href="#" id="closeInstructions" class="close-btn btn-text">
+          X
+        </button>
+        <h2>Instructions</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+          doloribus quam quidem deleniti, minima laboriosam adipisci, hic beatae
+          obcaecati nulla corporis! Nam culpa dignissimos quis aliquam magnam
+          optio vero odit, ut distinctio rerum voluptate officiis suscipit
+          ratione, impedit id cum vitae sunt voluptates a aut recusandae sint
+          minima. Quibusdam, asperiores!
+        </p>
+      </div>
+    </section>
     <div class="container">
       <h1>Speed Game</h1>
       <div class="settings">
@@ -68,6 +76,7 @@
             <label for="lvlThree">Level 3</label>
           </div>
         </form>
+        <button class="btn-icon info" id="infoBtn">i</button>
       </div>
       <div class="scores">
         <p>High Score: <span id="highscore">0</span></p>
@@ -83,14 +92,13 @@
         <button class="btn-text" id="start" type="submit">Start</button>
         <button class="btn-text" id="stop" type="submit">Stop</button>
       </div>
-    
-  </div>
     </div>
-    <section id="overlay">
+    <section class="overlay" id="gameoverOverlay">
       <div class="popup">
-        <button href="#" id="close" class="btn-text">X</button>
+        <button href="#" id="close" class="close-btn btn-text">X</button>
         <h2>Game Over</h2>
         <p id="final-score"></p>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>
