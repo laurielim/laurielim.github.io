@@ -51,7 +51,8 @@ h2 {
   justify-content: center;
 }
 .icon {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
   font-size: 2rem;
 }
 
@@ -210,6 +211,12 @@ button:focus {
   flex-direction: column;
   position: relative;
   padding: 3%;
+}
+
+.popup p {
+  font-size: 1.3rem;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
 }
 
 h2 {
