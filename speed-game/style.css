@@ -16,6 +16,12 @@ body {
   line-height: 1.8rem;
 }
 
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -30,6 +36,10 @@ body {
 h1 {
   color: #ffcb05;
   text-shadow: -4px 0 #3c5aa6, 0 4px #3c5aa6, 4px 0 #3c5aa6, 0 -4px #3c5aa6;
+}
+
+h2 {
+  margin: 2rem 0;
 }
 
 /**************** Setting Buttons ****************/
@@ -48,7 +58,6 @@ h1 {
 .btn-icon {
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 
 .btn-icon:hover {
@@ -100,6 +109,7 @@ h1 {
 
 .info {
   font-family: inherit;
+  padding: 0;
   padding-top: 0.2rem;
   margin: 1rem;
   border: 0.3rem solid;
@@ -168,9 +178,6 @@ button:focus {
 #start,
 #stop {
   grid-area: "a";
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 #stop {
@@ -185,15 +192,14 @@ button:focus {
   top: 0;
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   visibility: hidden;
   z-index: 100;
 }
 
 #instructionsOverlay {
-  visibility: visible;
+  /* visibility: visible; */
 }
 
 .popup {
@@ -207,7 +213,7 @@ button:focus {
   align-items: center;
   flex-direction: column;
   position: relative;
-  padding: 5%;
+  padding: 3%;
 }
 
 h2 {
@@ -236,6 +242,10 @@ h2 {
     font-size: 14px;
   }
 
+  .instructions-popup h2 {
+    padding-top: 1rem;
+  }
+
   .container {
     justify-content: start;
     margin-top: 5vh;
@@ -243,7 +253,6 @@ h2 {
 
   .settings {
     flex-flow: row wrap;
-    width: 50%;
     justify-content: center;
     margin: 1rem;
   }
@@ -258,6 +267,13 @@ h2 {
 
   .levels-setting {
     display: none;
+  }
+
+  .info {
+    margin: 1rem;
+    margin-left: 1.8rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .responsive {
