@@ -2,8 +2,12 @@ let circles = document.querySelectorAll(".circle");
 let displayScore = document.getElementById("score");
 let displayHighscore = document.getElementById("highscore");
 let overlay = document.getElementById("gameoverOverlay");
+let instructionsOverlay = document.getElementById("instructionsOverlay");
+let btnGoToGame = document.getElementById("goToGame");
+let btnInfo = document.getElementById("infoBtn");
 let finalScore = document.getElementById("final-score");
 let btnClose = document.getElementById("close");
+let btnCloseInstructions = document.getElementById("closeInstructions");
 let btnStart = document.getElementById("start");
 let btnStop = document.getElementById("stop");
 let audioBg, audioEnd;
@@ -15,6 +19,25 @@ let audioGoodEnd = new Audio("./music/good-end.mp3");
 let audioGreatEnd = new Audio("./music/great-end.mp3");
 let audioLvlChange = new Audio("./music/click.mp3");
 let audioSoundOn = new Audio("./music/sound-on.mp3");
+
+let isFirstVisit = localStorage.getItem("_firstVisit");
+
+if (!isFirstVisit) {
+  localStorage.setItem("_firstVisit", true);
+  instructionsOverlay.style.visibility = "visible";
+}
+
+const closeInstructions = () =>
+  (instructionsOverlay.style.visibility = "hidden");
+
+btnGoToGame.addEventListener("click", closeInstructions);
+
+btnCloseInstructions.addEventListener("click", closeInstructions);
+
+const showInstructions = () =>
+  (instructionsOverlay.style.visibility = "visible");
+
+btnInfo.addEventListener("click", showInstructions);
 
 let sessionStorage = window.sessionStorage;
 // Get highscore from session storage

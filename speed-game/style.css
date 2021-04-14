@@ -198,10 +198,6 @@ button:focus {
   z-index: 100;
 }
 
-#instructionsOverlay {
-  /* visibility: visible; */
-}
-
 .popup {
   background-color: white;
   border-radius: 15px;
