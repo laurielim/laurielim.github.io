@@ -1,0 +1,28 @@
+.resume,
+.resume section {
+	display: block;
+	text-align: left;
+	min-height: auto;
+}
+.resume-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.resume-header li {
+	display: block;
+	margin: 0;
+	font-size: 1.375rem;
+}
+
+.subheading {
+	margin-top: 0;
+}
+
+.table-of-contents li {
+	display: list-item;
+	font-size: 1.5rem;
+	line-height: 0.5rem;
+}

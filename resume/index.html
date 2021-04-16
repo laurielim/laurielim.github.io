@@ -8,9 +8,10 @@
 			name="description"
 			content="I'm a full stack developer that's constantly growing. I help make the web accessible to all one web app at a time."
 		/>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-		<title>Full Stack Developer - Laurie Lim Sam</title>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="resume-style.css" />
+		<link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon" />
+		<title>Resume - Laurie Lim Sam</title>
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -19,15 +20,15 @@
 					<div class="logo">
 						<a href="/">
 							<img
-								src="./img/logo.png"
+								src="../img/logo.png"
 								alt="Laurie's logo."
 								height="60"
 								width="60"
 						/></a>
 					</div>
 					<ul>
-						<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-						<li><a href="/resume/">Resume</a></li>
+						<li><a href="/#portfolio">Portfolio</a></li>
+						<li><p>Resume</p></li>
 						<li><a href="#contact" class="nav-link">Contact</a></li>
 					</ul>
 				</nav>
@@ -39,111 +40,61 @@
 				</div>
 			</header>
 			<main>
-				<section id="about">
-					<div class="about-text">
-						<h1>Laurie Lim Sam</h1>
-						<p>
-							Hi, I’m a
-							<button
-								class="link-button"
-								id="expandButton"
-								aria-controls="hiddenText"
-							>
-								responsible
-							</button>
-							<noscript>responsible</noscript> web developer<noscript
-								>, responsible as in I make
-								<a href="https://responsibleweb.app/"
-									>responsive and accessible web apps</a
-								>,</noscript
-							><span
-								id="hiddenText"
-								class="hidden-text"
-								aria-labelledby="hiddenText"
-								aria-expanded="false"
-								>, responsible as in I make
-								<a href="https://responsibleweb.app/"
-									>responsive and accessible web apps</a
-								>,</span
-							>
-							in Helsinki. Thank you for checking out my Portfolio.
-						</p>
-						<p>
-							I’m currently on the Full Stack Web Developer Program at
-							<a
-								href="https://en.bc.fi/qualifications/full-stack-web-developer-program/"
-								>Business College Helsinki</a
-							>. In my free time, I enjoy reading comics and experimenting with
-							CSS on <a href="https://codepen.io/laurielim/">CodePen</a>.
-						</p>
-						<p>
-							You can find me on
-							<a href="https://twitter.com/laurielimsam">Twitter</a>, inspect my
-							code on <a href="https://github.com/laurielim">Github</a> or read
-							my resume on
-							<a href="https://www.linkedin.com/in/laurielim/">LinkedIn</a>.
-						</p>
+				<section class="resume">
+					<h1>Resume</h1>
+					<a
+						href="https://docs.google.com/document/d/1FDVH_4BRTEWnmCwYpzUDtB1_q0nOVdNdJMHP-rrP4Jc/edit?usp=sharing"
+						>Download a copy from Google Docs</a
+					>
+					<div class="resume-header">
+						<div class="resume-name">
+							<h2>Laurie LIM SAM</h2>
+							<p class="subheading">
+								Full Stack Web Developer | Responsible Web Dev
+							</p>
+						</div>
+						<div class="resume-contact">
+							<ul>
+								<li>Helsinki, Finland</li>
+								<li>+358 64 6868508</li>
+								<li>laurie.limsam@gmail.com</li>
+								<li>laurielim@github.io</li>
+							</ul>
+						</div>
 					</div>
-					<div
-						class="about-img"
-						role="img"
-						aria-label="Drawn outline of me on my laptop by my wonderful partner Cristina"
-					></div>
+					<h3>Table of Contents</h3>
+					<nav class="section-nav">
+						<ul class="table-of-contents">
+							<li><a href="#education" class="nav-link">Education</a></li>
+							<li>
+								<a href="#experience" class="nav-link">Experience</a>
+							</li>
+							<li><a href="#skills" class="nav-link">Skills</a></li>
+						</ul>
+					</nav>
 				</section>
-				<section id="portfolio">
-					<h2>Selected Projects</h2>
-					<div class="card-container">
-						<div class="card big-card">
-							<div class="card-content">
-								<h3>Performance Plastics</h3>
-								<p>
-									A company website built on Wordpress, with Elementor, Google,
-									and zero knowledge of web design and development. This is the
-									first website I ever made.
-								</p>
-								<a href="http://performance.mu/" class="card-button">
-									View Website
-									<span class="visually-hidden"
-										>of Performance Plastics Ltd.</span
-									>
-								</a>
-							</div>
-						</div>
-						<div class="card small-card">
-							<div class="card-content">
-								<h3>Arcade Center</h3>
-								<p>
-									This was a group project I did alongside 4 other classmate at
-									Business College Helsinki. It's made with plain HTML, CSS and
-									JavaScript.
-								</p>
-								<a
-									href="https://bch-group-project-arcade-center.github.io/"
-									class="card-button"
-								>
-									View Demo
-									<span class="visually-hidden">of Arcade Center.</span>
-								</a>
-							</div>
-						</div>
-						<div class="card small-card">
-							<div class="card-content">
-								<h3>Speed Game</h3>
-								<p>
-									This is a simple speed game made with JavaScript which I had a
-									lot of fun with. Just so you know, the game is more fun on
-									mobile.
-								</p>
-								<a
-									href="https://laurielim.github.io/speed-game/"
-									class="card-button"
-								>
-									View Demo
-									<span class="visually-hidden">of Speed Game.</span>
-								</a>
-							</div>
-						</div>
-					</div>
+				<section class="resume resume-content">
+					<section id="education" class="resume-section">
+						<h2>Education</h2>
+					</section>
+					<section id="experience" class="resume-section">
+						<h2>Experience</h2>
+					</section>
+					<section id="skills" class="resume-section">
+						<h2>Skills</h2>
+						<section id="frontEnd" class="skills-section">
+							<h3>Front End</h3>
+						</section>
+						<section id="backEnd" class="skills-section">
+							<h3>Back End</h3>
+						</section>
+						<section id="design" class="skills-section">
+							<h3>Design</h3>
+						</section>
+						<section id="languages" class="skills-section">
+							<h3>Languages</h3>
+						</section>
+					</section>
 				</section>
 				<section id="contact">
 					<h2>Get In Touch</h2>
@@ -241,6 +192,6 @@
 				</div>
 			</footer>
 		</div>
-		<script src="script.js"></script>
+		<script src="../script.js"></script>
 	</body>
 </html>
