@@ -101,7 +101,7 @@ h1 {
 	font-size: 3.5rem;
 }
 h2 {
-	font-size: 5rem;
+	font-size: 4rem;
 }
 h3 {
 	font-size: 2rem;
@@ -142,11 +142,6 @@ button {
 	text-decoration: underline;
 }
 
-img {
-	width: 100%;
-	height: auto;
-}
-
 /******************** Header ********************/
 header {
 	display: flex;
@@ -155,21 +150,22 @@ header {
 	flex-wrap: wrap-reverse;
 }
 
+.site-nav {
+	display: flex;
+	align-items: center;
+}
+
 .logo {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
 	box-shadow: 0 0 5px #e3b74f;
+	margin-right: 1rem;
 }
 
-nav {
-	display: flex;
-	align-items: center;
-}
-
-nav li {
+.site-nav li {
 	display: inline-block;
-	margin-left: 2rem;
+	margin: 0.5rem 1rem;
 }
 
 /******************** Main ********************/
@@ -295,7 +291,7 @@ section:first-child {
 
 #contact {
 	min-height: 26rem;
-	padding-bottom: 5rem;
+	padding: 5rem 0;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -371,6 +367,11 @@ footer {
 
 	nav {
 		margin-top: 2rem;
+	}
+
+	.site-nav ul {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.user-toggle {
