@@ -118,6 +118,10 @@ a {
 	color: var(--accent-color);
 }
 
+li {
+	font-size: 1.375rem;
+}
+
 .nav-link {
 	color: var(--text-color);
 }
@@ -319,7 +323,7 @@ footer {
 	margin-top: 0.5rem;
 }
 
-.svg-icon:hover {
+.social-link:hover .svg-icon {
 	transform: scale(0.9);
 }
 

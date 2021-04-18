@@ -4,25 +4,61 @@
 	text-align: left;
 	min-height: auto;
 }
-.resume-header {
+
+.flex-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.resume-header li {
-	display: block;
-	margin: 0;
-	font-size: 1.375rem;
+.flex-content * {
+	margin-top: 0.5rem;
 }
 
-.subheading {
-	margin-top: 0;
+.resume-contact li {
+	display: block;
 }
 
 .table-of-contents li {
 	display: list-item;
-	font-size: 1.5rem;
-	line-height: 0.5rem;
+}
+
+.exp-list {
+	list-style-type: disc;
+}
+
+.exp-list ul {
+	list-style-type: circle;
+}
+
+.exp-list li {
+	margin-left: 2rem;
+	line-height: 1.8;
+}
+
+.skill-list li {
+	display: inline-block;
+	min-width: 15rem;
+	margin: 1rem;
+	line-height: 3rem;
+}
+
+.skill-list li > * {
+	vertical-align: bottom;
+}
+
+.skill-list .svg-icon {
+	margin-right: 1rem;
+}
+
+.language-list li {
+	float: left;
+	min-width: 22rem;
+	margin: 1rem;
+	margin-left: 2rem;
+}
+
+#contact {
+	clear: both;
 }
