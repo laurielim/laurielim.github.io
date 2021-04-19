@@ -101,7 +101,7 @@ h1 {
 	font-size: 3.5rem;
 }
 h2 {
-	font-size: 4rem;
+	font-size: 4.2rem;
 }
 h3 {
 	font-size: 2rem;
@@ -124,6 +124,7 @@ li {
 
 .nav-link {
 	color: var(--text-color);
+	line-height: 1.8;
 }
 
 button {
