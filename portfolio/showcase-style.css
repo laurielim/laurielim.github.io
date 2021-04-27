@@ -1,0 +1,42 @@
+.showcase-nav {
+	margin-top: 0;
+}
+
+.showcase-nav li {
+	display: inline-block;
+	margin: 0.5rem 1rem;
+}
+
+.showcase-nav li:first-child {
+	margin-left: 0;
+}
+
+.img-container {
+	min-height: 500px;
+}
+.screenshot {
+	width: 100%;
+	height: auto;
+}
+
+section {
+	min-height: auto;
+}
+
+.title {
+	flex: 2;
+}
+
+.content {
+	flex: 3;
+}
+
+@media (max-width: 900px) {
+	section.flex {
+		flex-direction: column;
+	}
+
+	.img-container {
+		min-height: 150px;
+	}
+}

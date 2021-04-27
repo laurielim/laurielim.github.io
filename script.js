@@ -18,17 +18,17 @@ const modeStatus = document.getElementById("modeStatus");
  * computed value.
  */
 const getCSSCustomProp = (propKey) => {
-  let response = getComputedStyle(document.documentElement).getPropertyValue(
-    propKey
-  );
+	let response = getComputedStyle(document.documentElement).getPropertyValue(
+		propKey
+	);
 
-  // Tidy up the string if there’s something to work with
-  if (response.length) {
-    response = response.replace(/\'|"/g, "").trim();
-  }
+	// Tidy up the string if there’s something to work with
+	if (response.length) {
+		response = response.replace(/\'|"/g, "").trim();
+	}
 
-  // Return the string response by default
-  return response;
+	// Return the string response by default
+	return response;
 };
 
 /**
@@ -37,51 +37,51 @@ const getCSSCustomProp = (propKey) => {
  * controlled by the media query
  */
 const applySetting = (passedSetting) => {
-  let currentSetting = passedSetting || localStorage.getItem(STORAGE_KEY);
+	let currentSetting = passedSetting || localStorage.getItem(STORAGE_KEY);
 
-  if (currentSetting) {
-    document.documentElement.setAttribute(
-      "data-user-color-scheme",
-      currentSetting
-    );
-    setButtonLabelAndStatus(currentSetting);
-  } else {
-    setButtonLabelAndStatus(getCSSCustomProp(COLOR_MODE_KEY));
-  }
+	if (currentSetting) {
+		document.documentElement.setAttribute(
+			"data-user-color-scheme",
+			currentSetting
+		);
+		setButtonLabelAndStatus(currentSetting);
+	} else {
+		setButtonLabelAndStatus(getCSSCustomProp(COLOR_MODE_KEY));
+	}
 };
 
 /**
  * Get’s the current setting > reverses it > stores it
  */
 const toggleSetting = () => {
-  let currentSetting = localStorage.getItem(STORAGE_KEY);
+	let currentSetting = localStorage.getItem(STORAGE_KEY);
 
-  switch (currentSetting) {
-    case null:
-      currentSetting =
-        getCSSCustomProp(COLOR_MODE_KEY) === "dark" ? "light" : "dark";
-      break;
-    case "light":
-      currentSetting = "dark";
-      break;
-    case "dark":
-      currentSetting = "light";
-      break;
-  }
+	switch (currentSetting) {
+		case null:
+			currentSetting =
+				getCSSCustomProp(COLOR_MODE_KEY) === "dark" ? "light" : "dark";
+			break;
+		case "light":
+			currentSetting = "dark";
+			break;
+		case "dark":
+			currentSetting = "light";
+			break;
+	}
 
-  localStorage.setItem(STORAGE_KEY, currentSetting);
+	localStorage.setItem(STORAGE_KEY, currentSetting);
 
-  return currentSetting;
+	return currentSetting;
 };
 
 /**
  * A shared method for setting the button text label and visually hidden status element
  */
 const setButtonLabelAndStatus = (currentSetting) => {
-  modeToggleText.innerText = `Enable ${
-    currentSetting === "dark" ? "light" : "dark"
-  } mode`;
-  modeStatus.innerText = `Color mode is now "${currentSetting}"`;
+	modeToggleText.innerText = `Enable ${
+		currentSetting === "dark" ? "light" : "dark"
+	} mode`;
+	modeStatus.innerText = `Color mode is now "${currentSetting}"`;
 };
 
 /**
@@ -89,9 +89,9 @@ const setButtonLabelAndStatus = (currentSetting) => {
  * from the toggle setting method.
  */
 modeToggleButton.addEventListener("click", (evt) => {
-  evt.preventDefault();
+	evt.preventDefault();
 
-  applySetting(toggleSetting());
+	applySetting(toggleSetting());
 });
 
 applySetting();
@@ -106,20 +106,20 @@ const hiddenText = document.getElementById("hiddenText");
  * Shows or hides hidden text and set the aria states accordingly
  */
 const toggleHiddenText = () => {
-  let expanded = hiddenText.getAttribute("aria-expanded");
-  hiddenText.setAttribute(
-    "aria-expanded",
-    expanded === "false" ? "true" : "false"
-  );
-  hiddenText.classList.toggle("expanded");
+	let expanded = hiddenText.getAttribute("aria-expanded");
+	hiddenText.setAttribute(
+		"aria-expanded",
+		expanded === "false" ? "true" : "false"
+	);
+	hiddenText.classList.toggle("expanded");
 };
 
 /**
  * Clicking the button runs the show text method which grabs its parameter
  * from the toggle setting method.
  */
-expandButton.addEventListener("click", (evt) => {
-  evt.preventDefault();
+expandButton?.addEventListener("click", (evt) => {
+	evt.preventDefault();
 
-  toggleHiddenText();
+	toggleHiddenText();
 });

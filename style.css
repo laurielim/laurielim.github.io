@@ -25,7 +25,6 @@ html {
 body {
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-	text-align: center;
 	background-color: #f8f6f1;
 	background-color: var(--background);
 	color: #211e1c;
@@ -143,16 +142,32 @@ button {
 	text-decoration: underline;
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-wrap-center {
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex-wrap-center * {
+	margin-top: 0.5rem;
+}
+
+/* .home * {
+	text-align: center;
+} */
+
 /******************** Header ********************/
 header {
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 }
 
 .site-nav {
-	display: flex;
 	align-items: center;
 }
 
@@ -175,7 +190,6 @@ main * + * {
 }
 
 section {
-	display: flex;
 	min-height: 38rem;
 }
 
@@ -210,7 +224,7 @@ section:first-child {
 /******************** Portfolio ********************/
 
 #portfolio {
-	display: block;
+	text-align: center;
 }
 
 .card-container {
@@ -265,6 +279,7 @@ section:first-child {
 	background-color: #f8f6f1;
 	background-color: var(--accent-color);
 	text-decoration: none;
+	/* text-align: center; */
 	border: 1px solid;
 	position: static;
 }
@@ -293,20 +308,14 @@ section:first-child {
 #contact {
 	min-height: 26rem;
 	padding: 5rem 0;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	display: grid;
+	place-content: center;
 }
 #contact p {
 	margin: 0 auto;
 }
 /******************** Footer ********************/
-
-footer {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
 
 .social-link {
 	text-decoration: none;
@@ -345,14 +354,9 @@ footer {
 }
 
 @media (max-width: 756px) {
-	.footer-right,
-	footer {
-		display: block;
-	}
-
-	.footer-left {
+	footer.flex,
+	footer .flex {
 		justify-content: center;
-		margin-bottom: 2rem;
 	}
 
 	.copyright-text {

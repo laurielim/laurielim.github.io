@@ -1,19 +1,5 @@
-.resume,
-.resume section {
-	display: block;
-	text-align: left;
+section {
 	min-height: auto;
-}
-
-.flex-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.flex-content * {
-	margin-top: 0.5rem;
 }
 
 .resume-contact li {
