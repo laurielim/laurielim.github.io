@@ -7,6 +7,7 @@ let btnGoToGame = document.getElementById("goToGame");
 let btnInfo = document.getElementById("infoBtn");
 let finalScore = document.getElementById("final-score");
 let btnClose = document.getElementById("close");
+let btnTryAgain = document.getElementById("tryAgain");
 let btnCloseInstructions = document.getElementById("closeInstructions");
 let btnStart = document.getElementById("start");
 let btnStop = document.getElementById("stop");
@@ -226,15 +227,21 @@ function startGame() {
 
 		// Display player's final score
 		finalScore.textContent = `Your final score is ${score}. ${endText}`;
-		// Add event listener to close button
-		btnClose.addEventListener("click", () => {
+
+		/**
+		 * Saves sound settings and highscore in session Storage and reloads the page
+		 */
+		const resetGame = () => {
 			// Store sound setting
 			sessionStorage.setItem("sound", `${soundOn}`);
 			// Store score if it's greater than current highscore
 			if (score > highscore) sessionStorage.setItem("highscore", `${score}`);
 			// Reload page
 			window.location.reload();
-		});
+		};
+		// Add event listener to close button and try again button
+		btnClose.addEventListener("click", resetGame);
+		btnTryAgain.addEventListener("click", resetGame);
 	}
 }
 

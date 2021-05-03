@@ -1,108 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fontello/css/fontello.css" />
-    <title>Speed Game</title>
-  </head>
-  <body>
-    <section class="overlay" id="instructionsOverlay">
-      <div class="popup instructions-popup">
-        <button href="#" id="closeInstructions" class="close-btn btn-text">
-          X
-        </button>
-        <h2>Gotta Catch'em All!</h2>
-        <p>
-          Press start to play! Pokemons will show up where the pokeballs are.
-          Tap on the pokemons to score points. It's game over if you tap on a
-          pokeball.
-        </p>
-        <p>
-          To be the very best, you can set the difficulty in settings. In level
-          1, you can skip up to 5 pokemons, in level 2, only 3 and in level 3,
-          skipping any means game over!
-        </p>
-        <button class="btn-text" id="goToGame">Got it!</button>
-      </div>
-    </section>
-    <div class="container">
-      <h1>Speed Game</h1>
-      <div class="settings">
-        <button class="btn-icon" id="soundOn">
-          <i class="icon icon-volume-high"></i>
-        </button>
-        <button class="btn-icon" id="soundOff">
-          <i class="icon icon-volume-off"></i>
-        </button>
-        <button class="btn-icon btn-icon-cog" id="btnSettings">
-          <i class="icon icon-cog-outline"></i>
-        </button>
-        <form class="levels-setting">
-          <div class="user-input">
-            <input
-              type="radio"
-              name="levels"
-              id="lvlOne"
-              class="input-lvl"
-              checked="checked"
-              value="0"
-            />
-            <label for="lvlOne">Level 1</label>
-          </div>
-          <div class="user-input">
-            <input
-              type="radio"
-              name="levels"
-              id="lvlTwo"
-              class="input-lvl"
-              value="1"
-            />
-            <label for="lvlTwo">Level 2</label>
-          </div>
-          <div class="user-input">
-            <input
-              type="radio"
-              name="levels"
-              id="lvlThree"
-              class="input-lvl"
-              value="2"
-            />
-            <label for="lvlThree">Level 3</label>
-          </div>
-        </form>
-        <button class="btn-icon info" id="infoBtn">i</button>
-      </div>
-      <div class="scores">
-        <p>High Score: <span id="highscore">0</span></p>
-        <p>Your Score: <span id="score">0</span></p>
-      </div>
-      <div class="circles">
-        <button class="circle bulbasaur inactive" value="0"></button>
-        <button class="circle charmander inactive" value="1"></button>
-        <button class="circle squirtle inactive" value="2"></button>
-        <button class="circle pikachu inactive" value="3"></button>
-      </div>
-      <div class="buttons">
-        <button class="btn-text" id="start" type="submit">Start</button>
-        <button class="btn-text" id="stop" type="submit">Stop</button>
-      </div>
-    </div>
-    <section class="overlay" id="gameoverOverlay">
-      <div class="popup">
-        <button href="#" id="close" class="close-btn btn-text">X</button>
-        <h2>Game Over</h2>
-        <p id="final-score"></p>
-      </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="fontello/css/fontello.css" />
+		<title>Speed Game</title>
+	</head>
+	<body>
+		<section class="overlay" id="instructionsOverlay">
+			<div class="popup instructions-popup">
+				<button href="#" id="closeInstructions" class="close-btn btn-text">
+					X
+				</button>
+				<h2>Gotta Catch'em All!</h2>
+				<p>
+					Press start to play! Pokemons will show up where the pokeballs are.
+					Tap on the pokemons to score points. It's game over if you tap on a
+					pokeball.
+				</p>
+				<p>
+					To be the very best, you can set the difficulty in settings. In level
+					1, you can skip up to 5 pokemons, in level 2, only 3 and in level 3,
+					skipping any means game over!
+				</p>
+				<button class="btn-text" id="goToGame">Got it!</button>
+			</div>
+		</section>
+		<div class="container">
+			<h1>Speed Game</h1>
+			<div class="settings">
+				<button class="btn-icon" id="soundOn">
+					<i class="icon icon-volume-high"></i>
+				</button>
+				<button class="btn-icon" id="soundOff">
+					<i class="icon icon-volume-off"></i>
+				</button>
+				<button class="btn-icon btn-icon-cog" id="btnSettings">
+					<i class="icon icon-cog-outline"></i>
+				</button>
+				<form class="levels-setting">
+					<div class="user-input">
+						<input
+							type="radio"
+							name="levels"
+							id="lvlOne"
+							class="input-lvl"
+							checked="checked"
+							value="0"
+						/>
+						<label for="lvlOne">Level 1</label>
+					</div>
+					<div class="user-input">
+						<input
+							type="radio"
+							name="levels"
+							id="lvlTwo"
+							class="input-lvl"
+							value="1"
+						/>
+						<label for="lvlTwo">Level 2</label>
+					</div>
+					<div class="user-input">
+						<input
+							type="radio"
+							name="levels"
+							id="lvlThree"
+							class="input-lvl"
+							value="2"
+						/>
+						<label for="lvlThree">Level 3</label>
+					</div>
+				</form>
+				<button class="btn-icon info" id="infoBtn">i</button>
+			</div>
+			<div class="scores">
+				<p>High Score: <span id="highscore">0</span></p>
+				<p>Your Score: <span id="score">0</span></p>
+			</div>
+			<div class="circles">
+				<button class="circle bulbasaur inactive" value="0"></button>
+				<button class="circle charmander inactive" value="1"></button>
+				<button class="circle squirtle inactive" value="2"></button>
+				<button class="circle pikachu inactive" value="3"></button>
+			</div>
+			<div class="buttons">
+				<button class="btn-text" id="start" type="submit">Start</button>
+				<button class="btn-text" id="stop" type="submit">Stop</button>
+			</div>
+		</div>
+		<section class="overlay" id="gameoverOverlay">
+			<div class="popup">
+				<button href="#" id="close" class="close-btn btn-text">X</button>
+				<h2>Game Over</h2>
+				<p id="final-score"></p>
+				<button href="#" id="tryAgain" class="btn-text">Try Again</button>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
 </html>
