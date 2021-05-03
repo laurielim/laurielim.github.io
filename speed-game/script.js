@@ -23,27 +23,27 @@ let audioSoundOn = new Audio("./music/sound-on.mp3");
 let isFirstVisit = localStorage.getItem("_firstVisit");
 
 if (!isFirstVisit) {
-  localStorage.setItem("_firstVisit", true);
-  instructionsOverlay.style.visibility = "visible";
+	localStorage.setItem("_firstVisit", true);
+	instructionsOverlay.style.visibility = "visible";
 }
 
 const closeInstructions = () =>
-  (instructionsOverlay.style.visibility = "hidden");
+	(instructionsOverlay.style.visibility = "hidden");
 
 btnGoToGame.addEventListener("click", closeInstructions);
 
 btnCloseInstructions.addEventListener("click", closeInstructions);
 
 const showInstructions = () =>
-  (instructionsOverlay.style.visibility = "visible");
+	(instructionsOverlay.style.visibility = "visible");
 
 btnInfo.addEventListener("click", showInstructions);
 
 let sessionStorage = window.sessionStorage;
 // Get highscore from session storage
 let highscore = sessionStorage.getItem("highscore")
-  ? parseInt(sessionStorage.getItem("highscore"))
-  : 0;
+	? parseInt(sessionStorage.getItem("highscore"))
+	: 0;
 // Display highscore
 displayHighscore.textContent = highscore;
 
@@ -55,179 +55,187 @@ let btnSoundOff = document.getElementById("soundOff");
 
 // Display volume icon matching soundOn
 if (soundOn) {
-  // Show sound on btn
-  btnSoundOn.style.display = "block";
+	// Show sound on btn
+	btnSoundOn.style.display = "block";
 } else {
-  // Show sound off btn
-  btnSoundOff.style.display = "block";
+	// Show sound off btn
+	btnSoundOff.style.display = "block";
 }
 
 // If sound is on...
 btnSoundOn.addEventListener("click", () => {
-  // Set sound on to false
-  soundOn = false;
-  // Pause bg music if playing
-  if (audioBg) audioBg.pause();
-  // Hide sound on btn
-  btnSoundOn.style.display = "none";
-  // Show sound off btn
-  btnSoundOff.style.display = "block";
+	// Set sound on to false
+	soundOn = false;
+	// Pause bg music if playing
+	if (audioBg) audioBg.pause();
+	// Hide sound on btn
+	btnSoundOn.style.display = "none";
+	// Show sound off btn
+	btnSoundOff.style.display = "block";
 });
 
 // If sound if off...
 btnSoundOff.addEventListener("click", () => {
-  soundOn = true;
-  // Resume bg music if paused else play audio indicating sound on;
-  audioBg ? audioBg.play() : audioSoundOn.play();
-  // Show sound on btn
-  btnSoundOn.style.display = "block";
-  // Hide sound off btn
-  btnSoundOff.style.display = "none";
+	soundOn = true;
+	// Resume bg music if paused else play audio indicating sound on;
+	audioBg ? audioBg.play() : audioSoundOn.play();
+	// Show sound on btn
+	btnSoundOn.style.display = "block";
+	// Hide sound off btn
+	btnSoundOff.style.display = "none";
 });
 
 let levels = document.querySelectorAll("input[type=radio]");
 
 // Play click sound whenever level is changed
 levels.forEach((level) => {
-  level.addEventListener("change", () => {
-    if (soundOn) audioLvlChange.play();
-  });
+	level.addEventListener("change", () => {
+		if (soundOn) audioLvlChange.play();
+	});
 });
 
 function startGame() {
-  let lastActive, active, endText, speed, minSpeed, maxSkip, speedUp, timer;
-  let score = 0;
-  let counter = 0;
+	let lastActive, active, endText, speed, minSpeed, maxSkip, speedUp, timer;
+	let score = 0;
+	let counter = 0;
 
-  // Check level setting
-  document.querySelectorAll("input[type=radio]").forEach((level) => {
-    if (level.checked == true) levelSet = level.value;
-  });
+	// Check level setting
+	document.querySelectorAll("input[type=radio]").forEach((level) => {
+		if (level.checked == true) levelSet = level.value;
+	});
 
-  // Set speed, minSpeed, maxSkip, bg music
-  switch (levelSet) {
-    case "0":
-      speed = 1000;
-      minSpeed = 250;
-      maxSkip = 5;
-      speedUp = 10;
-      audioBg = audioBgEasy;
-      break;
-    case "1":
-      speed = 1000;
-      minSpeed = 200;
-      maxSkip = 3;
-      speedUp = 15;
-      audioBg = audioBgMedium;
-      break;
-    case "2":
-      speed = 900;
-      minSpeed = 150;
-      maxSkip = 0;
-      speedUp = 20;
-      audioBg = audioBgHard;
-      break;
-  }
+	// Close level setting menu if it's open
+	if (
+		document
+			.querySelector(".levels-setting")
+			.classList.value.includes("responsive")
+	)
+		document.querySelector(".levels-setting").classList.remove("responsive");
 
-  // Start background music if sound is on
-  if (soundOn) audioBg.play();
+	// Set speed, minSpeed, maxSkip, bg music
+	switch (levelSet) {
+		case "0":
+			speed = 1000;
+			minSpeed = 250;
+			maxSkip = 5;
+			speedUp = 10;
+			audioBg = audioBgEasy;
+			break;
+		case "1":
+			speed = 1000;
+			minSpeed = 200;
+			maxSkip = 3;
+			speedUp = 15;
+			audioBg = audioBgMedium;
+			break;
+		case "2":
+			speed = 900;
+			minSpeed = 150;
+			maxSkip = 0;
+			speedUp = 20;
+			audioBg = audioBgHard;
+			break;
+	}
 
-  // Hide start button
-  btnStart.style.display = "none";
-  // Make stop button visible
-  btnStop.style.display = "block";
+	// Start background music if sound is on
+	if (soundOn) audioBg.play();
 
-  // Activate first circle
-  activateCircle();
+	// Hide start button
+	btnStart.style.display = "none";
+	// Make stop button visible
+	btnStop.style.display = "block";
 
-  function activateCircle() {
-    // End game if counter is more than five, else increment counter
-    counter > maxSkip ? showGameOver() : counter++;
-    // Get random number between 0 and 3
-    active = Math.floor(Math.random() * 4);
-    if (lastActive === active) {
-      // If last active and new active are the same, increase active by 1 if active is not 3, else set active to 0
-      active != 3 ? active++ : (active = 0);
-    }
+	// Activate first circle
+	activateCircle();
 
-    // If this is not the first time that activateCircle has been called
-    if (lastActive != undefined) {
-      // Make last circle inactive
-      circles[lastActive].classList.toggle("inactive");
-    }
-    // Make new circle active
-    circles[active].classList.toggle("inactive");
-    // Update last active
-    lastActive = active;
+	function activateCircle() {
+		// End game if counter is more than five, else increment counter
+		counter > maxSkip ? showGameOver() : counter++;
+		// Get random number between 0 and 3
+		active = Math.floor(Math.random() * 4);
+		if (lastActive === active) {
+			// If last active and new active are the same, increase active by 1 if active is not 3, else set active to 0
+			active != 3 ? active++ : (active = 0);
+		}
 
-    // Activate new circle
-    timer = setTimeout(() => {
-      activateCircle();
-    }, speed);
-  }
+		// If this is not the first time that activateCircle has been called
+		if (lastActive != undefined) {
+			// Make last circle inactive
+			circles[lastActive].classList.toggle("inactive");
+		}
+		// Make new circle active
+		circles[active].classList.toggle("inactive");
+		// Update last active
+		lastActive = active;
 
-  // Add event listener to each circle
-  circles.forEach((circle) => {
-    circle.addEventListener("click", checkClicked);
-  });
+		// Activate new circle
+		timer = setTimeout(() => {
+			activateCircle();
+		}, speed);
+	}
 
-  function checkClicked() {
-    // Check that the value of circle is the same as active
-    if (this.value == active) {
-      score++;
-      // Adjust speed to increase difficulty
-      if (speed > minSpeed) speed -= speedUp;
-      console.log(speed);
-      // Reset counter to 0;
-      counter = 0;
-      // Update score display
-      displayScore.textContent = `${score}`;
-    } else {
-      // If player clicked the wrong circle, trigger game over
-      showGameOver();
-    }
-  }
+	// Add event listener to each circle
+	circles.forEach((circle) => {
+		circle.addEventListener("click", checkClicked);
+	});
 
-  // Add event listener to stop button, if player click "stop", trigger game over
-  btnStop.addEventListener("click", showGameOver);
+	function checkClicked() {
+		// Check that the value of circle is the same as active
+		if (this.value == active) {
+			score++;
+			// Adjust speed to increase difficulty
+			if (speed > minSpeed) speed -= speedUp;
+			console.log(speed);
+			// Reset counter to 0;
+			counter = 0;
+			// Update score display
+			displayScore.textContent = `${score}`;
+		} else {
+			// If player clicked the wrong circle, trigger game over
+			showGameOver();
+		}
+	}
 
-  function showGameOver() {
-    // Stop background music
-    audioBg.pause();
-    // Stop timeout
-    clearTimeout(timer);
-    // Make overlay visible
-    overlay.style.visibility = "visible";
-    // Check users score, play ending audio and assign end text
-    switch (true) {
-      case score < 10:
-        audioEnd = audioBadEnd;
-        endText = "If you don't SPLASH, you won't evolve.";
-        break;
-      case score > 9 && score < 20:
-        audioEnd = audioGoodEnd;
-        endText = "HARDEN for now, things will get better.";
-        break;
-      case score > 19:
-        audioEnd = audioGreatEnd;
-        endText = "Never let your EMBER burn out.";
-    }
+	// Add event listener to stop button, if player click "stop", trigger game over
+	btnStop.addEventListener("click", showGameOver);
 
-    // Play ending audio if sound is on
-    if (soundOn) audioEnd.play();
+	function showGameOver() {
+		// Stop background music
+		audioBg.pause();
+		// Stop timeout
+		clearTimeout(timer);
+		// Make overlay visible
+		overlay.style.visibility = "visible";
+		// Check users score, play ending audio and assign end text
+		switch (true) {
+			case score < 10:
+				audioEnd = audioBadEnd;
+				endText = "If you don't SPLASH, you won't evolve.";
+				break;
+			case score > 9 && score < 20:
+				audioEnd = audioGoodEnd;
+				endText = "HARDEN for now, things will get better.";
+				break;
+			case score > 19:
+				audioEnd = audioGreatEnd;
+				endText = "Never let your EMBER burn out.";
+		}
 
-    // Display player's final score
-    finalScore.textContent = `Your final score is ${score}. ${endText}`;
-    // Add event listener to close button
-    btnClose.addEventListener("click", () => {
-      // Store sound setting
-      sessionStorage.setItem("sound", `${soundOn}`);
-      // Store score if it's greater than current highscore
-      if (score > highscore) sessionStorage.setItem("highscore", `${score}`);
-      // Reload page
-      window.location.reload();
-    });
-  }
+		// Play ending audio if sound is on
+		if (soundOn) audioEnd.play();
+
+		// Display player's final score
+		finalScore.textContent = `Your final score is ${score}. ${endText}`;
+		// Add event listener to close button
+		btnClose.addEventListener("click", () => {
+			// Store sound setting
+			sessionStorage.setItem("sound", `${soundOn}`);
+			// Store score if it's greater than current highscore
+			if (score > highscore) sessionStorage.setItem("highscore", `${score}`);
+			// Reload page
+			window.location.reload();
+		});
+	}
 }
 
 // Add event listener to start button
@@ -235,7 +243,7 @@ btnStart.addEventListener("click", startGame);
 
 // Toggle levels setting on click
 document
-  .getElementById("btnSettings")
-  .addEventListener("click", () =>
-    document.querySelector(".levels-setting").classList.toggle("responsive")
-  );
+	.getElementById("btnSettings")
+	.addEventListener("click", () =>
+		document.querySelector(".levels-setting").classList.toggle("responsive")
+	);
