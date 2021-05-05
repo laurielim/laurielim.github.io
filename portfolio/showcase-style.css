@@ -31,6 +31,10 @@ section {
 	flex: 3;
 }
 
+.showcase-list {
+	margin-left: 1.5rem;
+}
+
 @media (max-width: 900px) {
 	section.flex {
 		flex-direction: column;
