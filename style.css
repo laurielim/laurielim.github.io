@@ -189,9 +189,6 @@ main * + * {
 	margin-top: 2rem;
 }
 
-section {
-}
-
 section:first-child {
 	padding-top: 3rem;
 }
@@ -305,8 +302,12 @@ section:first-child {
 	height: 100%;
 }
 
-.card-button:focus {
-	outline: none;
+.card-button:hover {
+	opacity: 1;
+}
+
+.card-button:hover {
+	text-decoration: underline;
 }
 
 .card-button:hover::before,
