@@ -306,6 +306,10 @@ section:first-child {
 	opacity: 1;
 }
 
+.card-button:focus {
+	outline: none;
+}
+
 .card-button:hover {
 	text-decoration: underline;
 }
