@@ -1,6 +1,6 @@
-# How much time...?
+# Days Calculator
 
-"How much time...?" is a days calculator and an event countdown application.
+This is a days calculator and an event countdown application.
 
 Given two dates, the app will show the user how many calender days and how many business days there are between those two date. If no start date is given, the default start date is today.
 
