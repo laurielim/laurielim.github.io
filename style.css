@@ -190,14 +190,27 @@ main * + * {
 }
 
 section {
-	min-height: 38rem;
 }
 
 section:first-child {
 	padding-top: 3rem;
 }
 
+.content-nav {
+	margin-top: 0;
+}
+
+.content-nav li {
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 2rem;
+}
+
 /******************** About ********************/
+
+#about {
+	min-height: 38rem;
+}
 
 .about-text {
 	flex: 1;
@@ -223,7 +236,7 @@ section:first-child {
 
 /******************** Portfolio ********************/
 
-#portfolio {
+.portfolio {
 	text-align: center;
 }
 
@@ -243,25 +256,22 @@ section:first-child {
 	width: 100%;
 	position: relative;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.card-content * + * {
-	margin-top: 1rem;
-}
-
-.card:nth-child(1) {
 	background-color: #211e1c;
 	color: #f8f6f1;
 	background-color: var(--text-color);
 	color: var(--background);
 }
 
-.card:nth-child(2) {
+.card-content * + * {
+	margin-top: 1rem;
+}
+
+.card-color1 {
 	background-color: #cfc7b4;
 	color: #211e1c;
 }
 
-.card:nth-child(3) {
+.card-color2 {
 	background-color: #585350;
 	color: #f8f6f1;
 }
@@ -305,6 +315,10 @@ section:first-child {
 	outline-offset: -0.8rem;
 }
 
+.portfolio-page h2 {
+	text-align: left;
+}
+
 #contact {
 	min-height: 26rem;
 	padding: 5rem 0;
@@ -315,6 +329,7 @@ section:first-child {
 #contact p {
 	margin: 0 auto;
 }
+
 /******************** Footer ********************/
 
 .social-link {
