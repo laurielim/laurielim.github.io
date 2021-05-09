@@ -105,6 +105,8 @@ h2 {
 h3 {
 	font-size: 2rem;
 }
+li,
+a,
 p {
 	font-size: 1.375rem;
 	line-height: 1.8;
@@ -112,18 +114,12 @@ p {
 }
 
 a {
-	font-size: 1.375rem;
 	color: #a00000;
 	color: var(--accent-color);
 }
 
-li {
-	font-size: 1.375rem;
-}
-
 .nav-link {
 	color: var(--text-color);
-	line-height: 1.8;
 }
 
 button {
@@ -410,5 +406,23 @@ section:first-child {
 
 	.small-card {
 		grid-column: span 2;
+	}
+
+	.content-nav {
+		margin-top: 1rem;
+	}
+
+	.content-nav ul {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		height: 12rem;
+		margin: 0;
+	}
+
+	.content-nav li {
+		display: list-item;
+		margin: 0 2rem;
+		margin-bottom: 1rem;
 	}
 }
