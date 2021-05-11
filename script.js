@@ -4,6 +4,11 @@
  */
 document.documentElement.classList.remove("no-js");
 
+console.log(
+	"%cHi there! Welcome to the console. I invite you to check out my code which you can also find on github. I would be happy to get some feedback or hear about new opportunities! Feel free to send me an email at laurie.limsam@gmail.com",
+	"font-size: 16px"
+);
+
 /************* Color Mode **************/
 // Reference: https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode
 
