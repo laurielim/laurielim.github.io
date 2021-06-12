@@ -8,7 +8,7 @@
 			name="description"
 			content="I'm a full stack developer that's constantly growing. I help make the web accessible to all one web app at a time."
 		/>
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
 		<link rel="stylesheet" href="../../style.css" />
 		<link rel="stylesheet" href="../showcase-style.css" />
 		<link
@@ -92,7 +92,7 @@
 							at Business College Helsinki. The goal of this project is to
 							practice what I learn. As I am
 							<a href="//github.com/laurielim/REACT21K_PHP">learning PHP</a> and
-							data structures in parallel, I also made a simple
+							data structures in parallel, I also made an
 							<a href="//laurielim-thecocktailapp-api.herokuapp.com/"
 								>API for my recipes</a
 							>
@@ -102,8 +102,9 @@
 						<p>
 							This web app is built with React and hosted on Netlify. The
 							backend is built using the Symfony framework and is hosted on
-							Heroku. Since Heroku provides SQL database as a service, the data
-							is stored in a PostgreSQL database.
+							Heroku. The IBA official recipes are stored in a JSON file while
+							posted recipes are stored in a PostgreSQL database, as available
+							on Heroku.
 						</p>
 					</div>
 				</section>
@@ -132,24 +133,59 @@
 						</p>
 						<h3>Development</h3>
 						<p>
-							This is a work in progress. I currently have an MVP. The data is
-							stored inside a JSON file but because of Heroku's ephemeral
-							filesystem, I will be importing my data into a ProsgresSQL
-							database.
+							This website was developed over 8 weeks. I started with the
+							planning and design of the front end. Over a couple of weeks, I
+							translated those plans into actual code. After that I started
+							putting together the data for my recipes and eventually set up the
+							back end.
 						</p>
+						<p>For the React app:</p>
+						<ul class="showcase-list">
+							<li>I worked with both functional and class components.</li>
+							<li>I became familiar with React Hooks.</li>
+							<li>I used Bootstrap to build my form.</li>
+						</ul>
+						<p>Meanshile, for the Symfony app:</p>
+						<ul class="showcase-list">
+							<li>I created routes to get and post data.</li>
+							<li>I handled both JSON and SQL data.</li>
+							<li>I made my first forey into documenting an API.</li>
+						</ul>
 					</div>
 				</section>
 				<div class="img-container">
-					<img class="screenshot" src="./img/Screenshot-theCocktailApp-3.png""
-					alt="Screenshot of a recipe page from theCocktailApp on mobile" />
+					<img
+						class="screenshot"
+						src="./img/Screenshot-theCocktailApp-3.png"
+						alt="Screenshot of a recipe page from theCocktailApp on mobile"
+					/>
 				</div>
 				<section id="result" class="flex">
 					<div class="title"><h2>Result</h2></div>
 					<div class="content">
 						<h3>Lessons Learnt</h3>
 						<p>
-							So far, I have learnt how to structure my data and how to deploy a
-							full stack application.
+							Working on this project definitely made me realise the importance
+							of planning before opening the code editor. It's easier to
+							implements things over a blank slate as opposed to existing code.
+						</p>
+						<p>
+							We were introduced to component libraries towards the end of the
+							course and asked to use one in the project. Bootstrap broke some
+							of my styling and I spent more time fixing that than I would have
+							if I had used it from the beginning.
+						</p>
+						<p>
+							Knowing what data structure to work with from the beginning would
+							also have been ideal. I spent some time putting my data into a
+							JSON format and then had to create an SQL database. I learnt that
+							there is no simple way to convert JSON files into SQL data which
+							is why I've chosen to use both in this case.
+						</p>
+						<p>
+							In some way, this is an example of learning things the hard way.
+							Nonetheless, planning has become an essential part of my
+							development process and it is reflected in future projects.
 						</p>
 					</div>
 				</section>
