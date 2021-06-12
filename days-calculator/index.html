@@ -4,10 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			http-equiv="Content-Security-Policy"
-			content="default-src 'self'; font-src 'self' https://fonts.gstatic.com/; style-src-elem 'self' https://fonts.googleapis.com/ 'unsafe-inline'; connect-src 'self' https://calendarific.com 'unsafe-inline'"
-		/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
@@ -20,7 +16,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>How many days until...?</h1>
+			<h1>How many days between...?</h1>
 			<form>
 				<div class="user-input">
 					<div class="date mb-1rem">
@@ -32,7 +28,7 @@
 						<input type="date" name="end-date" id="end-date" required />
 					</div>
 					<div class="name mb-1rem">
-						<label for="event-name" class="required">Event</label>
+						<label for="event-name" class="required">Event Name</label>
 						<input type="text" name="event-name" id="event-name" required />
 					</div>
 				</div>
@@ -46,7 +42,7 @@
 			<p id="event" class="mb-1rem"></p>
 			<p id="result"></p>
 		</div>
-
+		<footer>2021 © <a href="//laurielim.github.io/">Laurie Lim Sam</a></footer>
 		<script src="script.js"></script>
 	</body>
 </html>

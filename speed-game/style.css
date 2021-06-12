@@ -22,7 +22,7 @@ button {
 	cursor: pointer;
 }
 
-:focus {
+:focus-visible {
 	outline: 5px solid #3b4cca;
 }
 
@@ -51,6 +51,10 @@ h1 {
 
 h2 {
 	margin: 2rem 0;
+}
+
+a {
+	color: #3b4cca;
 }
 
 /**************** Setting Buttons ****************/
@@ -167,7 +171,7 @@ h2 {
 	cursor: pointer;
 }
 
-.circle:focus {
+.circle:focus-visible {
 	outline: 2px solid transparent;
 	outline-offset: 4px;
 	box-shadow: 0px 0px 0px 5px #3b4cca;
