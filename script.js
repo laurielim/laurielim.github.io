@@ -100,31 +100,3 @@ modeToggleButton.addEventListener("click", (evt) => {
 });
 
 applySetting();
-
-/************* Expand hidden text **************/
-// Reference: https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
-
-const expandButton = document.getElementById("expandButton");
-const hiddenText = document.getElementById("hiddenText");
-
-/**
- * Shows or hides hidden text and set the aria states accordingly
- */
-const toggleHiddenText = () => {
-	let expanded = hiddenText.getAttribute("aria-expanded");
-	hiddenText.setAttribute(
-		"aria-expanded",
-		expanded === "false" ? "true" : "false"
-	);
-	hiddenText.classList.toggle("expanded");
-};
-
-/**
- * Clicking the button runs the show text method which grabs its parameter
- * from the toggle setting method.
- */
-expandButton?.addEventListener("click", (evt) => {
-	evt.preventDefault();
-
-	toggleHiddenText();
-});
