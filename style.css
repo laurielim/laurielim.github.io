@@ -233,6 +233,10 @@ section:first-child {
 	text-align: center;
 }
 
+.portfolio p {
+	margin: 0 auto;
+}
+
 .card-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
