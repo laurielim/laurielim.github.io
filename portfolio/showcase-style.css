@@ -40,3 +40,9 @@ section {
 		min-height: 150px;
 	}
 }
+
+@media (max-width: 576px) {
+	h1 {
+		hyphens: auto;
+	}
+}
