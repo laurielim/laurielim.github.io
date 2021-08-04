@@ -8,6 +8,11 @@ section {
 
 .table-of-contents li {
 	margin-left: 2rem;
+	margin-top: 1.5rem;
+}
+
+.list-max-width {
+	max-width: initial;
 }
 
 .exp-list {
