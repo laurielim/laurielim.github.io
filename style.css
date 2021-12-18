@@ -1,21 +1,21 @@
 :root {
-	--color-mode: "light";
-	--color-dark: #211e1c;
-	--color-light: #f8f6f1;
-	--background: #f8f6f1;
-	--text-color: #211e1c;
 	--accent-color-light: #a00000;
 	--accent-color-dark: #e3b74f;
 	--accent-color: var(--accent-color-light);
+	--background: #f8f6f1;
 	--banner-image-light: url("./img/light-profile-picture.png");
 	--banner-image-dark: url("./img/dark-profile-picture.png");
 	--banner-image-source: var(--banner-image-light);
+	--color-mode: "light";
+	--color-dark: #211e1c;
+	--color-light: #f8f6f1;
+	--text-color: #211e1c;
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 html {
@@ -23,16 +23,16 @@ html {
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	background-color: #f8f6f1;
 	background-color: var(--background);
 	color: #211e1c;
 	color: var(--text-color);
-	transition: background-color 500ms ease-in-out, color 200ms ease;
-	max-width: 960px;
-	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	margin: 0 auto;
+	max-width: 960px;
+	transition: background-color 500ms ease-in-out, color 200ms ease;
+	width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,18 +41,18 @@ body {
 	}
 
 	:root:not([data-user-color-scheme]) {
-		--background: var(--color-dark);
-		--text-color: var(--color-light);
 		--accent-color: var(--accent-color-dark);
+		--background: var(--color-dark);
 		--banner-image-source: var(--banner-image-dark);
+		--text-color: var(--color-light);
 	}
 }
 
 [data-user-color-scheme="dark"] {
-	--background: var(--color-dark);
-	--text-color: var(--color-light);
 	--accent-color: var(--accent-color-dark);
+	--background: var(--color-dark);
 	--banner-image-source: var(--banner-image-dark);
+	--text-color: var(--color-light);
 }
 
 /* Remove _all_ animations and transitions for people that prefer not to see them */
@@ -123,18 +123,18 @@ a {
 }
 
 button {
+	cursor: pointer;
 	font-family: inherit;
 	font-size: 1.375rem;
-	cursor: pointer;
 }
 
 .link-button {
 	display: inline;
 	background-color: transparent;
-	line-height: 1.5;
-	font-weight: normal;
 	border: 0;
 	color: currentColor;
+	font-weight: normal;
+	line-height: 1.5;
 	text-decoration: underline;
 }
 
@@ -152,15 +152,11 @@ button {
 	margin-top: 0.5rem;
 }
 
-/* .home * {
-	text-align: center;
-} */
-
 /******************** Header ********************/
 header {
 	align-items: center;
-	justify-content: space-between;
 	flex-wrap: wrap-reverse;
+	justify-content: space-between;
 }
 
 .site-nav {
@@ -168,11 +164,11 @@ header {
 }
 
 .logo {
-	width: 60px;
-	height: 60px;
 	border-radius: 50%;
 	box-shadow: 0 0 5px #e3b74f;
+	height: 60px;
 	margin-right: 1rem;
+	width: 60px;
 }
 
 .site-nav li {
@@ -195,8 +191,8 @@ section:first-child {
 
 .content-nav li {
 	display: inline-block;
-	margin-top: 0;
 	margin-right: 2rem;
+	margin-top: 0;
 }
 
 /******************** About ********************/
@@ -219,12 +215,12 @@ section:first-child {
 }
 
 .about-img {
-	flex: 1;
-	position: relative;
 	background-image: url("./img/light-profile-picture.png");
 	background-image: var(--banner-image-source);
-	background-repeat: no-repeat;
 	background-position: center;
+	background-repeat: no-repeat;
+	flex: 1;
+	position: relative;
 }
 
 /******************** Portfolio ********************/
@@ -238,30 +234,30 @@ section:first-child {
 }
 
 .card-container {
+	column-gap: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 1rem;
 }
 
 .card {
-	min-height: 22rem;
-	display: grid;
-	place-content: center;
-	margin-top: 1rem;
-	padding: 2rem 8%;
-	padding-top: 3rem;
-	width: 100%;
-	position: relative;
+	background-color: #211e1c;
+	background-color: var(--text-color);
+	border-radius: 2px;
 	/* Generated using https://shadows.brumm.af/, recommended by Josh W Comeau*/
 	box-shadow: 0px 1.1px 2.2px rgba(0, 0, 0, 0.042),
 		0px 2.7px 5.3px rgba(0, 0, 0, 0.061), 0px 5px 10px rgba(0, 0, 0, 0.075),
 		0px 8.9px 17.9px rgba(0, 0, 0, 0.089),
 		0px 16.7px 33.4px rgba(0, 0, 0, 0.108), 0px 40px 80px rgba(0, 0, 0, 0.15);
-	background-color: #211e1c;
-	background-color: var(--text-color);
-	border-radius: 2px;
 	color: #f8f6f1;
 	color: var(--background);
+	display: grid;
+	margin-top: 1rem;
+	min-height: 22rem;
+	padding: 2rem 8%;
+	padding-top: 3rem;
+	place-content: center;
+	position: relative;
+	width: 100%;
 }
 
 .card-content * + * {
@@ -283,29 +279,28 @@ section:first-child {
 }
 
 .card-button {
-	border-radius: 2px;
-	display: block;
-	padding: 0.5rem;
-	width: 12rem;
-	margin: 1rem auto;
-	color: var(--background);
 	background-color: #f8f6f1;
 	background-color: var(--accent-color);
-	text-decoration: none;
-	/* text-align: center; */
 	border: 1px solid;
+	border-radius: 2px;
+	color: var(--background);
+	display: block;
+	margin: 1rem auto;
+	padding: 0.5rem;
 	position: static;
+	text-decoration: none;
+	width: 12rem;
 }
 
 .card-button::before {
-	cursor: pointer;
 	content: "";
+	cursor: pointer;
 	display: block;
+	height: 100%;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
 }
 
 .card-button:hover {
@@ -331,11 +326,11 @@ section:first-child {
 }
 
 #contact {
+	display: grid;
 	min-height: 26rem;
 	padding: 5rem 0;
-	text-align: center;
-	display: grid;
 	place-content: center;
+	text-align: center;
 }
 #contact p {
 	margin: 0 auto;
@@ -344,15 +339,15 @@ section:first-child {
 /******************** Footer ********************/
 
 .social-link {
-	text-decoration: none;
 	margin: 0.8rem;
 	padding-top: 2rem;
+	text-decoration: none;
 }
 
 .svg-icon {
-	width: 44px;
 	height: 44px;
 	margin-top: 0.5rem;
+	width: 44px;
 }
 
 .social-link:hover .svg-icon {
@@ -365,9 +360,9 @@ section:first-child {
 
 .footer-left,
 .footer-right {
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 }
 
 .social-links {
@@ -406,8 +401,8 @@ section:first-child {
 	}
 
 	.user-toggle {
-		min-width: 40%;
 		height: 2rem;
+		min-width: 40%;
 	}
 
 	.about-img {
@@ -425,9 +420,9 @@ section:first-child {
 	.content-nav ul {
 		display: flex;
 		flex-flow: column wrap;
-		width: 100%;
 		height: 12rem;
 		margin: 0;
+		width: 100%;
 	}
 
 	.content-nav li {

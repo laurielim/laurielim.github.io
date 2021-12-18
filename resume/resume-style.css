@@ -30,9 +30,9 @@ section {
 
 .skill-list li {
 	display: inline-block;
-	min-width: 15rem;
-	margin: 1rem;
 	line-height: 3rem;
+	margin: 1rem;
+	min-width: 15rem;
 }
 
 .skill-list li > * {
@@ -45,9 +45,9 @@ section {
 
 .language-list li {
 	float: left;
-	min-width: 22rem;
 	margin: 1rem;
 	margin-left: 2rem;
+	min-width: 22rem;
 }
 
 #contact {
