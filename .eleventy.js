@@ -1,10 +1,8 @@
 const { fortawesomeBrandsPlugin } = require('@vidhill/fortawesome-brands-11ty-shortcode');
-// Filters
-const jsmin = require('./src/filters/jsmin')
 
 module.exports = function (config) {
   config.addWatchTarget("./src/static/scss/");
-  config.addNunjucksAsyncFilter('jsmin', jsmin);
+  config.addTransform("minify", require("./src/transforms/minify"));
 
   // Plugins
   config.addPlugin(fortawesomeBrandsPlugin);
