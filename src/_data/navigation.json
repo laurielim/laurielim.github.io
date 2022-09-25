@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "text": "Portfolio",
+      "url": "/portfolio/"
+    },
+    {
+      "text": "Résumé",
+      "url": "/resume/"
+    },
+    {
+      "text": "Contact",
+      "url": "#contact"
+    }
+  ]
+}

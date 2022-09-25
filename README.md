@@ -1,8 +1,6 @@
 # My Portfolio on Github Page
 
-Welcome to my github page repo where I will be showcasing my projects. Most are from the Full Stack Web Developer program I am currently enrolled in but hopefully I will also be adding other cool stuff I make during my free time.
-
-This repo primarily hosts my portfolio which you can see live here: https://laurielim.github.io/
+Welcome to my github page repo where I will be showcasing my projects. Most are from the Full Stack Web Developer program I did in 2021. You can see it live at https://laurielim.github.io/
 
 ## Technologies used
 
@@ -11,11 +9,11 @@ This repo primarily hosts my portfolio which you can see live here: https://laur
 - JavaScript
 - Figma
 
-I've built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The page has a perfect score on Google Lighthouse. It is responsive and works without JavaScript. And last but not least, it even looks decent on Internet Explorer!
+I originally built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The updated version is built using Eleventy as its known for performance and simplicity.
+
+The page has a perfect score on Google Lighthouse. It is responsive and works without JavaScript. And last but not least, it even looks decent on Internet Explorer!
 
 You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB4aOTKfUYTw2s/my-portfolio?node-id=0%3A1).
-
-As I am currently learning React, I intend on building a React mode... you know, on top of light/dark mode.
 
 ## Sources
 
@@ -24,3 +22,5 @@ As I am currently learning React, I intend on building a React mode... you know,
 - [Accessible design pattern by Graham Armfield](https://www.hassellinclusion.com/blog/accessible-accordion-pattern/)
 - [Inspiration from Joost van der Schee's personal website](https://www.usecue.com/)
 - [SVG icons from Simple Icons](https://simpleicons.org)
+- [Learn Eleventy from scratch](https://learneleventyfromscratch.com)
+- [How to deploy your Eleventy website to GitHub Pages with GitHub Actions](https://maarten.be/blog/20220730/how-to-deploy-your-eleventy-website-to-github-pages-with-github-actions/)

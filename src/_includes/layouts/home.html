@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <section id="about" class="flex">
+    <div class="about-text">
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </div>
+    <div
+      class="about-img"
+      role="img"
+      aria-label="Drawn outline of me by my wonderful partner Cristina"
+    ></div>
+  </section>
+{% endblock %}
