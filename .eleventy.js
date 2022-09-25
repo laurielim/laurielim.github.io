@@ -5,6 +5,9 @@ module.exports = function (config) {
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/static/images/');
+  config.addPassthroughCopy('./days-calculator')
+  config.addPassthroughCopy('./portfolio-project')
+  config.addPassthroughCopy('./speed-game')
 
   return {
     markdownTemplateEngine: 'njk',
