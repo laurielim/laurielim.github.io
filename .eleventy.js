@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
     files: './public/static/**/*.css',
   });
 
+  // Set directories to pass through to the dist folder
+  config.addPassthroughCopy('./src/static/images/');
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
