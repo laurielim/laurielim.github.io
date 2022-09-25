@@ -1,12 +1,12 @@
 .social-link {
-	margin: 0.8rem;
-	padding-top: 2rem;
+	margin: 12px;
+	padding-top: $spacing-extra-large;
 	text-decoration: none;
 }
 
 .svg-icon {
 	height: 44px;
-	margin-top: 0.5rem;
+	margin-top: $spacing-small;
 	width: 44px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .svg-icon path {
-	fill: $text-color;
+	fill: var(--text-color);
 }
 
 .footer-left,
@@ -26,10 +26,10 @@
 }
 
 .social-links {
-	margin-right: 0.5rem;
+	margin-right: $spacing-small;
 }
 
 .copyright-text {
-	border-left: 1px solid $text-color;
-	padding-left: 0.8rem;
+	border-left: 1px solid var(--text-color);
+	padding-left: 12px;
 }

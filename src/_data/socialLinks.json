@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Message me on Twitter",
+      "url": "https://twitter.com/intent/tweet?screen_name=laurielimsam",
+      "icon": "twitter"
+    },
+    {
+      "title": "View my resume on LinkedIn",
+      "url": "https://www.linkedin.com/in/laurie-limsam/",
+      "icon": "linkedin"
+    },
+    {
+      "title": "Check out my CodePen",
+      "url": "https://codepen.io/laurielim",
+      "icon": "codepen"
+    },
+    {
+      "title": "Inspect my code on Github",
+      "url": "https://github.com/laurielim",
+      "icon": "github"
+    }
+  ]
+}

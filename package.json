@@ -27,6 +27,10 @@
   "homepage": "https://laurielim.github.io/",
   "dependencies": {
     "@11ty/eleventy": "1.0.2",
-    "sass": "1.55.0"
+    "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
+    "html-minifier": "^4.0.0",
+    "prettier": "^2.7.1",
+    "sass": "1.55.0",
+    "terser": "^5.15.0"
   }
 }

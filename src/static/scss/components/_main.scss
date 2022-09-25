@@ -1,9 +1,9 @@
 main * + * {
-	margin-top: 2rem;
+	margin-top: $spacing-extra-large;
 }
 
 section:first-child {
-	padding-top: 3rem;
+	padding-top: calc($spacing-extra-large * 1.5);
 }
 
 .content-nav {
@@ -12,7 +12,7 @@ section:first-child {
 
 .content-nav li {
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: $spacing-extra-large;
 	margin-top: 0;
 }
 
@@ -37,7 +37,7 @@ section:first-child {
 
 .about-img {
 	background-image: url("../images/light-profile-picture.png");
-	background-image: $banner-image-source;
+	background-image: var(--banner-image-source);
 	background-position: center;
 	background-repeat: no-repeat;
 	flex: 1;
@@ -62,7 +62,7 @@ section:first-child {
 
 .card {
 	background-color: #211e1c;
-	background-color: $text-color;
+	background-color: var(--text-color);
 	border-radius: 2px;
 	/* Generated using https://shadows.brumm.af/, recommended by Josh W Comeau*/
 	box-shadow:
@@ -71,12 +71,12 @@ section:first-child {
   0px 12.1px 24.1px rgba(0, 0, 0, 0.098),
   0px 40px 80px rgba(0, 0, 0, 0.15);
 	color: #f8f6f1;
-	color: $background;
+	color: var(--background);
 	display: grid;
-	margin-top: 1.2rem;
-	min-height: 22rem;
-	padding: 2rem 8%;
-	padding-top: 3rem;
+	margin-top: $spacing-large;
+	min-height: 350px;
+	padding: $spacing-extra-large 8%;
+	padding-top: calc($spacing-extra-large * 1.5);
 	place-content: center;
 	position: relative;
 	width: 100%;
@@ -97,7 +97,7 @@ section:first-child {
 }
 
 .card-content * + * {
-	margin-top: 1rem;
+	margin-top: $spacing;
 }
 
 .card-color1 {
@@ -116,13 +116,13 @@ section:first-child {
 
 .card-button {
 	background-color: #f8f6f1;
-	background-color: $accent-color;
+	background-color: var(--accent-color);
 	border: 1px solid;
 	border-radius: 2px;
-	color: $background;
+	color: var(--background);
 	display: block;
-	margin: 1rem auto;
-	padding: 0.5rem;
+	margin: $spacing auto;
+	padding: $spacing-small;
 	position: static;
 	text-decoration: none;
 	width: 12rem;
@@ -153,7 +153,7 @@ section:first-child {
 
 .card-button:hover::before,
 .card-button:focus::before {
-  outline: 5px dashed $accent-color;
+  outline: 5px dashed var(--accent-color);
 	outline-offset: -0.8rem;
 }
 
@@ -163,8 +163,8 @@ section:first-child {
 
 #contact {
 	display: grid;
-	min-height: 26rem;
-	padding: 5rem 0;
+	min-height: 400px;
+	padding: 80px 0;
 	place-content: center;
 	text-align: center;
 }

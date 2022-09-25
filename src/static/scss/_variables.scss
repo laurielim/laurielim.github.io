@@ -1,14 +1,22 @@
-// Colors
-$accent-color-light: #a00000;
-$accent-color-dark: #e3b74f;
-$accent-color: $accent-color-light;
-$color-dark: #211e1c;
-$color-light: #f8f6f1;
-$text-color: #211e1c;
-$background: #f8f6f1;
+:root {
+	--accent-color-light: #a00000;
+	--accent-color-dark: #e3b74f;
+	--accent-color: var(--accent-color-light);
+	--logo-color-light: #ed7575;
+	--logo-color-dark: var(--accent-color-dark);
+	--logo-color: var(--logo-color-light);
+	--background: #f8f6f1;
+	--banner-image-light: url("../images/light-profile-picture.png");
+	--banner-image-dark: url("../images/dark-profile-picture.png");
+	--banner-image-source: var(--banner-image-light);
+	--color-mode: "light";
+	--color-dark: #211e1c;
+	--color-light: #f8f6f1;
+	--text-color: #211e1c;
+}
 
-// Other vars
-$color-mode: "light";
-$banner-image-light: url("../images/light-profile-picture.png");
-$banner-image-dark: url("../images/dark-profile-picture.png");
-$banner-image-source: $banner-image-light;
+// Spacing
+$spacing: 16px;
+$spacing-small: calc($spacing / 2);
+$spacing-large: calc($spacing * 1.5);
+$spacing-extra-large: calc($spacing * 2);

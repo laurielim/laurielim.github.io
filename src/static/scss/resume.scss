@@ -1,0 +1,45 @@
+// Spacing
+$spacing: 16px;
+$spacing-small: calc($spacing / 2);
+$spacing-large: calc($spacing * 1.5);
+$spacing-extra-large: calc($spacing * 2);
+
+.exp-list {
+	list-style-type: disc;
+
+  ul {
+    list-style-type: circle;
+  }
+
+  li {
+    line-height: 1.8;
+    margin-left: $spacing-extra-large;
+  }
+}
+
+.skill-list {
+  li {
+	  display: inline-block;
+	  line-height: 3rem;
+	  margin: $spacing;
+	  min-width: 15rem;
+
+    &> * {
+      vertical-align: bottom;
+    }
+  }
+
+  .svg-icon {
+    margin-right: $spacing;
+  }
+}
+
+.language-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  & > li {
+    margin: $spacing;
+	  margin-left: $spacing-extra-large;
+  }
+}

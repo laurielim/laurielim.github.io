@@ -1,7 +1,11 @@
+const { fortawesomeBrandsPlugin } = require('@vidhill/fortawesome-brands-11ty-shortcode');
+
 module.exports = function (config) {
-  config.setBrowserSyncConfig({
-    files: './public/static/**/*.css',
-  });
+  config.addWatchTarget("./src/static/scss/");
+  config.addTransform("minify", require("./src/transforms/minify"));
+
+  // Plugins
+  config.addPlugin(fortawesomeBrandsPlugin);
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/static/images/');

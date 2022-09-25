@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top-of-site" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="{{ 'static/css/main.css' | url }}" media="screen" />
-    <title>{{ title }}</title>
+    {% include "partials/meta-info.html" %}
+    <link rel="preload" href="{{ '/static/css/main.css' | url }}" as="style" onload="this.rel='stylesheet'" />
+    {% if pageStylesheets %}
+      {% for item in pageStylesheets %}
+        <link rel="preload" href="{{ item }}" as="style" onload="this.rel='stylesheet'">
+      {% endfor %}
+    {% endif %}
   </head>
   <body>
     <div class="page-wrapper sticky-footer">
       {% include "partials/site-head.html" %}
       <main tabindex="-1" id="main-content">
         {% block content %}{% endblock %}
+        {% include "partials/cta.html" %}
       </main>
       {% include "partials/site-footer.html" %}
     </div>
+    {% set js %}
+      {% include "main.js" %}
+    {% endset %}
+    <script>
+      {{ js | safe }}
+    </script>
   </body>
 </html>

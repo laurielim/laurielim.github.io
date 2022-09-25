@@ -10,9 +10,9 @@ html {
 
 body {
 	background-color: #f8f6f1;
-	background-color: $background;
+	background-color: var(--background);
 	color: #211e1c;
-	color: $text-color;
+	color: var(--text-color);
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	margin: 0 auto;
@@ -23,22 +23,30 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		$color-mode: "dark";
+		--color-mode: "dark";
 	}
 
-	:root:not([data-user-color-scheme]) {
-		$accent-color: $accent-color-dark;
-		$background: $color-dark;
-		$banner-image-source: $banner-image-dark;
-		$text-color: $color-light;
-	}
-}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--color-mode: "dark";
+		}
 
-[data-user-color-scheme="dark"] {
-	$accent-color: $accent-color-dark;
-	$background: $color-dark;
-	$banner-image-source: $banner-image-dark;
-	$text-color: $color-light;
+		:root:not([data-user-color-scheme]) {
+			--accent-color: var(--accent-color-dark);
+			--logo-color: var(--logo-color-dark);
+			--background: var(--color-dark);
+			--banner-image-source: var(--banner-image-dark);
+			--text-color: var(--color-light);
+		}
+	}
+
+	[data-user-color-scheme="dark"] {
+		--accent-color: var(--accent-color-dark);
+		--logo-color: var(--logo-color-dark);
+		--background: var(--color-dark);
+		--banner-image-source: var(--banner-image-dark);
+		--text-color: var(--color-light);
+	}
 }
 
 /* Remove _all_ animations and transitions for people that prefer not to see them */
@@ -79,7 +87,7 @@ body {
 }
 
 .page-wrapper {
-	padding: 1rem;
+	padding: $spacing;
 }
 
 .sticky-footer {
@@ -111,11 +119,12 @@ p {
 
 a {
 	color: #a00000;
-	color: $accent-color;
+	color: var(--accent-color);
 }
 
-.nav-link {
-	color: $text-color;
+.nav-link,
+[data-is-internal="internal"] {
+	color: var(--text-color);
 
   & [data-state="active"] {
     text-decoration: none;
@@ -149,7 +158,7 @@ button {
 }
 
 .flex-wrap-center * {
-	margin-top: 0.5rem;
+	margin-top: $spacing-small;
 }
 
 /******************** Responsiveness ********************/
@@ -160,7 +169,7 @@ button {
 	}
 
 	.copyright-text {
-		margin: 1rem;
+		margin: $spacing;
 		border: none;
 	}
 }
@@ -171,7 +180,7 @@ button {
 	}
 
 	nav {
-		margin-top: 2rem;
+		margin-top: $spacing-extra-large;
 	}
 
 	.site-nav ul {
@@ -193,20 +202,20 @@ button {
 	}
 
 	.content-nav {
-		margin-top: 1rem;
+		margin-top: $spacing;
 	}
 
 	.content-nav ul {
 		display: flex;
 		flex-flow: column wrap;
-		height: 12rem;
+		height: 200px;
 		margin: 0;
 		width: 100%;
 	}
 
 	.content-nav li {
 		display: list-item;
-		margin: 0 2rem;
-		margin-bottom: 1rem;
+		margin: 0 $spacing-extra-large;
+		margin-bottom: $spacing-large;
 	}
 }
