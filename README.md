@@ -4,9 +4,9 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 ## Technologies used
 
-- HTML
-- CSS
-- JavaScript
+- Eleventy
+- Nunjucks
+- Sass
 - Figma
 
 I originally built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The updated version is built using Eleventy as its known for performance and simplicity.
