@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "watch:sass": "sass src/static/scss:public/static/css --watch",
-    "build:sass": "sass src/static/scss:public/static/css",
+    "build:sass": "sass src/static/scss:public/static/css --style=compressed",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "ELEVENTY_ENV=development eleventy",
     "start": "npm run watch:eleventy & npm run watch:sass",

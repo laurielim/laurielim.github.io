@@ -1,0 +1,35 @@
+.social-link {
+	margin: 0.8rem;
+	padding-top: 2rem;
+	text-decoration: none;
+}
+
+.svg-icon {
+	height: 44px;
+	margin-top: 0.5rem;
+	width: 44px;
+}
+
+.social-link:hover .svg-icon {
+	transform: scale(0.9);
+}
+
+.svg-icon path {
+	fill: $text-color;
+}
+
+.footer-left,
+.footer-right {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social-links {
+	margin-right: 0.5rem;
+}
+
+.copyright-text {
+	border-left: 1px solid $text-color;
+	padding-left: 0.8rem;
+}

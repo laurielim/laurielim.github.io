@@ -22,6 +22,15 @@ module.exports = {
   },
 
   /**
+   * Returns the current year
+   *
+   * @returns {String} The attributes or empty
+   */
+  getCurrentYear() {
+    return /\d{4}/.exec(Date())[0];
+  },
+
+  /**
    * Take an array of keys and return back items that match.
    * Note: items in the collection must have a key attribute in
    * Front Matter

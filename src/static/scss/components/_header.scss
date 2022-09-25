@@ -1,0 +1,22 @@
+header {
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+.site-nav {
+	align-items: center;
+}
+
+.logo {
+	border-radius: 50%;
+	box-shadow: 0 0 5px #e3b74f;
+	height: 60px;
+	margin-right: 1rem;
+	width: 60px;
+}
+
+.site-nav li {
+	display: inline-block;
+	margin: 0.5rem 1rem;
+}
