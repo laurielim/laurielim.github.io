@@ -1,0 +1,356 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* + * {
+	margin-bottom: 1rem;
+}
+
+body {
+	background-color: #aedcea;
+	height: 100%;
+	font-family: "Press Start 2P", "Courier New", Courier, monospace;
+	text-align: center;
+	line-height: 1.8rem;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+footer div:first-child {
+	padding-right: 0.8rem;
+	border-right: 3px solid black;
+	margin-bottom: 0;
+}
+
+footer div:last-child {
+	padding-left: 1rem;
+	margin-bottom: 0;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+:focus-visible {
+	outline: 5px solid #3b4cca;
+}
+
+button:active {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transform: scale(0.95);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	height: 90vh;
+	justify-content: center;
+}
+
+h1 {
+	color: #ffcb05;
+	text-shadow: -4px 0 #3c5aa6, 0 4px #3c5aa6, 4px 0 #3c5aa6, 0 -4px #3c5aa6;
+}
+
+h2 {
+	margin: 2rem 0;
+}
+
+a {
+	color: #3b4cca;
+}
+
+/**************** Setting Buttons ****************/
+
+.settings {
+	display: flex;
+	margin: 1rem;
+	justify-content: center;
+}
+.icon {
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+		monospace;
+	font-size: 2rem;
+}
+
+.btn-icon {
+	background-color: transparent;
+	border: none;
+}
+
+.btn-icon:hover {
+	transform: scale(0.9);
+}
+
+#soundOn,
+#soundOff {
+	display: none;
+}
+
+#soundOff {
+	margin-bottom: 0;
+}
+
+.btn-icon-cog {
+	transition: transform 0.2s ease-in-out;
+	display: none;
+}
+
+.btn-icon-cog:hover {
+	transform: rotate(30deg);
+}
+
+.levels-setting {
+	display: flex;
+	align-items: center;
+}
+
+.user-input {
+	display: inline-block;
+	margin: 1rem;
+	margin-bottom: 0;
+}
+
+.user-input label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.input-lvl {
+	height: 0;
+	width: 0;
+}
+
+.input-lvl:checked {
+	position: relative;
+}
+
+.input-lvl:checked::after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-left: 12px solid black;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	right: 0;
+	bottom: 0;
+}
+
+.input-lvl:focus::after {
+	outline: 5px solid #3b4cca;
+	outline-offset: 3px;
+}
+
+.info,
+.info:active,
+.info:focus {
+	font-family: inherit;
+	padding: 0;
+	padding-top: 0.2rem;
+	margin: 1rem;
+	border: 0.3rem solid;
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+/**************** Game Buttons ****************/
+
+.circles {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.circle,
+.circle:active {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: white;
+	border: 1px solid black;
+	margin: 1rem;
+	cursor: pointer;
+}
+
+.circle:focus-visible {
+	outline: 2px solid transparent;
+	outline-offset: 4px;
+	box-shadow: 0px 0px 0px 5px #3b4cca;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.bulbasaur {
+	background-image: url("./images/bulbasaur.png");
+}
+.charmander {
+	background-image: url("./images/charmander.png");
+}
+
+.squirtle {
+	background-image: url("./images/squirtle.png");
+}
+
+.pikachu {
+	background-image: url("./images/pikachu.png");
+}
+
+.active {
+	background-color: tomato;
+}
+
+.inactive {
+	background-image: radial-gradient(
+			white 10%,
+			black 11%,
+			black 15%,
+			transparent 16%
+		),
+		linear-gradient(0deg, white 45%, black 45%, black 55%, red 55%);
+}
+
+#start,
+#stop {
+	grid-area: "a";
+}
+
+#stop {
+	display: none;
+	margin-bottom: 0;
+}
+
+/**************** Overlay ****************/
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-content: center;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.popup {
+	background-color: white;
+	border-radius: 15px;
+	width: 90vw;
+	min-height: 50vh;
+	max-width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	padding: 3%;
+}
+
+.popup p {
+	font-size: 1.3rem;
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+		monospace;
+}
+
+h2 {
+	margin-bottom: 1rem;
+}
+
+.close-btn {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	border: none;
+	background-color: white;
+	font-size: 1.5rem;
+}
+
+.btn-text {
+	font-family: "Press Start 2P", cursive;
+}
+
+.btn-text:hover {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 576px) {
+	:focus {
+		outline: none;
+	}
+	.circle:focus {
+		box-shadow: none;
+	}
+	html {
+		font-size: 14px;
+	}
+
+	.instructions-popup h2 {
+		padding-top: 1rem;
+	}
+
+	.container {
+		justify-content: start;
+		margin-top: 5vh;
+	}
+
+	.settings {
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: 1rem;
+	}
+
+	.btn-icon {
+		margin: 0.5rem;
+	}
+
+	.btn-icon-cog {
+		display: block;
+	}
+
+	.levels-setting {
+		display: none;
+	}
+
+	.info {
+		margin: 1rem;
+		margin-left: 1.8rem;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.responsive {
+		display: block;
+	}
+
+	footer div:first-child {
+		padding-right: 0rem;
+		border-right: none;
+		width: 99vw;
+	}
+
+	footer div:last-child {
+		padding-left: 0rem;
+		padding: 0.5rem 0;
+	}
+}
