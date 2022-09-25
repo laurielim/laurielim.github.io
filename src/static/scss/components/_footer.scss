@@ -15,7 +15,7 @@
 }
 
 .svg-icon path {
-	fill: $text-color;
+	fill: var(--text-color);
 }
 
 .footer-left,
@@ -30,6 +30,6 @@
 }
 
 .copyright-text {
-	border-left: 1px solid $text-color;
+	border-left: 1px solid var(--text-color);
 	padding-left: 0.8rem;
 }

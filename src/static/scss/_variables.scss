@@ -1,14 +1,13 @@
-// Colors
-$accent-color-light: #a00000;
-$accent-color-dark: #e3b74f;
-$accent-color: $accent-color-light;
-$color-dark: #211e1c;
-$color-light: #f8f6f1;
-$text-color: #211e1c;
-$background: #f8f6f1;
-
-// Other vars
-$color-mode: "light";
-$banner-image-light: url("../images/light-profile-picture.png");
-$banner-image-dark: url("../images/dark-profile-picture.png");
-$banner-image-source: $banner-image-light;
+:root {
+	--accent-color-light: #a00000;
+	--accent-color-dark: #e3b74f;
+	--accent-color: var(--accent-color-light);
+	--background: #f8f6f1;
+	--banner-image-light: url("../images/light-profile-picture.png");
+	--banner-image-dark: url("../images/dark-profile-picture.png");
+	--banner-image-source: var(--banner-image-light);
+	--color-mode: "light";
+	--color-dark: #211e1c;
+	--color-light: #f8f6f1;
+	--text-color: #211e1c;
+}
