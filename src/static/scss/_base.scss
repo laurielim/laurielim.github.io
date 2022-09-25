@@ -33,6 +33,7 @@ body {
 
 		:root:not([data-user-color-scheme]) {
 			--accent-color: var(--accent-color-dark);
+			--logo-color: var(--logo-color-dark);
 			--background: var(--color-dark);
 			--banner-image-source: var(--banner-image-dark);
 			--text-color: var(--color-light);
@@ -41,6 +42,7 @@ body {
 
 	[data-user-color-scheme="dark"] {
 		--accent-color: var(--accent-color-dark);
+		--logo-color: var(--logo-color-dark);
 		--background: var(--color-dark);
 		--banner-image-source: var(--banner-image-dark);
 		--text-color: var(--color-light);

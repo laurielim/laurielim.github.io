@@ -10,10 +10,22 @@ header {
 
 .logo {
 	border-radius: 50%;
-	box-shadow: 0 0 5px #e3b74f;
+	box-shadow: 0 0 5px var(--accent-color);
 	height: 60px;
 	margin-right: 1rem;
 	width: 60px;
+
+	circle {
+		fill: var(--color-dark);
+	}
+
+	path {
+		fill: var(--logo-color);
+	}
+}
+
+[data-state='active'] {
+	text-decoration: none;
 }
 
 .site-nav li {
