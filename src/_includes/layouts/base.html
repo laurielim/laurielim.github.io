@@ -15,5 +15,12 @@
       </main>
       {% include "partials/site-footer.html" %}
     </div>
+    {% set js %}
+      {% include "main.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    <script src="{{ '/js/script.js' }}" type="text/javascript"></script>
   </body>
 </html>
