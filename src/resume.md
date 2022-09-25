@@ -96,6 +96,48 @@ experience:
             - Oversaw daily production planning by allocating resources accordingly.
             - Coordinated between production and sales departments accommodating urgent orders, to ensure free flowing production and on-time delivery.
             - Entered and monitored production data into the company system daily.
+skills:
+  title: Skills
+  items:
+    - title: Front End
+      skills:
+        - name: HTML
+          icon: html5
+        - name: CSS
+          icon: css3
+        - name: Sass
+          icon: sass
+        - name: JavaScript
+          icon: js
+        - name: React
+          icon: react
+        - name: Vue.js
+          icon: vuejs
+    - title: Back End
+      skills:
+        - name: PHP
+          icon: php
+        - name: Symfony
+          icon: symfony
+        - name: Drupal
+          icon: drupal
+    - title: Other
+      skills:
+        - name: Docker
+          icon: docker
+        - name: Figma
+          icon: figma
+        - name: Git
+          icon: git-alt
+languages:
+  title: Languages
+  items:
+    - Mauritian Creole, native
+    - English, bilingual proficiency
+    - French, bilingual proficiency
+    - Spanish, working proficiency
+    - Catalan, basic proficiency
+    - Finnish, a semester of confusion
 
 ---
 

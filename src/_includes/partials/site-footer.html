@@ -12,17 +12,8 @@
           target="_blank"
           title="{{ item.title }}"
         >
-          <svg
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="svg-icon"
-          >
-            <title>{{ item.iconTitle }}</title>
-            <path
-              d="{{ item.iconPath }}"
-            />
-          </svg>
+          {% fortawesomeBrand item.icon, 'svg-icon' %}
+          <span class="visually-hidden">{{ item.title }}</span>
         </a>
       {% endfor %}
     </p>
