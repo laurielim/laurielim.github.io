@@ -1,0 +1,25 @@
+<a class="visually-hidden" href="#main-content">Skip to content</a>
+<header class="flex">
+  <nav aria-label="website" class="site-nav flex">
+    <div class="logo">
+      <a href="/" aria-label="Homepage" title="Go to homepage">
+        {% include "partials/brand.html" %}
+      </a>
+    </div>
+    <ul>
+      {% for item in navigation.items %}
+        <li>
+          <a href="{{ item.url }}" class="nav-link" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+            >{{ item.text }}</a
+          >
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="user-toggle">
+    <div role="status" id="modeStatus" class="visually-hidden"></div>
+    <button id="modeToggleButton" class="link-button">
+      <span id="modeToggleText">Enable dark mode</span>
+    </button>
+  </div>
+</header>
