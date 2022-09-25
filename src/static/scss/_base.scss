@@ -120,7 +120,8 @@ a {
 	color: var(--accent-color);
 }
 
-.nav-link {
+.nav-link,
+[data-is-internal="internal"] {
 	color: var(--text-color);
 
   & [data-state="active"] {

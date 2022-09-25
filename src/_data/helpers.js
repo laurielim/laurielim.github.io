@@ -20,6 +20,22 @@ module.exports = {
 
     return response;
   },
+  /**
+   * Returns back some attributes based on whether the
+   * link is internal or external
+   *
+   * @param {String} itemUrl The link in question
+   * @returns {String} The attributes or empty
+   */
+  isInternal(itemUrl) {
+    let response = "";
+
+    if (!itemUrl.includes('//')) {
+      response += ' data-is-internal="internal"';
+    }
+
+    return response;
+  },
 
   /**
    * Returns the current year

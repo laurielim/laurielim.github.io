@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %}
+{% set pageStylesheets = ['/static/css/resume.css'] %}
+
+{% block content %}
+  <section class="resume">
+    {% include "partials/page-header.html" %}
+    <div>
+      <h2>{{ about.title }}</h2>
+      <p>{{ about.desc }}</p>
+    </div>
+  </section>
+  <section class="resume">
+    <article id="education">
+      <h2>{{ education.title }}</h2>
+      {% for item in education.items %}
+        <li class="flex flex-wrap-center list-max-width">
+          <div>
+            <h3>{{ item.school }}</h3>
+            <p>{{ item.program }}</p>
+          </div>
+          <div>
+            <p>{{ item.location }}</p>
+            <p>{{ item.year }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </article>
+    <article id="experience">
+      <h2>{{ experience.title }}</h2>
+      {% for item in experience.items %}
+        <li class="flex flex-wrap-center list-max-width">
+          <div>
+            <h3>{{ item.company }}</h3>
+            <p>{{ item.desc }}</p>
+          </div>
+          <div>
+            <p>{{ item.location }}</p>
+            <p>{{ item.year }}</p>
+          </div>
+          <div>
+            {% for role in item.roles %}
+              <h4>{{ role.title }}</h4>
+              <ul class="exp-list">
+                {% for item in role.desc %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
+        </li>
+      {% endfor %}
+    </article>
+  </section>
+{% endblock %}

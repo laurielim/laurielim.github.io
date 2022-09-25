@@ -1,0 +1,51 @@
+section {
+	min-height: auto;
+}
+
+.table-of-contents li {
+	margin-left: 2rem;
+	margin-top: 1.5rem;
+}
+
+.list-max-width {
+	max-width: initial;
+}
+
+.exp-list {
+	list-style-type: disc;
+}
+
+.exp-list ul {
+	list-style-type: circle;
+}
+
+.exp-list li {
+	line-height: 1.8;
+	margin-left: 2rem;
+}
+
+.skill-list li {
+	display: inline-block;
+	line-height: 3rem;
+	margin: 1rem;
+	min-width: 15rem;
+}
+
+.skill-list li > * {
+	vertical-align: bottom;
+}
+
+.skill-list .svg-icon {
+	margin-right: 1rem;
+}
+
+.language-list li {
+	float: left;
+	margin: 1rem;
+	margin-left: 2rem;
+	min-width: 22rem;
+}
+
+#contact {
+	clear: both;
+}

@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<nav aria-label="content" class="content-nav">
+	<ul class="quick-links">
+    {% for item in quickLinks %}
+      <li>
+        <a href="{{ item.url }}" {{ helpers.isInternal(item.url) | safe }}>
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+	</ul>
+</nav>
