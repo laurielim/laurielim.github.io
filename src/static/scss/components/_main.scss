@@ -1,9 +1,9 @@
 main * + * {
-	margin-top: 2rem;
+	margin-top: $spacing-extra-large;
 }
 
 section:first-child {
-	padding-top: 3rem;
+	padding-top: calc($spacing-extra-large * 1.5);
 }
 
 .content-nav {
@@ -12,7 +12,7 @@ section:first-child {
 
 .content-nav li {
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: $spacing-extra-large;
 	margin-top: 0;
 }
 
@@ -73,10 +73,10 @@ section:first-child {
 	color: #f8f6f1;
 	color: var(--background);
 	display: grid;
-	margin-top: 1.2rem;
-	min-height: 22rem;
-	padding: 2rem 8%;
-	padding-top: 3rem;
+	margin-top: $spacing-large;
+	min-height: 350px;
+	padding: $spacing-extra-large 8%;
+	padding-top: calc($spacing-extra-large * 1.5);
 	place-content: center;
 	position: relative;
 	width: 100%;
@@ -97,7 +97,7 @@ section:first-child {
 }
 
 .card-content * + * {
-	margin-top: 1rem;
+	margin-top: $spacing;
 }
 
 .card-color1 {
@@ -121,8 +121,8 @@ section:first-child {
 	border-radius: 2px;
 	color: var(--background);
 	display: block;
-	margin: 1rem auto;
-	padding: 0.5rem;
+	margin: $spacing auto;
+	padding: $spacing-small;
 	position: static;
 	text-decoration: none;
 	width: 12rem;
@@ -163,8 +163,8 @@ section:first-child {
 
 #contact {
 	display: grid;
-	min-height: 26rem;
-	padding: 5rem 0;
+	min-height: 400px;
+	padding: 80px 0;
 	place-content: center;
 	text-align: center;
 }

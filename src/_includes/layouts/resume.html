@@ -2,13 +2,7 @@
 {% set pageStylesheets = ['/static/css/resume.css'] %}
 
 {% block content %}
-  <section class="resume">
-    {% include "partials/page-header.html" %}
-    <div>
-      <h2>{{ about.title }}</h2>
-      <p>{{ about.desc }}</p>
-    </div>
-  </section>
+  {% include "partials/page-header.html" %}
   <section class="resume">
     <article id="education">
       <h2>{{ education.title }}</h2>

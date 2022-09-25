@@ -12,7 +12,7 @@ header {
 	border-radius: 50%;
 	box-shadow: 0 0 5px var(--accent-color);
 	height: 60px;
-	margin-right: 1rem;
+	margin-right: $spacing;
 	width: 60px;
 
 	circle {
@@ -30,5 +30,5 @@ header {
 
 .site-nav li {
 	display: inline-block;
-	margin: 0.5rem 1rem;
+	margin: $spacing-small $spacing;
 }

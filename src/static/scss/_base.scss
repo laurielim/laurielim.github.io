@@ -87,7 +87,7 @@ body {
 }
 
 .page-wrapper {
-	padding: 1rem;
+	padding: $spacing;
 }
 
 .sticky-footer {
@@ -158,7 +158,7 @@ button {
 }
 
 .flex-wrap-center * {
-	margin-top: 0.5rem;
+	margin-top: $spacing-small;
 }
 
 /******************** Responsiveness ********************/
@@ -169,7 +169,7 @@ button {
 	}
 
 	.copyright-text {
-		margin: 1rem;
+		margin: $spacing;
 		border: none;
 	}
 }
@@ -180,7 +180,7 @@ button {
 	}
 
 	nav {
-		margin-top: 2rem;
+		margin-top: $spacing-extra-large;
 	}
 
 	.site-nav ul {
@@ -202,20 +202,20 @@ button {
 	}
 
 	.content-nav {
-		margin-top: 1rem;
+		margin-top: $spacing;
 	}
 
 	.content-nav ul {
 		display: flex;
 		flex-flow: column wrap;
-		height: 12rem;
+		height: 200px;
 		margin: 0;
 		width: 100%;
 	}
 
 	.content-nav li {
 		display: list-item;
-		margin: 0 2rem;
-		margin-bottom: 1rem;
+		margin: 0 $spacing-extra-large;
+		margin-bottom: $spacing-large;
 	}
 }
