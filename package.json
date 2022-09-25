@@ -1,0 +1,29 @@
+{
+  "name": "laurielim.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio where I will be showcasing my projects.",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass": "sass src/static/scss:public/static/css --watch",
+    "build:sass": "sass src/static/scss:public/static/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "ELEVENTY_ENV=development eleventy",
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "npm run build:eleventy & npm run build:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurielim/laurielim.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurielim/laurielim.github.io/issues"
+  },
+  "homepage": "https://laurielim.github.io/",
+  "dependencies": {
+    "@11ty/eleventy": "1.0.2",
+    "sass": "1.55.0"
+  }
+}
