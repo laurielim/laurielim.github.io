@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.html" %}
-    <link rel="preload" href="{{ '/static/css/styles.css' | url }}" as="style" onload="this.rel='stylesheet'" />
-    {% if pageStylesheets %}
-      {% for item in pageStylesheets %}
-        <link rel="preload" href="{{ item }}" as="style" onload="this.rel='stylesheet'">
+    <style>{% include "css/styles.css" %}</style>
+    {% if pageStyles %}
+      {% for item in pageStyles %}
+        <style>{% include item %}</style>
       {% endfor %}
     {% endif %}
   </head>
