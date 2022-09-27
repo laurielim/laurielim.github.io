@@ -1,0 +1,41 @@
+@use 'spacing' as *;
+
+.portfolio-item {
+  &__content {
+
+    li {
+      margin-left: $spacing-extra-large;
+      & + li {
+        margin-top: $spacing;
+      }
+    }
+
+    hr {
+      color: var(--text-color);
+    }
+
+    @media screen and (min-width: $large) {
+      figure {
+        margin-bottom: $spacing-large;
+      }
+      h2 {
+        float: left;
+        width: 35%;
+        margin-top: 0;
+
+        & ~ h3,
+        & ~ p,
+        & ~ ul {
+          float: right;
+          width: 65%;
+        }
+      }
+
+      hr {
+        border-style: solid;
+        border-top: 32px solid transparent;
+        clear: both;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// max container width
+$container-width: 960px;
+
+// media queries
+$small: 576px;
+$medium: 756px;
+$large: $container-width;
+
+// spacing
+$spacing: 16px;
+$spacing-small: calc($spacing / 2);
+$spacing-large: calc($spacing * 1.5);
+$spacing-extra-large: calc($spacing * 2);

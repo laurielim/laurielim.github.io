@@ -2,18 +2,20 @@ main * + * {
 	margin-top: $spacing-extra-large;
 }
 
-section:first-child {
-	padding-top: calc($spacing-extra-large * 1.5);
+section {
+	&:first-child {
+		padding-top: calc($spacing-extra-large * 1.5);
+	}
 }
 
 .content-nav {
 	margin-top: 0;
-}
 
-.content-nav li {
-	display: inline-block;
-	margin-right: $spacing-extra-large;
-	margin-top: 0;
+	li {
+		display: inline-block;
+		margin-right: $spacing-extra-large;
+		margin-top: 0;
+	}
 }
 
 /******************** About ********************/
@@ -29,10 +31,10 @@ section:first-child {
 
 .hidden-text {
 	display: none;
-}
 
-.hidden-text.expanded {
-	display: inline;
+	&.expanded {
+		display: inline;
+	}
 }
 
 .about-img {
@@ -163,6 +165,7 @@ section:first-child {
 
 #contact {
 	display: grid;
+	margin-top: 0;
 	min-height: 400px;
 	padding: 80px 0;
 	place-content: center;

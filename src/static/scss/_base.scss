@@ -16,7 +16,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: $container-width;
 	transition: background-color 500ms ease-in-out, color 200ms ease;
 	width: 100%;
 }
@@ -130,6 +130,7 @@ button {
 
 img {
 	display: block;
+	height: auto;
   max-width: 100%;
 }
 
@@ -168,7 +169,12 @@ img {
 
 /******************** Responsiveness ********************/
 
-@media (max-width: 756px) {
+@media (max-width: $medium) {
+
+	.about-img {
+		display: none;
+	}
+
 	footer.flex,
 	footer .flex {
 		justify-content: center;
@@ -180,13 +186,9 @@ img {
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: $small) {
 	html {
 		font-size: 13px;
-	}
-
-	nav {
-		margin-top: $spacing-extra-large;
 	}
 
 	.site-nav ul {
@@ -195,12 +197,8 @@ img {
 	}
 
 	.user-toggle {
-		height: 2rem;
+		height: $spacing-extra-large;
 		min-width: 40%;
-	}
-
-	.about-img {
-		display: none;
 	}
 
 	.small-card {

@@ -1,10 +1,11 @@
 {% extends "layouts/base.html" %}
+{% set pageStylesheets = ['/static/css/portfolio-item.css'] %}
 
 {% block content %}
-
-  {% include "partials/page-header.html" %}
-  <div class="content">
-    {{ content | safe }}
-  </div>
-
+  <article class="portfolio-item">
+    {% include "partials/page-header.html" %}
+    <section class="portfolio-item__content">
+      {{ content | safe }}
+    </section>
+  </article>
 {% endblock %}

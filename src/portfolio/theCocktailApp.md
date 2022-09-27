@@ -1,6 +1,6 @@
 ---
-title: 'TheCocktailApp'
-summary: 'A cocktail recipe web app built with React and Symfony. This is the course project I did while learning Reactjs.'
+title: "TheCocktailApp"
+summary: "A cocktail recipe web app built with React and Symfony. This is the course project I did while learning Reactjs."
 displayOrder: 1
 featured: true
 quickLinks:
@@ -24,7 +24,7 @@ quickLinks:
     width="960" height="500" />
 </figure>
 
-## Overview
+<h2 id="overview">Overview</h2>
 
 ### Purpose & Goal
 TheCocktailApp is the course project I did while I was [learning React](//github.com/laurielim/REACT21K_REACT_JS) at Business College Helsinki. The goal of this project was to practice what I learnt. As I was [learning PHP](//github.com/laurielim/REACT21K_PHP) and data structures in parallel, I also made an [API for my recipes](//laurielim-thecocktailapp-api.herokuapp.com/) which interacts with an SQL database.
@@ -40,7 +40,7 @@ This web app is built with React and hosted on Netlify. The backend is built usi
     width="960" height="500" />
 </figure>
 
-## Process
+<h2 id="overview">Process</h2>
 
 ### Design
 The initial idea was to make a website for cooking recipes. However I wanted to make use of [TheCocktailDB](//www.thecocktaildb.com/) which is an open, crowd-sourced database of drinks and cocktails from around the world. Based on this, I desgined [the app on Figma](//www.figma.com/file/qVjZ8IDxZnayehZwQBCsev/TheCocktailApp?node-id=0%3A1). In the end, I made my own API and database but the project desgin stayed the same.
@@ -68,7 +68,7 @@ Meanwhile, for the Symfony app:
     width="960" height="500" />
 </figure>
 
-## Result
+<h2 id="result">Result</h2>
 
 ### Lessons Learnt
 Working on this project definitely made me realise the importance of planning before opening the code editor. It's easier to implements things over a blank slate as opposed to existing code.
