@@ -4,6 +4,10 @@ $spacing-small: calc($spacing / 2);
 $spacing-large: calc($spacing * 1.5);
 $spacing-extra-large: calc($spacing * 2);
 
+.list-max-width {
+	max-width: initial;
+}
+
 .exp-list {
 	list-style-type: disc;
 

@@ -122,6 +122,17 @@ a {
 	color: var(--accent-color);
 }
 
+button {
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 1.375rem;
+}
+
+img {
+	display: block;
+  max-width: 100%;
+}
+
 .nav-link,
 [data-is-internal="internal"] {
 	color: var(--text-color);
@@ -129,12 +140,6 @@ a {
   & [data-state="active"] {
     text-decoration: none;
   }
-}
-
-button {
-	cursor: pointer;
-	font-family: inherit;
-	font-size: 1.375rem;
 }
 
 .link-button {
@@ -162,6 +167,7 @@ button {
 }
 
 /******************** Responsiveness ********************/
+
 @media (max-width: 756px) {
 	footer.flex,
 	footer .flex {
