@@ -13,6 +13,13 @@ module.exports = function (config) {
   config.addPassthroughCopy('./portfolio-project')
   config.addPassthroughCopy('./speed-game')
 
+  const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+
+  // Returns portfolio items, sorted by display order
+  config.addCollection('portfolio', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/portfolio/*.md'));
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
