@@ -1,17 +1,41 @@
 @use 'spacing' as *;
 
 .portfolio-item {
+  .content-nav {
+    ul {
+      @media screen and (max-width: $medium) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        row-gap: $spacing-small;
+        margin-left: $spacing-small;
+      }
+
+      @media screen and (max-width: $small) {
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, auto);
+      }
+    }
+  }
+
   &__content {
+
+    p + ul {
+      margin-top: $spacing-small;
+    }
 
     li {
       margin-left: $spacing-extra-large;
       & + li {
-        margin-top: $spacing;
+        margin-top: $spacing-small;
       }
     }
 
     hr {
-      color: var(--text-color);
+      border-bottom: 1px solid var(--text-color);
+      border-top: $spacing-extra-large solid transparent;
+      border-style: solid;
+      color: transparent;
+      clear: both;
     }
 
     @media screen and (min-width: $large) {
@@ -20,22 +44,17 @@
       }
       h2 {
         float: left;
-        width: 35%;
+        width: 40%;
         margin-top: 0;
 
         & ~ h3,
         & ~ p,
         & ~ ul {
           float: right;
-          width: 65%;
+          width: 60%;
         }
       }
 
-      hr {
-        border-style: solid;
-        border-top: 32px solid transparent;
-        clear: both;
-      }
     }
   }
 }

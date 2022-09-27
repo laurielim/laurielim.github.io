@@ -16,7 +16,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 		helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	margin: 0 auto;
-	max-width: $container-width;
+	max-width: $max-container-width;
 	transition: background-color 500ms ease-in-out, color 200ms ease;
 	width: 100%;
 }
@@ -62,42 +62,14 @@ body {
 	}
 }
 
-.no-js .link-button {
-	display: none;
+main * + * {
+	margin-top: $spacing-extra-large;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	-webkit-clip-path: inset(50%);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-:focus-visible {
-	outline: 3px dashed;
-	outline-offset: 2px;
-}
-.link-button:hover,
-[href]:hover {
-	text-decoration: none;
-}
-
-.page-wrapper {
-	padding: $spacing;
-}
-
-.sticky-footer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  > main {
-    flex-grow: 1;
-  }
+section {
+	&:first-child {
+		padding-top: calc($spacing-extra-large * 1.5);
+	}
 }
 
 h1 {
@@ -115,6 +87,7 @@ p {
 	font-size: 1.375rem;
 	line-height: 1.8;
 	max-width: 60ch;
+
 }
 
 a {
@@ -132,6 +105,45 @@ img {
 	display: block;
 	height: auto;
   max-width: 100%;
+}
+
+:focus-visible {
+	outline: 3px dashed;
+	outline-offset: 2px;
+}
+
+.no-js .link-button {
+	display: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.link-button:hover,
+[href]:hover {
+	text-decoration: none;
+}
+
+.page-wrapper {
+	padding: $spacing $spacing-extra-large;
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > main {
+    flex-grow: 1;
+  }
 }
 
 .nav-link,
@@ -169,57 +181,16 @@ img {
 
 /******************** Responsiveness ********************/
 
-@media (max-width: $medium) {
-
-	.about-img {
-		display: none;
-	}
-
-	footer.flex,
-	footer .flex {
-		justify-content: center;
-	}
-
-	.copyright-text {
-		margin: $spacing;
-		border: none;
-	}
-}
-
 @media (max-width: $small) {
 	html {
 		font-size: 13px;
 	}
 
-	.site-nav ul {
-		display: flex;
-		flex-wrap: wrap;
+	main * + * {
+		margin-top: $spacing-large;
 	}
 
-	.user-toggle {
-		height: $spacing-extra-large;
-		min-width: 40%;
-	}
-
-	.small-card {
-		grid-column: span 2;
-	}
-
-	.content-nav {
-		margin-top: $spacing;
-	}
-
-	.content-nav ul {
-		display: flex;
-		flex-flow: column wrap;
-		height: 200px;
-		margin: 0;
-		width: 100%;
-	}
-
-	.content-nav li {
-		display: list-item;
-		margin: 0 $spacing-extra-large;
-		margin-bottom: $spacing-large;
+	.page-wrapper {
+		padding: $spacing;
 	}
 }

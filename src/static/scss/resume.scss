@@ -39,7 +39,7 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
   & > li {
-    margin: $spacing;
+    margin: $spacing-small;
 	  margin-left: $spacing-extra-large;
   }
 }

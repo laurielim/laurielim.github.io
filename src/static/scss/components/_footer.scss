@@ -33,3 +33,18 @@
 	border-left: 1px solid var(--text-color);
 	padding-left: 12px;
 }
+
+
+/******************** Responsiveness ********************/
+
+@media (max-width: $medium) {
+	footer.flex,
+	footer .flex {
+		justify-content: center;
+	}
+
+	.copyright-text {
+		margin: $spacing;
+		border: none;
+	}
+}

@@ -1,13 +1,3 @@
-main * + * {
-	margin-top: $spacing-extra-large;
-}
-
-section {
-	&:first-child {
-		padding-top: calc($spacing-extra-large * 1.5);
-	}
-}
-
 .content-nav {
 	margin-top: 0;
 
@@ -173,4 +163,19 @@ section {
 }
 #contact p {
 	margin: 0 auto;
+}
+
+
+/******************** Responsiveness ********************/
+
+@media (max-width: $medium) {
+	.about-img {
+		display: none;
+	}
+}
+
+@media (max-width: $small) {
+  .small-card {
+		grid-column: span 2;
+	}
 }

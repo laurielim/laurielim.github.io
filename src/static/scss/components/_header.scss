@@ -7,6 +7,11 @@ header {
 
 .site-nav {
 	align-items: center;
+
+	li {
+		display: inline-block;
+		margin: $spacing-small $spacing;
+	}
 }
 
 .logo {
@@ -29,7 +34,16 @@ header {
 	text-decoration: none;
 }
 
-.site-nav li {
-	display: inline-block;
-	margin: $spacing-small $spacing;
+
+@media (max-width: $small) {
+
+	.site-nav ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.user-toggle {
+		height: $spacing-extra-large;
+		min-width: 40%;
+	}
 }
