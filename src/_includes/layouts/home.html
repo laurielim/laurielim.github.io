@@ -13,4 +13,17 @@
       aria-label="Drawn outline of me by my wonderful partner Cristina"
     ></div>
   </section>
+  <section id="portfolio" class="portfolio">
+    <h2>Featured projects</h2>
+		<p>
+			Read about my showcase projects or
+			<a href="/portfolio">view my whole portfolio.</a>
+		</p>
+		<div class="card-container">
+			{% for project in collections.featuredProjects %}
+				{% set cardContent = project.data %}
+				{% include "partials/card.html" %}
+			{% endfor %}
+		</div>
+  </section>
 {% endblock %}

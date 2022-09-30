@@ -15,9 +15,11 @@ module.exports = function (config) {
 
   const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
-  // Returns portfolio items, sorted by display order
-  config.addCollection('portfolio', collection => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('./src/portfolio/*.md'));
+  // Returns featured portfolio items, sorted by display order
+  config.addCollection('featuredProjects', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/portfolio/*.md')).filter(
+      x => x.data.featured
+    );
   });
 
   return {
