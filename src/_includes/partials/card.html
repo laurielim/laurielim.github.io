@@ -1,0 +1,12 @@
+{% if cardContent %}
+  <article class="card">
+    <div class="card__content">
+      <h3 class="card__title">{{ cardContent.title }}</h3>
+      <p class="card__summary">{{ cardContent.summary }}</p>
+      <a href="{{ cardContent.cardCtaLink }}" class="card__link">
+        {{ cardContent.cardCtaText }}
+        <span class="visually-hidden">about {{ cardContent.title }}</span>
+      </a>
+    </div>
+  </article>
+{% endif %}
