@@ -1,6 +1,8 @@
 ---
 title: "TheCocktailApp"
-summary: "A cocktail recipe web app built with React and Symfony. This is the course project I did while learning Reactjs."
+summary: "A cocktail recipe web application built with React and Symfony. This is the course project I did while learning Reactjs."
+cardCtaText: See Project
+cardCtaLink: /portfolio/thecocktailapp/
 displayOrder: 1
 featured: true
 quickLinks:
@@ -16,6 +18,7 @@ quickLinks:
   url: "https://laurielim-thecocktailapp.netlify.app/"
 - title: "API"
   url: "https://laurielim-thecocktailapp-api.herokuapp.com/"
+tags: ['selected']
 ---
 
 <figure>

@@ -9,11 +9,11 @@ quickLinks:
   url: "#school"
 - title: Personal Work
   url: "#work"
-selected:
-  title: Selected Projects
-school:
-  title: School Tasks
-work:
-  title: Personal Work
-
+items:
+  - title: Selected Projects
+    key: selected
+  - title: School Tasks
+    key: school
+  - title: Personal Work
+    key: work
 ---

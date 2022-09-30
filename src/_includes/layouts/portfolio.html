@@ -4,14 +4,16 @@
 {% block content %}
   {% include "partials/page-header.html" %}
   <section class="portfolio">
-    <article id="selected">
-      <h2>{{ selected.title }}</h2>
-    </article>
-    <article id="school">
-      <h2>{{ school.title }}</h2>
-    </article>
-    <article id="work">
-      <h2>{{ work.title }}</h2>
-    </article>
+    {% for item in items %}
+      <article id="{{ item.key }}">
+        <h2>{{ item.title }}</h2>
+        <div class="card-container">
+          {% for project in collections[item.key] %}
+            {% set cardContent = project.data %}
+            {% include "partials/card.html" %}
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
   </section>
 {% endblock %}
