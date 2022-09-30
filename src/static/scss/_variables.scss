@@ -1,4 +1,5 @@
 :root {
+	// Colors
 	--accent-color-light: #a00000;
 	--accent-color-dark: #e3b74f;
 	--accent-color: var(--accent-color-light);
@@ -6,11 +7,23 @@
 	--logo-color-dark: var(--accent-color-dark);
 	--logo-color: var(--logo-color-light);
 	--background: #f8f6f1;
-	--banner-image-light: url("/static/images/light-profile-picture.png");
-	--banner-image-dark: url("/static/images/dark-profile-picture.png");
-	--banner-image-source: var(--banner-image-light);
 	--color-mode: "light";
 	--color-dark: #211e1c;
 	--color-light: #f8f6f1;
 	--text-color: #211e1c;
+
+	// Homepage hero image
+	--banner-image-light: url("/static/images/light-profile-picture.png");
+	--banner-image-dark: url("/static/images/dark-profile-picture.png");
+	--banner-image-source: var(--banner-image-light);
+
+	// Fluid typography
+	--step--2: clamp(0.72rem, calc(0.69rem + 0.13vw), 0.77rem);
+  --step--1: clamp(0.90rem, calc(0.83rem + 0.33vw), 1.03rem);
+  --step-0: clamp(1.13rem, calc(1.00rem + 0.63vw), 1.38rem);
+  --step-1: clamp(1.41rem, calc(1.19rem + 1.07vw), 1.83rem);
+  --step-2: clamp(1.76rem, calc(1.42rem + 1.71vw), 2.44rem);
+  --step-3: clamp(2.20rem, calc(1.67rem + 2.65vw), 3.26rem);
+  --step-4: clamp(2.75rem, calc(1.95rem + 3.99vw), 4.34rem);
+  --step-5: clamp(3.43rem, calc(2.26rem + 5.88vw), 5.79rem);
 }
