@@ -6,8 +6,8 @@
 	--logo-color-dark: var(--accent-color-dark);
 	--logo-color: var(--logo-color-light);
 	--background: #f8f6f1;
-	--banner-image-light: url("../images/light-profile-picture.png");
-	--banner-image-dark: url("../images/dark-profile-picture.png");
+	--banner-image-light: url("/static/images/light-profile-picture.png");
+	--banner-image-dark: url("/static/images/dark-profile-picture.png");
 	--banner-image-source: var(--banner-image-light);
 	--color-mode: "light";
 	--color-dark: #211e1c;

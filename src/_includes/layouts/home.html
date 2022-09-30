@@ -1,13 +1,14 @@
 {% extends "layouts/base.html" %}
+{% set pageStyles = "css/home.css" %}
 
 {% block content %}
-  <section id="about" class="flex">
-    <div class="about-text">
+  <section id="about" class="about flex">
+    <div class="about__text">
       <h1>{{ title }}</h1>
       {{ content | safe }}
     </div>
     <div
-      class="about-img"
+      class="about__image"
       role="img"
       aria-label="Drawn outline of me by my wonderful partner Cristina"
     ></div>

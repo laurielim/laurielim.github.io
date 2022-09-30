@@ -1,0 +1,38 @@
+@use 'spacing' as *;
+
+@import './components/card';
+
+/******************** About ********************/
+
+.about {
+	min-height: 38rem;
+
+  &__text {
+    flex: 1;
+    text-align: left;
+  }
+
+  &__image {
+    background-image: url("static/images/light-profile-picture.png");
+    background-image: var(--banner-image-source);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+
+    @media (max-width: $medium) {
+      display: none;
+    }
+
+  }
+}
+
+/******************** Portfolio ********************/
+
+.portfolio {
+	text-align: center;
+}
+
+.portfolio p {
+	margin: 0 auto;
+}

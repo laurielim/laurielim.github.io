@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.html" %}
-    <style>{% include "css/styles.css" %}</style>
+    <style>{% include "css/main.css" %}</style>
     {% if pageStyles %}
-      {% for item in pageStyles %}
-        <style>{% include item %}</style>
-      {% endfor %}
+      <style>{% include pageStyles %}</style>
     {% endif %}
   </head>
   <body>

@@ -1,0 +1,7 @@
+@use 'spacing' as *;
+
+@import './components/card';
+
+.portfolio-page h2 {
+	text-align: left;
+}

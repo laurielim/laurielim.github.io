@@ -34,6 +34,15 @@ header {
 	text-decoration: none;
 }
 
+.content-nav {
+	margin-top: 0;
+
+	li {
+		display: inline-block;
+		margin-right: $spacing-extra-large;
+		margin-top: 0;
+	}
+}
 
 @media (max-width: $small) {
 

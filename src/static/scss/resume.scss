@@ -7,12 +7,7 @@
 .exp-list {
 	list-style-type: disc;
 
-  ul {
-    list-style-type: circle;
-  }
-
   li {
-    line-height: 1.8;
     margin-left: $spacing-extra-large;
   }
 }
@@ -38,7 +33,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
-  & > li {
+  li {
     margin: $spacing-small;
 	  margin-left: $spacing-extra-large;
   }
