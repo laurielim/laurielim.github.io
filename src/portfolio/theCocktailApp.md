@@ -22,9 +22,11 @@ tags: ['selected']
 ---
 
 <figure>
-  <img src="/static/images/portfolio/Screenshot-theCocktailApp-1.png"
-    alt="Screenshot of theCocktailApp homepage"
-    width="960" height="500" />
+  {% image
+    "src/static/portfolio-assets/Screenshot-theCocktailApp-1.jpg",
+    "Screenshot of theCocktailApp homepage",
+    false
+  %}
 </figure>
 
 <h2 id="overview">Overview</h2>
@@ -38,9 +40,10 @@ This web app is built with React and hosted on Netlify. The backend is built usi
 ---
 
 <figure>
-  <img src="/static/images/portfolio/Screenshot-theCocktailApp-2.png"
-    alt="Screenshot of the page of recipes from theCocktailApp"
-    width="960" height="500" />
+  {% image
+    "src/static/portfolio-assets/Screenshot-theCocktailApp-2.jpg",
+    "Screenshot of the page of recipes from theCocktailApp"
+  %}
 </figure>
 
 <h2 id="overview">Process</h2>
@@ -66,9 +69,10 @@ Meanwhile, for the Symfony app:
 ---
 
 <figure>
-  <img src="/static/images/portfolio/Screenshot-theCocktailApp-3.png"
-    alt="Screenshot of a recipe page from theCocktailApp on mobile"
-    width="960" height="500" />
+  {% image
+    "src/static/portfolio-assets/Screenshot-theCocktailApp-3.jpg",
+    "Screenshot of a recipe page from theCocktailApp on mobile"
+  %}
 </figure>
 
 <h2 id="result">Result</h2>

@@ -4,6 +4,9 @@ module.exports = function (config) {
   config.addWatchTarget("./src/static/scss/");
   config.addTransform("minify", require("./src/transforms/minify"));
 
+  // Shortcodes
+  config.addNunjucksAsyncShortcode('image', require('./src/shortcodes/imageShortcode'));
+
   // Plugins
   config.addPlugin(fortawesomeBrandsPlugin);
 

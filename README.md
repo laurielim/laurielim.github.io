@@ -21,6 +21,6 @@ You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB
 - [Recommendations from CSS Tricks](https://css-tricks.com)
 - [Accessible design pattern by Graham Armfield](https://www.hassellinclusion.com/blog/accessible-accordion-pattern/)
 - [Inspiration from Joost van der Schee's personal website](https://www.usecue.com/)
-- [SVG icons from Simple Icons](https://simpleicons.org)
 - [Learn Eleventy from scratch](https://learneleventyfromscratch.com)
-- [How to deploy your Eleventy website to GitHub Pages with GitHub Actions](https://maarten.be/blog/20220730/how-to-deploy-your-eleventy-website-to-github-pages-with-github-actions/)
+- [Optimizing Images with the 11ty Image Plugin by Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/)
+- [How to deploy your Eleventy website to GitHub Pages with GitHub Actions by Maarten Tibau](https://maarten.be/blog/20220730/how-to-deploy-your-eleventy-website-to-github-pages-with-github-actions/)

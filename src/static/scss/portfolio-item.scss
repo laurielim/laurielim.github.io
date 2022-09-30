@@ -19,6 +19,21 @@
 
   &__content {
 
+    figure {
+      background-color: #cfc7b4;
+      padding: calc($spacing-extra-large * 2) calc($spacing-extra-large * 1.5);
+
+      img {
+        box-shadow:
+        0px 2.1px 3px rgba(0, 0, 0, 0.202),
+        0px 7.1px 10.1px rgba(0, 0, 0, 0.298),
+        0px 32px 45px rgba(0, 0, 0, 0.5)
+      ;
+
+        margin-top: 0;
+      }
+    }
+
     p + ul {
       margin-top: $spacing-small;
     }
