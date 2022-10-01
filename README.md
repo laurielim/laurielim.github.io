@@ -26,5 +26,6 @@ You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB
 
 ## Tools
 
-- [Fluid type scale calculator by Utopia](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/)
+- [Fluid type scale calculator by Utopia](https://utopia.fyi/type/calculator)
+- [Fluid space calculator by Utopia](https://utopia.fyi/space/calculator/)
 - [Smooth shadow generator by Philipp Brumm](https://shadows.brumm.af)

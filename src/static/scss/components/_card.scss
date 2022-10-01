@@ -18,8 +18,8 @@
 	color: var(--background);
 	display: grid;
 	min-height: 350px;
-	padding: $spacing-extra-large 8%;
-	padding-top: calc($spacing-extra-large * 1.5);
+	padding: $spacing-large 8%;
+	padding-top: $spacing-extra-large;
 	place-content: center;
 	position: relative;
 	width: 100%;

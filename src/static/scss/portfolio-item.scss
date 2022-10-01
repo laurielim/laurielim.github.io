@@ -18,18 +18,18 @@
   }
 
   &__content {
+    margin-top: $spacing;
 
     figure {
       background-color: #cfc7b4;
-      padding: calc($spacing-extra-large * 2) calc($spacing-extra-large * 1.5);
+      margin-top: $spacing-large;
+      padding: $spacing-extra-large $spacing-large;
 
       img {
         box-shadow:
         0px 2.1px 3px rgba(0, 0, 0, 0.202),
         0px 7.1px 10.1px rgba(0, 0, 0, 0.298),
-        0px 32px 45px rgba(0, 0, 0, 0.5)
-      ;
-
+        0px 32px 45px rgba(0, 0, 0, 0.5);
         margin-top: 0;
       }
     }
@@ -39,7 +39,7 @@
     }
 
     li {
-      margin-left: $spacing-extra-large;
+      margin-left: $spacing;
       & + li {
         margin-top: $spacing-small;
       }
@@ -57,6 +57,7 @@
       figure {
         margin-bottom: $spacing-large;
       }
+
       h2 {
         float: left;
         width: 40%;
@@ -69,7 +70,6 @@
           width: 60%;
         }
       }
-
     }
   }
 }

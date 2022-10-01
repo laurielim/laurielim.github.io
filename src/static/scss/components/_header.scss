@@ -1,5 +1,6 @@
 header {
 	align-items: center;
+	column-gap: $spacing-medium;
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
 	row-gap: $spacing;
@@ -8,9 +9,14 @@ header {
 .site-nav {
 	align-items: center;
 
+	ul {
+		display: flex;
+		column-gap: $spacing-medium;
+		flex-wrap: wrap;
+	}
+
 	li {
 		display: inline-block;
-		margin: $spacing-small $spacing;
 	}
 }
 
@@ -39,20 +45,14 @@ header {
 
 	li {
 		display: inline-block;
-		margin-right: $spacing-extra-large;
+		margin-right: $spacing-medium;
 		margin-top: 0;
 	}
 }
 
 @media (max-width: $small) {
 
-	.site-nav ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
 	.user-toggle {
-		height: $spacing-extra-large;
 		min-width: 40%;
 	}
 }

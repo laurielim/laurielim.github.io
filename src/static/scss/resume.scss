@@ -1,40 +1,54 @@
 @use 'spacing' as *;
 
-.list-max-width {
-	max-width: initial;
+.resume {
+  .flex {
+    column-gap: $spacing-medium;
+  }
+
+  .mt0 {
+    margin-top: 0;
+  }
+
+  .list-max-width {
+    align-self: flex-end;
+    max-width: initial;
+  }
+
+  &__skills {
+    h3 {
+      margin-top: $spacing-medium;
+    }
+
+    .skill-list {
+      column-gap: $spacing-medium;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, clamp(12.38rem, calc(11.00rem + 6.88vw), 15.13rem));
+
+      > li {
+        align-items: center;
+        display: flex;
+        gap: $spacing-large;
+      }
+    }
+
+    .language-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+      li {
+        margin: $spacing-small;
+        margin-left: $spacing;
+      }
+    }
+
+  }
 }
 
 .exp-list {
 	list-style-type: disc;
 
   li {
-    margin-left: $spacing-extra-large;
+    margin-left: $spacing-large;
   }
 }
 
-.skill-list {
-  li {
-	  display: inline-block;
-	  line-height: 3rem;
-	  margin: $spacing;
-	  min-width: 15rem;
-
-    &> * {
-      vertical-align: bottom;
-    }
-  }
-
-  .svg-icon {
-    margin-right: $spacing;
-  }
-}
-
-.language-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-  li {
-    margin: $spacing-small;
-	  margin-left: $spacing-extra-large;
-  }
-}

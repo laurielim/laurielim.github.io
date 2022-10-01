@@ -1,14 +1,16 @@
 // spacing
-$spacing: 16px;
-$spacing-small: calc($spacing / 2);
-$spacing-large: calc($spacing * 1.5);
-$spacing-extra-large: calc($spacing * 2);
+$spacing: var(--space-s);
+$spacing-small: var(--space-xs);
+$spacing-medium: var(--space-m);
+$spacing-large: var(--space-l);
+$spacing-extra-large: var(--space-xl);
+$spacing-2x-large: var(--space-2xl);
 
 // max container width
 $max-content-width: 960px;
-$max-container-width: $max-content-width + calc($spacing-extra-large * 2);
+$max-container-width: calc(#{$max-content-width} + #{$spacing-2x-large});
 
 // media queries
 $small: 576px;
 $medium: 756px;
-$large: $max-container-width;
+$large: 960px;

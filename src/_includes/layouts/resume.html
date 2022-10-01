@@ -4,35 +4,35 @@
 {% block content %}
   {% include "partials/page-header.html" %}
   <section class="resume">
-    <article id="education">
+    <article id="education" class="resume__education">
       <h2>{{ education.title }}</h2>
       <ul>
         {% for item in education.items %}
           <li class="flex flex-wrap-center list-max-width">
-            <div>
+            <div class="mt0">
               <h3>{{ item.school }}</h3>
-              <p>{{ item.program }}</p>
+              <p class="mt0">{{ item.program }}</p>
             </div>
             <div>
-              <p>{{ item.location }}</p>
-              <p>{{ item.year }}</p>
+              <p class="mt0">{{ item.location }}</p>
+              <p class="mt0">{{ item.year }}</p>
             </div>
           </li>
         {% endfor %}
       </ul>
     </article>
-    <article id="experience">
+    <article id="experience" class="resume__experience">
       <h2>{{ experience.title }}</h2>
       <ul>
         {% for item in experience.items %}
           <li class="flex flex-wrap-center list-max-width">
             <div>
               <h3>{{ item.company }}</h3>
-              <p>{{ item.desc }}</p>
+              <p class="mt0">{{ item.desc }}</p>
             </div>
             <div>
-              <p>{{ item.location }}</p>
-              <p>{{ item.year }}</p>
+              <p class="mt0">{{ item.location }}</p>
+              <p class="mt0">{{ item.year }}</p>
             </div>
             <div>
               {% for role in item.roles %}
@@ -48,11 +48,11 @@
         {% endfor %}
       </ul>
     </article>
-    <article id="skills">
+    <article id="skills" class="resume__skills">
       <h2>{{ skills.title }}</h2>
       {% for item in skills.items %}
         <h3>{{ item.title }}</h3>
-        <ul class="skill-list">
+        <ul class="skill-list mt0">
           {% for skill in item.skills %}
             <li>
               {% fortawesomeBrand skill.icon, 'svg-icon' %}
