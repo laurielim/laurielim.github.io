@@ -81,7 +81,9 @@ h2 {
 }
 h3 {
 	font-size: var(--step-2);
+	line-height: 1.6;
 }
+
 li,
 a,
 p {
@@ -105,6 +107,14 @@ img {
 	display: block;
 	height: auto;
   max-width: 100%;
+}
+
+hr {
+	border-bottom: 1px solid var(--text-color);
+	border-top: $spacing-extra-large solid transparent;
+	border-style: solid;
+	color: transparent;
+	clear: both;
 }
 
 :focus-visible {
@@ -133,7 +143,7 @@ img {
 }
 
 .page-wrapper {
-	padding: $spacing $spacing-extra-large;
+	padding: $spacing $spacing-large;
 }
 
 .sticky-footer {
@@ -173,12 +183,4 @@ img {
 .flex-wrap-center {
 	align-items: center;
 	flex-wrap: wrap;
-}
-
-/******************** Responsiveness ********************/
-
-@media (max-width: $small) {
-	.page-wrapper {
-		padding: $spacing;
-	}
 }

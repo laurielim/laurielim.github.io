@@ -21,7 +21,7 @@
     margin-top: $spacing;
 
     figure {
-      background-color: #cfc7b4;
+      background-color: var(--card-color-1);
       margin-top: $spacing-large;
       padding: $spacing-extra-large $spacing-large;
 
@@ -43,14 +43,6 @@
       & + li {
         margin-top: $spacing-small;
       }
-    }
-
-    hr {
-      border-bottom: 1px solid var(--text-color);
-      border-top: $spacing-extra-large solid transparent;
-      border-style: solid;
-      color: transparent;
-      clear: both;
     }
 
     @media screen and (min-width: $large) {

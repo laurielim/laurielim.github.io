@@ -2,71 +2,74 @@
 {% set pageStyles = "css/resume.css" %}
 
 {% block content %}
-  {% include "partials/page-header.html" %}
-  <section class="resume">
-    <article id="education" class="resume__education">
-      <h2>{{ education.title }}</h2>
-      <ul>
-        {% for item in education.items %}
-          <li class="flex flex-wrap-center list-max-width">
-            <div class="mt0">
-              <h3>{{ item.school }}</h3>
-              <p class="mt0">{{ item.program }}</p>
-            </div>
-            <div>
-              <p class="mt0">{{ item.location }}</p>
-              <p class="mt0">{{ item.year }}</p>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </article>
-    <article id="experience" class="resume__experience">
-      <h2>{{ experience.title }}</h2>
-      <ul>
-        {% for item in experience.items %}
-          <li class="flex flex-wrap-center list-max-width">
-            <div>
-              <h3>{{ item.company }}</h3>
-              <p class="mt0">{{ item.desc }}</p>
-            </div>
-            <div>
-              <p class="mt0">{{ item.location }}</p>
-              <p class="mt0">{{ item.year }}</p>
-            </div>
-            <div>
-              {% for role in item.roles %}
-                <h4>{{ role.title }}</h4>
-                <ul class="exp-list">
-                  {% for item in role.desc %}
-                    <li>{{ item }}</li>
-                  {% endfor %}
-                </ul>
-              {% endfor %}
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </article>
-    <article id="skills" class="resume__skills">
-      <h2>{{ skills.title }}</h2>
-      {% for item in skills.items %}
-        <h3>{{ item.title }}</h3>
-        <ul class="skill-list mt0">
-          {% for skill in item.skills %}
-            <li>
-              {% fortawesomeBrand skill.icon, 'svg-icon' %}
-              {{ skill.name }}
+  <article class="resume">
+    {% include "partials/page-header.html" %}
+    <section class="resume__content">
+      <article id="education" class="resume__education">
+        <h2>{{ education.title }}</h2>
+        <ul>
+          {% for item in education.items %}
+            <li class="flex flex-wrap-center list-max-width">
+              <div class="mt0">
+                <h3>{{ item.school }}</h3>
+                <p class="mt0">{{ item.program }}</p>
+              </div>
+              <div>
+                <p class="mt0">{{ item.location }}</p>
+                <p class="mt0">{{ item.year }}</p>
+              </div>
             </li>
           {% endfor %}
         </ul>
-      {% endfor %}
-      <h3>{{ languages.title }}</h3>
-      <ul class="language-list">
-        {% for item in languages.items %}
-          <li>{{ item }}</li>
+      </article>
+      <article id="experience" class="resume__experience">
+        <h2>{{ experience.title }}</h2>
+        <ul>
+          {% for item in experience.items %}
+            <li class="flex flex-wrap-center list-max-width">
+              <div>
+                <h3>{{ item.company }}</h3>
+                <p class="mt0">{{ item.desc }}</p>
+              </div>
+              <div>
+                <p class="mt0">{{ item.location }}</p>
+                <p class="mt0">{{ item.year }}</p>
+              </div>
+              <div>
+                {% for role in item.roles %}
+                  <h4>{{ role.title }}</h4>
+                  <ul class="exp-list">
+                    {% for item in role.desc %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endfor %}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </article>
+      <article id="skills" class="resume__skills">
+        <h2>{{ skills.title }}</h2>
+        {% for item in skills.items %}
+          <h3>{{ item.title }}</h3>
+          <ul class="skill-list mt0">
+            {% for skill in item.skills %}
+              <li>
+                {% fortawesomeBrand skill.icon, 'svg-icon' %}
+                {{ skill.name }}
+              </li>
+            {% endfor %}
+          </ul>
         {% endfor %}
-      </ul>
-    </article>
-  </section>
+        <h3>{{ languages.title }}</h3>
+        <ul class="language-list">
+          {% for item in languages.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+      <hr>
+    </section>
+  </article>
 {% endblock %}

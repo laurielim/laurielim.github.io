@@ -21,7 +21,7 @@
 		</p>
 		<div class="card-container">
 			{% for project in collections.featuredProjects %}
-				{% set cardContent = project.data %}
+				{% set card = project %}
 				{% include "partials/card.html" %}
 			{% endfor %}
 		</div>
