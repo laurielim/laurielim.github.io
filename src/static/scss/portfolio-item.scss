@@ -62,6 +62,14 @@
           width: 60%;
         }
       }
+
+      hr + h2 {
+        margin-top: $spacing;
+
+        + h3 {
+          margin-top: $spacing-large;
+        }
+      }
     }
   }
 }

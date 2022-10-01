@@ -1,8 +1,8 @@
 ---
 title: "TheCocktailApp"
-summary: "A cocktail recipe web application built with React and Symfony. This is the course project I did while learning Reactjs."
-cardCtaText: See Project
-cardCtaLink: /portfolio/thecocktailapp/
+summary: "A cocktail recipe website built with React and Symfony. This is the course project I did while learning Reactjs."
+cardCtaText:
+cardCtaLink:
 displayOrder: 1
 featured: true
 quickLinks:
@@ -46,7 +46,7 @@ This web app is built with React and hosted on Netlify. The backend is built usi
   %}
 </figure>
 
-<h2 id="overview">Process</h2>
+<h2 id="process">Process</h2>
 
 ### Design
 The initial idea was to make a website for cooking recipes. However I wanted to make use of [TheCocktailDB](//www.thecocktaildb.com/) which is an open, crowd-sourced database of drinks and cocktails from around the world. Based on this, I desgined [the app on Figma](//www.figma.com/file/qVjZ8IDxZnayehZwQBCsev/TheCocktailApp?node-id=0%3A1). In the end, I made my own API and database but the project desgin stayed the same.
@@ -71,7 +71,7 @@ Meanwhile, for the Symfony app:
 <figure>
   {% image
     "src/static/portfolio-assets/Screenshot-theCocktailApp-3.jpg",
-    "Screenshot of a recipe page from theCocktailApp on mobile"
+    "Screenshot of a recipe page"
   %}
 </figure>
 
