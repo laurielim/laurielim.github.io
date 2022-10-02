@@ -1,5 +1,7 @@
 @use 'spacing' as *;
 
+@import './components/card';
+
 .portfolio-item {
   .content-nav {
     ul {

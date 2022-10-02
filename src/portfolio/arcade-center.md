@@ -12,4 +12,4 @@ quickLinks:
   url: "https://bch-group-project-arcade-center.github.io/"
 tags: ['school']
 ---
-Maybe one day I will sit down and write about this project...
+Maybe one day I will write about this project. Meanwhile, checkout my other projects.
