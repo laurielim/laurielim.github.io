@@ -1,43 +1,47 @@
 ---
 title: "School tasks"
 summary: "Various tasks I did throughout the course which are available online."
-cardCtaText:
+cardCtaText: Find out more
 cardCtaLink:
 displayOrder: 0
 featured: false
 quickLinks:
-- title: Portfolio Project
-  url: "#portfolio-project"
-- title: "Days Calculator"
-  url: "#days-calculator"
-- title: "React Form"
-  url: "#react-form"
+- title: Basics
+  url: "#basics"
+- title: React
+  url: "#react"
+
 tags: ['school']
 ---
 
-## Basics
+<h2 id="basics">Basics</h2>
 
-<h3 id="portfolio-project">Portfolio Project</h3>
+### Portfolio Project
 
 This is a showcase of basic HTML, CSS and JavaScript skills learnt during lessons in one project."
 
-[View Demo](https://laurielim.github.io/portfolio-project/)
+[Demo](https://laurielim.github.io/portfolio-project/) | [Repo](https://github.com/laurielim/REACT21K_HTML3_-_CSS3)
 
-
-<h3 id="days-calculator">Days Calculator</h3>
+### Days Calculator
 
 A days calculator and event countdown app made with plain JavaScript.
 
-[View Demo](https://laurielim-react-forms.netlify.app/)
+[Demo](https://laurielim.github.io/days-calculator/) | [Repo](https://github.com/laurielim/laurielim.github.io/tree/main/days-calculator)
 
 ---
 
-## React
+<h2 id="react">React</h2>
 
-<h3 id="react-form">React Form</h3>
+### React Form
 
-A form built with React which connects to a simple API made with PHP.
+A form built with React which connects to a simple [API made with PHP](https://github.com/laurielim/heroku-react-forms-api).
 
-[View Demo](https://laurielim-react-forms.netlify.app/)
+[Demo](https://laurielim-react-forms.netlify.app/) | [Repo](https://github.com/laurielim/REACT21K_REACT_JS/tree/main/task-05-forms)
+
+### React Speed Game
+
+A React version of the [JS Speed Game](/portfolio/speed-game/).
+
+[Demo](https://laurielim-react-speed-game.netlify.app) | [Repo](https://github.com/laurielim/REACT21K_REACT_JS/tree/main/task-04-speed-game)
 
 ---

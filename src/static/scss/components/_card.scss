@@ -59,6 +59,15 @@
 		color: var(--color-light);
 	}
 
+  // If there is only 2 cards
+	&:first-child:nth-last-child(2),
+  &:first-child:nth-last-child(2) ~ .card {
+		@media screen and (min-width: $medium) {
+			grid-column: initial;
+			margin-top: 0;
+		}
+}
+
 	&__summary {
 		margin-top: 0;
 	}
