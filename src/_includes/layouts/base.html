@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.html" %}
-    <link rel="preload" href="{{ '/static/css/main.css' | url }}" as="style" onload="this.rel='stylesheet'" />
-    {% if pageStylesheets %}
-      {% for item in pageStylesheets %}
-        <link rel="preload" href="{{ item }}" as="style" onload="this.rel='stylesheet'">
-      {% endfor %}
+    <style>{% include "css/main.css" %}</style>
+    {% if pageStyles %}
+      <style>{% include pageStyles %}</style>
     {% endif %}
   </head>
   <body>

@@ -1,0 +1,10 @@
+
+@use 'spacing' as *;
+
+@import './components/card';
+
+.portfolio {
+	> article:not(:first-child) {
+		margin-top: $spacing-2x-large;
+	}
+}

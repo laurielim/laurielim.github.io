@@ -1,11 +1,23 @@
 header {
 	align-items: center;
+	column-gap: $spacing-medium;
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
+	row-gap: $spacing;
 }
 
 .site-nav {
 	align-items: center;
+
+	ul {
+		display: flex;
+		column-gap: $spacing-medium;
+		flex-wrap: wrap;
+	}
+
+	li {
+		display: inline-block;
+	}
 }
 
 .logo {
@@ -28,7 +40,19 @@ header {
 	text-decoration: none;
 }
 
-.site-nav li {
-	display: inline-block;
-	margin: $spacing-small $spacing;
+.content-nav {
+	margin-top: 0;
+
+	li {
+		display: inline-block;
+		margin-right: $spacing-medium;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: $small) {
+
+	.user-toggle {
+		min-width: 40%;
+	}
 }

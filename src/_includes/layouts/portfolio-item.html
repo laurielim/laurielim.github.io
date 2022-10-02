@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+{% set pageStyles = "css/portfolio-item.css" %}
+
+{% set otherProjects = helpers.getSiblingContent(collections.featuredProjects, page) %}
+
+{% block content %}
+  <article class="portfolio-item">
+    {% include "partials/page-header.html" %}
+    <section class="portfolio-item__content">
+      {{ content | safe }}
+    </section>
+  </article>
+  {% if otherProjects %}
+    <footer class="other-projects">
+      <h2>Other Projects</h2>
+      <div class="card-container">
+        {% for project in otherProjects %}
+          {% set card = project %}
+          {% include "partials/card.html" %}
+        {% endfor %}
+      </div>
+    </footer>
+  {% endif %}
+{% endblock %}

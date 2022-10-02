@@ -4,6 +4,9 @@ module.exports = function (config) {
   config.addWatchTarget("./src/static/scss/");
   config.addTransform("minify", require("./src/transforms/minify"));
 
+  // Shortcodes
+  config.addNunjucksAsyncShortcode('image', require('./src/shortcodes/imageShortcode'));
+
   // Plugins
   config.addPlugin(fortawesomeBrandsPlugin);
 
@@ -12,6 +15,15 @@ module.exports = function (config) {
   config.addPassthroughCopy('./days-calculator')
   config.addPassthroughCopy('./portfolio-project')
   config.addPassthroughCopy('./speed-game')
+
+  const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+
+  // Returns featured portfolio items, sorted by display order
+  config.addCollection('featuredProjects', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/portfolio/*.md')).filter(
+      x => x.data.featured
+    );
+  });
 
   return {
     markdownTemplateEngine: 'njk',

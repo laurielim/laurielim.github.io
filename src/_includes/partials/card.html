@@ -1,0 +1,26 @@
+{% if card %}
+  {% set cardContent = card.data %}
+
+  {% if cardContent.cardCtaLink  %}
+    {% set ctaLink = cardContent.cardCtaLink %}
+  {% elif not cardContent.cardCtaLink  %}
+    {% set ctaLink = card.url %}
+  {% endif %}
+
+  {% if cardContent.cardCtaText  %}
+    {% set ctaText = cardContent.cardCtaText %}
+  {% elif not cardContent.cardCtaText  %}
+    {% set ctaText = "See Project" %}
+  {% endif %}
+
+  <article class="card">
+    <div class="card__content">
+      <h3 class="card__title">{{ cardContent.title }}</h3>
+      <p class="card__summary">{{ cardContent.summary }}</p>
+      <a href="{{ ctaLink }}" class="card__link">
+        {{ ctaText }}
+        <span class="visually-hidden">about {{ cardContent.title }}</span>
+      </a>
+    </div>
+  </article>
+{% endif %}

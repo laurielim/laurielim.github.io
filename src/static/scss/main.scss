@@ -6,9 +6,11 @@
 
 @charset 'UTF-8';
 
+@use 'spacing' as *;
+
 @import 'variables';
 @import 'base';
 
 @import './components/footer';
 @import './components/header';
-@import './components/main';
+@import './components/cta'

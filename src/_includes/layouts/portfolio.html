@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+{% set pageStyles = "css/portfolio.css" %}
+
+{% block content %}
+  {% include "partials/page-header.html" %}
+  <section class="portfolio">
+    {% for item in items %}
+      <article id="{{ item.key }}">
+        <h2>{{ item.title }}</h2>
+        <div class="card-container">
+          {% for project in collections[item.key] %}
+            {% set card = project %}
+            {% include "partials/card.html" %}
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+{% endblock %}

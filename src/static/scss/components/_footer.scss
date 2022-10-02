@@ -1,6 +1,6 @@
 .social-link {
 	margin: 12px;
-	padding-top: $spacing-extra-large;
+	padding-top: $spacing-large;
 	text-decoration: none;
 }
 
@@ -32,4 +32,20 @@
 .copyright-text {
 	border-left: 1px solid var(--text-color);
 	padding-left: 12px;
+}
+
+
+/******************** Responsiveness ********************/
+
+@media (max-width: $medium) {
+	footer.flex,
+	footer .flex {
+		column-gap: $spacing-medium;
+		justify-content: center;
+		row-gap: $spacing-small;
+	}
+
+	.copyright-text {
+		border: none;
+	}
 }

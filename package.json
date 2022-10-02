@@ -4,15 +4,15 @@
   "description": "My portfolio where I will be showcasing my projects.",
   "main": "script.js",
   "scripts": {
-    "watch:sass": "sass src/static/scss:public/static/css --watch",
-    "build:sass": "sass src/static/scss:public/static/css",
+    "watch:sass": "sass src/static/scss:src/_includes/css --watch",
+    "build:sass": "sass src/static/scss:src/_includes/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "ELEVENTY_ENV=development eleventy",
-    "start": "npm run watch:eleventy & npm run watch:sass",
-    "build": "npm run build:eleventy & npm run build:sass",
-    "build:sass:prod": "sass src/static/scss:public/static/css --style=compressed",
+    "start": "npm run watch:sass & npm run watch:eleventy",
+    "build": "npm run build:sass & npm run build:eleventy",
+    "build:sass:prod": "sass src/static/scss:src/_includes/css --style=compressed",
     "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
-    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod"
+    "build:prod": "npm run build:sass:prod & npm run build:eleventy:prod"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,10 @@
   "homepage": "https://laurielim.github.io/",
   "dependencies": {
     "@11ty/eleventy": "1.0.2",
+    "@11ty/eleventy-img": "^2.0.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "html-minifier": "^4.0.0",
+    "outdent": "^0.8.0",
     "prettier": "^2.7.1",
     "sass": "1.55.0",
     "terser": "^5.15.0"

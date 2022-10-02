@@ -1,0 +1,11 @@
+.cta {
+	display: grid;
+	margin-top: 0;
+	min-height: 400px;
+	place-content: center;
+	text-align: center;
+
+	h2, p {
+		margin: 0 auto;
+	}
+}
