@@ -28,6 +28,10 @@
         align-items: center;
         display: flex;
         gap: $spacing-large;
+
+        &:first-child {
+          margin-top: $spacing;
+        }
       }
     }
 
