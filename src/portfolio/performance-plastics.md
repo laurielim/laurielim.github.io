@@ -31,7 +31,7 @@ tags: ['selected']
 In 2019, I made this company website on Wordpress, using the website builder Elementor. Now that I have experience in web development, I want to rebuild the website with a modern techstack focusing on performance and accessibility.
 
 ### Web Stack
-The new website is built with [static site generator Eleventy](https://www.11ty.dev/). While most of the content is static, the website also hosts a product catalogue that changes occassionally. To allow for a content editor to update the catalogue, I used [headless CMS Contentful](https://www.contentful.com) to store the catalogue data. The site is hosted on a private server but once I have the MVP, I will change it to Github Pages, using Github Actions to build and deploy it.
+The new website is built with [static site generator Eleventy](https://www.11ty.dev/). While most of the content is static, the website also hosts a product catalogue that changes occassionally. To allow for a content editor to update the catalogue, I used [Netlify CMS](https://www.netlifycms.org/). The old site is hosted on a private server but the new one will be on Netlify, using Github Actions to deploy it.
 
 ---
 
