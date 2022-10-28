@@ -83,6 +83,7 @@
 		padding: $spacing-small;
 		position: static;
 		text-decoration: none;
+		text-transform: capitalize;
 		width: 12rem;
 
 		&::before {
