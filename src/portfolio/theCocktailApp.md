@@ -17,7 +17,7 @@ quickLinks:
 - title: "Live Site"
   url: "https://laurielim-thecocktailapp.netlify.app/"
 - title: "API"
-  url: "https://laurielim-thecocktailapp-api.herokuapp.com/"
+  url: "https://laurielim-thecocktailapp.netlify.app/api"
 tags: ['selected']
 ---
 
@@ -32,10 +32,10 @@ tags: ['selected']
 <h2 id="overview">Overview</h2>
 
 ### Purpose & Goal
-TheCocktailApp is the course project I did while I was [learning React](//github.com/laurielim/REACT21K_REACT_JS) at Business College Helsinki. The goal of this project was to practice what I learnt. As I was [learning PHP](//github.com/laurielim/REACT21K_PHP) and data structures in parallel, I also made an [API for my recipes](//laurielim-thecocktailapp-api.herokuapp.com/) which interacts with an SQL database.
+TheCocktailApp is the course project I did while I was [learning React](//github.com/laurielim/REACT21K_REACT_JS) at Business College Helsinki. The goal of this project was to practice what I learnt. As I was [learning PHP](//github.com/laurielim/REACT21K_PHP) and data structures in parallel, I also made an [API for my recipes](//laurielim-thecocktailapp.netlify.app/) which interacted with an SQL database.
 
 ### Web Stack
-This web app is built with React and hosted on Netlify. The backend is built using the Symfony framework and is hosted on Heroku. The IBA official recipes are stored in a JSON file while posted recipes are stored in a PostgreSQL database, as available on Heroku.
+This web app is built with React and hosted on Netlify. The backend is built using the Symfony framework and was hosted on Heroku. I took down the Symfony application after Heroku announced that the free plan would no longer be available but you can still see the [API repo on my github](//github.com/laurielim/REACT21K_PHP_PROJECT). The IBA official recipes are stored in a JSON file while posted recipes were stored in a Heroku Postgres.
 
 ---
 
