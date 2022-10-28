@@ -11,5 +11,6 @@ quickLinks:
 - title: "Live Site"
   url: https://voizy-chat.web.app/
 tags: ['school']
+permalink: false
 ---
 Maybe one day I will write about this project. Meanwhile, checkout my other projects.

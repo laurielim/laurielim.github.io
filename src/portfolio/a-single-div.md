@@ -1,8 +1,8 @@
 ---
 title: "A Single Div"
 summary: "My CSS drawings using a single div, inspired by Lynn Fisher."
-cardCtaText: View Collection
-cardCtaLink: https://codepen.io/collection/DbPKEv
+cardCtaText: See project
+cardCtaLink:
 quickLinks:
 - title: Overview
   url: "#overview"
@@ -43,6 +43,6 @@ I wanted to see how I was progressing on my journey to learn web development. I 
 <h2 id="result">Result</h2>
 
 ### Lessons Learnt
-This collection is incomplete and it is highly unlikely to be completed. Life happened and in a way, I lost interest. Nonetheless, I learnt a lot from this challenge and I am more comfortable with CSS thanks to it. In turn, it has made me a better developer, equiped with more tools to tackle front end challengers.
+This collection is incomplete and it is highly unlikely to be completed. Life happened and in a way, I lost interest. Nonetheless, I learnt a lot from this challenge and I am more comfortable with CSS thanks to it. In turn, it has made me a better developer, equipped with more tools to tackle front end challengers.
 
 ---

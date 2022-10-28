@@ -11,5 +11,6 @@ quickLinks:
 - title: "Live Site"
   url: "https://bch-group-project-arcade-center.github.io/"
 tags: ['school']
+permalink: false
 ---
 Maybe one day I will write about this project. Meanwhile, checkout my other projects.

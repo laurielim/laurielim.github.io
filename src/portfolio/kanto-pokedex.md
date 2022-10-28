@@ -11,6 +11,7 @@ quickLinks:
 - title: "Repo"
   url: "https://github.com/laurielim/pokedex-project"
 tags: ['work']
+permalink: false
 ---
 
 <figure>
