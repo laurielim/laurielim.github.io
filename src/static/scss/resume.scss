@@ -32,6 +32,10 @@
         &:first-child {
           margin-top: $spacing;
         }
+
+        .svg-icon {
+          margin: 0;
+        }
       }
     }
 

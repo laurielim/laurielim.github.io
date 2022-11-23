@@ -1,5 +1,6 @@
 ---
 title: "Résumé"
+metaDesc: "Find out about my education, my work experience and some of my skills"
 layout: "layouts/resume.html"
 permalink: "/resume/index.html"
 quickLinks:
