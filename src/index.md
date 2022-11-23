@@ -1,7 +1,7 @@
 ---
 title: "Laurie Lim Sam"
 layout: "layouts/home.html"
-metaDesc: "Laurie Lim Sam's portfolio website"
+metaDesc: "Laurie Lim Sam's portfolio website."
 ---
 
 Hi, I’m a responsible developer in Helsinki. Responsible as in I make [responsive and accessible](https://responsibleweb.app/) websites. Thank you for checking out my portfolio.

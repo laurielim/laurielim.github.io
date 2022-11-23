@@ -1,5 +1,6 @@
 ---
 title: "Portfolio"
+metaDesc: "Read about some projects I've worked on or check out the demos I've made to showcase my skills"
 layout: "layouts/portfolio.html"
 permalink: "/portfolio/index.html"
 quickLinks:
