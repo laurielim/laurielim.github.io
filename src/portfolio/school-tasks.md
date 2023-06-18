@@ -1,15 +1,15 @@
 ---
 title: "School tasks"
 summary: "Various tasks I did throughout the course which are available online."
-cardCtaText: Find out more
+cardCtaText: Learn more
 cardCtaLink:
 displayOrder: 0
 featured: false
 quickLinks:
-- title: Basics
-  url: "#basics"
-- title: React
-  url: "#react"
+  - title: Basics
+    url: "#basics"
+  - title: React
+    url: "#react"
 
 tags: ['school']
 ---
