@@ -11,7 +11,7 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 I originally built my portfolio with plain HTML, CSS and JavaScript. I chose simplicity as I had 2 focus in mind: performance and accessibility. The updated version is built using Eleventy as its known for performance and simplicity.
 
-The page has a perfect score on Google Lighthouse. It is responsive and works without JavaScript. And last but not least, it even looks decent on Internet Explorer!
+The page has a perfect score on Google Lighthouse. It is responsive and works without JavaScript. And last but not least, it looks decent on Internet Explorer!
 
 You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB4aOTKfUYTw2s/my-portfolio?node-id=0%3A1).
 

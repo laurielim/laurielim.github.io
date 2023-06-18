@@ -17,7 +17,7 @@
     <div class="card__content">
       <h3 class="card__title">{{ cardContent.title }}</h3>
       <p class="card__summary">{{ cardContent.summary }}</p>
-      <a href="{{ ctaLink }}" class="card__link">
+      <a href="{{ ctaLink }}" class="card__link" {{ helpers.isInternal(ctaLink) | safe }}>
         {{ ctaText }}
         <span class="visually-hidden">about {{ cardContent.title }}</span>
       </a>

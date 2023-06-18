@@ -114,6 +114,18 @@
 			}
 
 		}
+
+		&::after {
+			bottom: -2px;
+			content: "⭢";
+			position: relative;
+		}
+
+		&:not([data-is-internal="internal"]) {
+			&::after {
+				content: "⭧";
+			}
+		}
 	}
 }
 
