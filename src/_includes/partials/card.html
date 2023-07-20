@@ -13,6 +13,12 @@
     {% set ctaText = "See Project" %}
   {% endif %}
 
+  {% if helpers.isInternal(ctaLink) %}
+    {% set ctaIcon = "partials/internal-link.html" %}
+  {% else %}
+    {% set ctaIcon = "partials/external-link.html" %}
+  {% endif %}
+
   <article class="card">
     <div class="card__content">
       <h3 class="card__title">{{ cardContent.title }}</h3>
@@ -20,6 +26,7 @@
       <a href="{{ ctaLink }}" class="card__link" {{ helpers.isInternal(ctaLink) | safe }}>
         {{ ctaText }}
         <span class="visually-hidden">about {{ cardContent.title }}</span>
+        <span class="card__icon">{% include ctaIcon %}</span>
       </a>
     </div>
   </article>

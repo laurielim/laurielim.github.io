@@ -99,7 +99,6 @@
 
 		&:hover {
 			opacity: 1;
-			text-decoration: underline;
 		}
 
 		&:focus {
@@ -112,18 +111,23 @@
 				outline: 5px dashed var(--accent-color);
 				outline-offset: -0.8rem;
 			}
-
 		}
+	}
 
-		&::after {
-			bottom: -2px;
-			content: "⭢";
+	&__icon {
+		.icon {
+			fill: var(--background);
+			height: var(--step-0);
+			margin: 0;
 			position: relative;
-		}
+			width: var(--step-0);
 
-		&:not([data-is-internal="internal"]) {
-			&::after {
-				content: "⭧";
+			&.external {
+				bottom: -2px;
+			}
+
+			&.internal {
+				bottom: -4px;
 			}
 		}
 	}
