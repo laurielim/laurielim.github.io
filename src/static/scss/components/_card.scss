@@ -20,14 +20,18 @@
 	color: #f8f6f1;
 	color: var(--background);
 	display: grid;
-	min-height: 350px;
-	padding: $spacing-large 8%;
-	padding-top: $spacing-extra-large;
+	padding: $spacing-extra-large 8%;
 	place-content: center;
 	position: relative;
-	width: 100%;
-	text-align: center;
 	transition: all .4s;
+	width: 100%;
+
+	@media screen and (min-width: $medium) {
+		min-height: 350px;
+		padding: $spacing-large 8%;
+		padding-top: $spacing-extra-large;
+		text-align: center;
+	}
 
 	&:hover {
 		box-shadow:
@@ -66,7 +70,7 @@
 			grid-column: initial;
 			margin-top: 0;
 		}
-}
+  }
 
 	&__summary {
 		margin-top: 0;
@@ -79,12 +83,16 @@
 		border-radius: 2px;
 		color: var(--background);
 		display: block;
-		margin: $spacing auto;
-		padding: $spacing-small;
+		padding: $spacing-small $spacing;
 		position: static;
 		text-decoration: none;
 		text-transform: capitalize;
-		width: 12rem;
+		width: fit-content;
+
+		@media screen and (min-width: $medium) {
+			margin: $spacing auto;
+			width: 12rem;
+		}
 
 		&::before {
 			content: "";
