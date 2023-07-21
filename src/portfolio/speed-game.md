@@ -3,8 +3,7 @@ title: "Speed Game"
 summary: "A simple game made with JavaScript which I update as I learn more about web development."
 cardCtaText:
 cardCtaLink:
-displayOrder: 3
-featured: true
+displayOrder: 0
 quickLinks:
 - title: Overview
   url: "#overview"
@@ -16,7 +15,7 @@ quickLinks:
   url: "https://github.com/laurielim/laurielim.github.io/tree/main/speed-game"
 - title: "Live Site"
   url: "https://laurielim.github.io/speed-game/"
-tags: ['selected']
+tags: ['school']
 ---
 
 <figure>
