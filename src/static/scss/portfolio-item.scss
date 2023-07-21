@@ -25,7 +25,11 @@
     figure {
       background-color: var(--card-color-1);
       margin-top: $spacing-large;
-      padding: $spacing-extra-large $spacing-large;
+      padding: 2%;
+
+      @media screen and (min-width: $medium) {
+        padding: 6% 4%;
+      }
 
       img {
         box-shadow:
