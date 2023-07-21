@@ -1,6 +1,6 @@
 ---
 title: "Speed Game"
-summary: "A simple game made with JavaScript which I update as I learn more about web development."
+summary: "A fun simple game made with vanilla JavaScript."
 cardCtaText:
 cardCtaLink:
 displayOrder: 0
