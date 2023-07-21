@@ -4,10 +4,10 @@ metaDesc: "Find out about my education, my work experience and some of my skills
 layout: "layouts/resume.html"
 permalink: "/resume/index.html"
 quickLinks:
-- title: Education
-  url: "#education"
 - title: Experience
   url: "#experience"
+- title: Education
+  url: "#education"
 - title: Skills
   url: "#skills"
 - title: "Download a copy from Google Docs"
@@ -38,12 +38,17 @@ experience:
       year: 06/21 - Present
       location: Helsinki, Finland
       roles:
+        - title: Technical Lead, full-time
+          desc:
+            - Organise work to ensure that my team of 5 is effective and performing well.
+            - Remove blockers and provide technical guidelines or assistance.
+            - Mentor team members and oversee their continuous professional development.
         - title: Software Developer, summer trainee then full-time
           desc:
             - Contribute to software maintenance and security.
             - Perform code reviews of peers.
             - Carry out accessibility audits and improvements.
-            - Implement front-end redesigns.
+            - Transform designs into front end code.
             - Develop new features for existing projects.
     - company: Performance Plastics Ltd
       desc: Manufacturer of plastic bags and plastic packagings
@@ -52,10 +57,9 @@ experience:
       roles:
         - title: Project Manager, full-time
           desc:
-            - Improved company’s online presence by creating the company website (design and development), updating company information on social media, and performing SEO.
+            - Improved the company’s online presence by creating the company website (design and development), updating company information on social media, and performing SEO.
             - Reorganized customer accounts among sales representatives according to customer behaviour and each representatives’ capacity to improve customer service.
             - Implemented a stock card system to improve stock control of standard items.
-            - Recruited and facilitated on-boarding of an employee for a new job role to ensure information tracking of operations.
             - Oversaw the digitization of the production order process following the outbreak of the coronavirus.
             - Moved Quality System Management docs to Confluence and Non-Conforming product tracking to Jira Core.
         - title: Sales Assistant, part-time
