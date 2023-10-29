@@ -3,8 +3,7 @@ title: "Voizy Chat"
 summary: "A voice-based social media app. I was the lead front-end developer in a team of 3."
 cardCtaText: View Demo
 cardCtaLink: https://voizy-chat.web.app/
-displayOrder: 0
-featured: false
+caseStudy: false
 quickLinks:
 - title: "Repos"
   url: https://github.com/bch-voizy-chat

@@ -16,12 +16,10 @@ module.exports = function (config) {
   config.addPassthroughCopy('./portfolio-project')
   config.addPassthroughCopy('./speed-game')
 
-  const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
-
-  // Returns featured portfolio items, sorted by display order
-  config.addCollection('featuredProjects', collection => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('./src/portfolio/*.md')).filter(
-      x => x.data.featured
+  // Returns case studies portfolio items, sorted by display order
+  config.addCollection('caseStudies', collection => {
+    return collection.getFilteredByGlob('./src/portfolio/*.md').filter(
+      x => x.data.caseStudy
     );
   });
 

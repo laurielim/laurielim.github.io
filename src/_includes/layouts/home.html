@@ -20,7 +20,7 @@
 			<a href="/portfolio">check out my whole portfolio</a>.
 		</p>
 		<div class="card-container">
-			{% for project in collections.featuredProjects %}
+			{% for project in collections.selected %}
 				{% set card = project %}
 				{% include "partials/card.html" %}
 			{% endfor %}

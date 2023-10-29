@@ -3,8 +3,7 @@ title: "TheCocktailApp"
 summary: "A cocktail recipe website built with React and Symfony. This is the course project I did while learning Reactjs."
 cardCtaText:
 cardCtaLink:
-displayOrder: 1
-featured: true
+caseStudy: true
 quickLinks:
 - title: Overview
   url: "#overview"

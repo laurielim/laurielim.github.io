@@ -3,8 +3,7 @@ title: "Performance Plastics"
 summary: "Originally built on Wordpress and zero knowledge of web development. This is the first website I ever made."
 cardCtaText:
 cardCtaLink:
-displayOrder: 3
-featured: true
+caseStudy: true
 quickLinks:
 - title: Overview
   url: "#overview"
@@ -50,7 +49,7 @@ The new website is built with [static site generator Eleventy](https://www.11ty.
 
 The original website was put together without knowledge of web design and development. I used it as a starting point and improve the things based on best practices and what I have learnt so far.
 
-The new UI is simpler. For example, the old content sidebar, which was some sort of accordion available from Elementor, has been replaced with a fixed container containing links. 
+The new UI is simpler. For example, the old content sidebar, which was some sort of accordion available from Elementor, has been replaced with a fixed container containing links.
 
 Site building tools provide a lot of functionalities and I found myself back then trying to use too many of them. I mistakenly believed that it would make the site appear more modern. I have since learnt that less is more and it is visible via the website's sleek new design.
 

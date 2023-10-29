@@ -3,8 +3,7 @@ title: "One Hit KO shop"
 summary: "A serverless e-commerce website built with 11ty, Netlify and Stripe. This is a weekend project."
 cardCtaText:
 cardCtaLink:
-displayOrder: 3
-featured: true
+caseStudy: true
 quickLinks:
 - title: Overview
   url: "#overview"
