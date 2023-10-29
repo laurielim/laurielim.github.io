@@ -3,7 +3,7 @@ title: "Speed Game"
 summary: "A fun simple game made with vanilla JavaScript."
 cardCtaText:
 cardCtaLink:
-displayOrder: 0
+caseStudy: true
 quickLinks:
 - title: Overview
   url: "#overview"

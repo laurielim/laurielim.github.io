@@ -3,6 +3,7 @@ title: "Kanto Pokedex"
 summary: "Using CSS, I styled a school task to look like a Pokedex."
 cardCtaText: View demo
 cardCtaLink: https://codepen.io/collection/DbPKEv
+caseStudy: false
 quickLinks:
 - title: Overview
   url: "#overview"

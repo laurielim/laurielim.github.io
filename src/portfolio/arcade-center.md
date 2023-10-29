@@ -3,8 +3,7 @@ title: "Arcade Center"
 summary: "A collection of JavaScript games. This was my first group project."
 cardCtaText: View Demo
 cardCtaLink: https://bch-group-project-arcade-center.github.io/
-displayOrder: 0
-featured: false
+caseStudy: false
 quickLinks:
 - title: "Repo"
   url: "https://github.com/bch-group-project-arcade-center/bch-group-project-arcade-center.github.io"

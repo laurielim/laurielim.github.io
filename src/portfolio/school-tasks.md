@@ -3,8 +3,7 @@ title: "School tasks"
 summary: "Various tasks I did throughout the course which are available online."
 cardCtaText: Learn more
 cardCtaLink:
-displayOrder: 0
-featured: false
+caseStudy: false
 quickLinks:
   - title: Basics
     url: "#basics"

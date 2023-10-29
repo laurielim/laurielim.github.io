@@ -3,6 +3,7 @@ title: "A Single Div"
 summary: "My CSS drawings using a single div, inspired by Lynn Fisher."
 cardCtaText: See project
 cardCtaLink:
+caseStudy: false
 quickLinks:
 - title: Overview
   url: "#overview"
