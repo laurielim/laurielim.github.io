@@ -43,12 +43,15 @@
 			<div class="settings">
 				<button class="btn-icon" id="soundOn">
 					<i class="icon icon-volume-high"></i>
+					<span class="visually-hidden">Sound on</span>
 				</button>
 				<button class="btn-icon" id="soundOff">
 					<i class="icon icon-volume-off"></i>
+					<span class="visually-hidden">Sound off</span>
 				</button>
 				<button class="btn-icon btn-icon-cog" id="btnSettings">
 					<i class="icon icon-cog-outline"></i>
+					<span class="visually-hidden">Settings</span>
 				</button>
 				<form class="levels-setting">
 					<div class="user-input">
@@ -90,10 +93,18 @@
 				<p>Your Score: <span id="score">0</span></p>
 			</div>
 			<div class="circles">
-				<button class="circle bulbasaur inactive" value="0"></button>
-				<button class="circle charmander inactive" value="1"></button>
-				<button class="circle squirtle inactive" value="2"></button>
-				<button class="circle pikachu inactive" value="3"></button>
+				<button class="circle bulbasaur inactive" value="0">
+					<span class="visually-hidden">Bulbasaur</span>
+				</button>
+				<button class="circle charmander inactive" value="1">
+					<span class="visually-hidden">Charmander</span>
+				</button>
+				<button class="circle squirtle inactive" value="2">
+					<span class="visually-hidden">Squirtle</span>
+				</button>
+				<button class="circle pikachu inactive" value="3">
+					<span class="visually-hidden">Pikachu</span>
+				</button>
 			</div>
 			<div class="buttons">
 				<button class="btn-text" id="start" type="submit">Start</button>
