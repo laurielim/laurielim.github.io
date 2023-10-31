@@ -34,9 +34,7 @@ Kreolingo is a language learning app for Mauritian Creole, inspired by [Duolingo
 Svelte is a JS framework with a reputation for offering a great developer experience and remarkable ease of use. The framework's user-friendly documentation provides clear, concise, and comprehensive resources that made learning Svelte a breeze.
 
 ### Web Stack
-This web app is built with [Skeleton](https://www.skeleton.dev), a UI toolkit for Svelte and [Tailwind CSS](https://tailwindcss.com). I used Skeleton to handle most of the design work with its ready-made components and curated color palettes. This strategic choice allowed me to focus on developing the core components of the application.
-
-Furthermore, I used [Svelte Kit](https://kit.svelte.dev), which added another layer of ease to the development process, and I deployed the project on [Netlify](netlify.com/) to make my project globally accessible.
+This web app is built with [Skeleton](https://www.skeleton.dev), a UI toolkit for Svelte and [Tailwind CSS](https://tailwindcss.com). I used Skeleton to handle most of the design work with its ready-made components and curated color palettes. This decision allowed me to focus on learning and development. Furthermore, I used [Svelte Kit](https://kit.svelte.dev), which added another layer of ease to the development process, and I deployed the project on [Netlify](netlify.com/) like many of my other projects.
 
 ---
 
@@ -59,7 +57,7 @@ When it came to designing the language exercises, I took inspiration from Duolin
 ### Development
 In terms of development, this project presented an exciting challenge. I had to figure out how Duolingo's exercises worked and implement them using Svelte, which was both demanding and rewarding. It was like taking things apart to see how they work and then putting them back together.
 
-The project not only expanded my understanding of Svelte but also honed my problem-solving skills as I tackled each exercise type. In the end, I created a strong and user-friendly language learning app. It may not have all of Duolingo's features, but it shares the same core exercises, making learning Mauritian Creole engaging and interactive.
+The project not only expanded my understanding of Svelte but also honed my problem-solving skills as I tackled each exercise type. It may not have all of Duolingo's features, but it shares the same core exercises, making learning Mauritian Creole engaging and interactive.
 
 ---
 
