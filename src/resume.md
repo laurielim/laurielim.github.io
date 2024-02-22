@@ -38,11 +38,12 @@ experience:
       year: 06/21 - Present
       location: Helsinki, Finland
       roles:
-        - title: Technical Lead, full-time
+        - title: Apprentice Initiator, full-time
           desc:
-            - Organise work to ensure that my team of 5 is effective and performing well.
-            - Remove blockers and provide technical guidelines or assistance.
+            - Facilitate the integration of interns and junior developers into the company.
+            - Remove blockers and offer technical guidance.
             - Mentor team members and oversee their continuous professional development.
+            - Conduct regular check-ins to gauge progress and well-being
         - title: Software Developer, summer trainee then full-time
           desc:
             - Contribute to software maintenance and security.
