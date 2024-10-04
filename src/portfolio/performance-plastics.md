@@ -53,7 +53,7 @@ The new UI is simpler. For example, the old content sidebar, which was some sort
 
 Site building tools provide a lot of functionalities and I found myself back then trying to use too many of them. I mistakenly believed that it would make the site appear more modern. I have since learnt that less is more and it is visible via the website's sleek new design.
 
-### Developmemt
+### Development
 
 Having previously transformed my portfolio website from a plain html/css site to a statically built site, development was relatively straightforward. I had all the tools necessary to build a site the way I envisioned and to move away from Wordpress and WYSIWYG site building tools. Most of my time was in fact spent on managing the content.
 
