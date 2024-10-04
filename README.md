@@ -6,6 +6,12 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 - Node v16
 
+## Commands
+
+Start development server with `npm start`
+
+Get a production build with `npm run build`
+
 ## Technologies used
 
 - Eleventy
