@@ -2,6 +2,10 @@
 
 Welcome to my github page repo where I will be showcasing my projects. Most are from the Full Stack Web Developer program I did in 2021. You can see it live at https://laurielim.github.io/
 
+## Requirement
+
+- Node v16
+
 ## Technologies used
 
 - Eleventy
