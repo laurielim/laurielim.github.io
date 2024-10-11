@@ -39,3 +39,4 @@ You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB
 - [Fluid type scale calculator by Utopia](https://utopia.fyi/type/calculator)
 - [Fluid space calculator by Utopia](https://utopia.fyi/space/calculator/)
 - [Smooth shadow generator by Philipp Brumm](https://shadows.brumm.af)
+- [Testing a static SvelteKit site with Cypress on GitHub Actions](https://medium.com/dropzone/testing-a-static-sveltekit-site-with-cypress-on-github-actions-5ba86f6a0897)
