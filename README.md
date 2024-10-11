@@ -4,7 +4,7 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 ## Requirement
 
-- Node v16
+- Node v22
 
 ## Commands
 
