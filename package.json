@@ -29,7 +29,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^2.0.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "outdent": "^0.8.0",
     "prettier": "^2.7.1",
     "sass": "1.55.0",

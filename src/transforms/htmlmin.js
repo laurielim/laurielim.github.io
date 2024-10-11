@@ -1,5 +1,5 @@
 
-const minify = require("html-minifier").minify;
+const minify = require("html-minifier-terser").minify;
 const prettier = require("prettier");
 
 module.exports = async (content, outputPath) => {
@@ -16,7 +16,6 @@ module.exports = async (content, outputPath) => {
     minifyCSS: true,
     minifyJS: true,
     removeComments: true,
-    removeOptionalTags: true,
     removeRedundantAttributes: true,
     removeScriptTypeAttributes: true,
     removeTagWhitespace: true,
