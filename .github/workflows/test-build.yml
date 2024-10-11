@@ -58,9 +58,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           # Simply start a python http server that exposes the public/ dir
-          start: python3 -m http.server --directory public 3000
+          start: npm run serve
           # Only start tests when the server is up and running.
-          wait-on: http://localhost:3000/
+          wait-on: http://localhost:8080/
           # A simple python http server should really never take longer
           # than 10 seconds to start.
           wait-on-timeout: 10
