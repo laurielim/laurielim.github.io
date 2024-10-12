@@ -20,7 +20,7 @@ html {
 body {
   font-family: var(--font);
   background-color: var(--primary-color);
-  background: var(--dark-color) url("https://source.unsplash.com/PzO_CitnJdI/")
+  background: var(--dark-color) url("https://images.pexels.com/photos/7736064/pexels-photo-7736064.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1")
     no-repeat fixed center center/ cover;
   color: var(--light-color);
 }
@@ -309,73 +309,6 @@ progress[value]::-moz-progress-bar {
   text-align: right;
 }
 
-/**************** Gallery area ****************/
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-areas:
-    "a a b b c c"
-    "a a d d c c"
-    "e h h h c c"
-    "f h h h i i"
-    "g h h h i i";
-  grid-gap: 0.5rem;
-}
-
-.grid-div > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  transition: all 0.1s ease-out;
-}
-
-.grid-div > img:hover {
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
-  border: 0.2rem solid var(--dark-color);
-  border-radius: 2px;
-  transform: scale(1.2);
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.grid-item-1 {
-  grid-area: a;
-}
-
-.grid-item-2 {
-  grid-area: b;
-}
-
-.grid-item-3 {
-  grid-area: c;
-}
-
-.grid-item-4 {
-  grid-area: d;
-}
-
-.grid-item-5 {
-  grid-area: e;
-}
-
-.grid-item-6 {
-  grid-area: f;
-}
-
-.grid-item-7 {
-  grid-area: g;
-}
-
-.grid-item-8 {
-  grid-area: h;
-}
-
-.grid-item-9 {
-  grid-area: i;
-}
-
 /**************** Footer area ****************/
 
 footer {
@@ -591,16 +524,5 @@ form button:focus {
 
   progress[value] {
     width: 100%;
-  }
-
-  .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .grid-div > img:hover {
-    border: none;
-    border-radius: 2px;
-    transform: none;
   }
 }
