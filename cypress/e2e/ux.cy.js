@@ -4,6 +4,11 @@ describe('User experience and interactions',  { scrollBehavior: 'center' }, () =
   })
 
   it('enable light/dark mode', () => {
+    cy.get('#modeToggleText').then(($text) => {
+      if ($text.text().includes('Enable dark mode')) {
+        cy.get('#modeToggleButton').click()
+      }
+    })
     cy.wait(1000)
     cy.get('#modeToggleButton').click()
     cy.get('html')
