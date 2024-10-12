@@ -1,8 +1,7 @@
+import { minify } from "html-minifier-terser";
+import prettier from "prettier";
 
-const minify = require("html-minifier-terser").minify;
-const prettier = require("prettier");
-
-module.exports = async (content, outputPath) => {
+export default async (content, outputPath) => {
   const $content = prettier.format(content, { parser: "html" });
 
   // If this is NOT a production build, return the prettified HTML for easier debugging.

@@ -1,9 +1,8 @@
-const extname = require("path").extname;
+import { extname } from 'node:path'
+import htmlmin from "./htmlmin.js"
+import jsmin from "./jsmin.js"
 
-const htmlmin = require("./htmlmin");
-const jsmin = require("./jsmin");
-
-module.exports = async (content, outputPath) => {
+export default async (content, outputPath) => {
   if (!outputPath) return content;
 
   const ext = extname(outputPath);

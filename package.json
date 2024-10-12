@@ -2,6 +2,7 @@
   "name": "laurielim.github.io",
   "version": "1.0.0",
   "description": "My portfolio where I will be showcasing my projects.",
+  "type": "module",
   "main": "script.js",
   "scripts": {
     "watch:sass": "sass src/static/scss:src/_includes/css --watch",
