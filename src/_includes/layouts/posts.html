@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+{% set pageStyles = "css/posts.css" %}
+
+{% block content %}
+  <article class="posts">
+    {% include "partials/page-header.html" %}
+    <section class="posts-list">
+      {{ content | safe }}
+    </section>
+  </article>
+{% endblock %}
