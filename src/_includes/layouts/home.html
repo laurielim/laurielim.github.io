@@ -3,24 +3,25 @@
 
 {% block content %}
   <section id="about" class="about flex">
-    <div class="about__text">
-      <h1 data-test='hero-heading'>{{ title }}</h1>
+    <div class="about__text test">
+      <h1 data-test='about-heading'>{{ title }}</h1>
       {{ content | safe }}
     </div>
     <div
-      class="about__image"
-      role="img"
       aria-label="Drawn outline of me by my wonderful partner Cristina"
+      class="about__image"
+      data-test="about-image"
+      role="img"
     ></div>
   </section>
   <section id="portfolio" class="portfolio">
-    <h2>Featured Projects</h2>
+    <h2 data-test='portfolio-heading'>Featured Projects</h2>
 		<p>
 			Find out about my featured projects or
 			<a href="/portfolio">check out my whole portfolio</a>.
 		</p>
 		<div class="card-container">
-			{% for project in collections.selected %}
+			{% for project in collections.selected.slice(0, 3) %}
 				{% set card = project %}
 				{% include "partials/card.html" %}
 			{% endfor %}
