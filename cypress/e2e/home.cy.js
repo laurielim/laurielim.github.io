@@ -3,8 +3,7 @@ describe('The Home Page', () => {
     cy.visit('/')
   })
 
-  context('About section', () => {
-
+  context('About', () => {
     it('h1 contains correct text', () => {
       cy.getByData('about-heading').contains('Laurie Lim Sam')
     })
@@ -37,11 +36,7 @@ describe('The Home Page', () => {
 
   context('Contact', () => {
     it('there is a contact cta' , () => {
-      cy.get('section#contact')
-        .should('have.attr', 'id', 'contact')
-        .find('a')
-        .contains('laurie.limsam@gmail.com')
-        .should('have.attr', 'href', 'mailto:laurie.limsam@gmail.com')
+      cy.hasContactCta()
     })
   })
 })
