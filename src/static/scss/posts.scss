@@ -1,0 +1,7 @@
+@use 'spacing' as *;
+
+.posts {
+  li {
+    margin-left: $spacing;
+  }
+}

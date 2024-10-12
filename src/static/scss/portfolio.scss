@@ -4,7 +4,7 @@
 @import './components/card';
 
 .portfolio {
-	> article:not(:first-child) {
+	> article:not(:first-of-type) {
 		margin-top: $spacing-2x-large;
 	}
 }

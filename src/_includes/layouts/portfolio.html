@@ -2,8 +2,8 @@
 {% set pageStyles = "css/portfolio.css" %}
 
 {% block content %}
-  {% include "partials/page-header.html" %}
-  <section class="portfolio">
+  <article class="portfolio">
+    {% include "partials/page-header.html" %}
     {% for item in items %}
       <article id="{{ item.key }}">
         <h2>{{ item.title }}</h2>
@@ -15,5 +15,5 @@
         </div>
       </article>
     {% endfor %}
-  </section>
+  </article>
 {% endblock %}

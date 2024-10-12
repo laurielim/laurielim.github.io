@@ -1,0 +1,67 @@
+name: Test prod build on pull request
+
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['22.4.1']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Run npm build
+        run: npm run build:prod
+
+      - name: Save build folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          if-no-files-found: error
+          path: public
+
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # Setting the different browsers we want to test.
+        # This is later used in the cypress action.
+        browser: [chrome, firefox]
+
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download the build folder
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: public
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          # Simply start a python http server that exposes the public/ dir
+          start: npm run serve
+          # Only start tests when the server is up and running.
+          wait-on: http://localhost:8080/
+          # A simple python http server should really never take longer
+          # than 10 seconds to start.
+          wait-on-timeout: 10
+          browser: ${{ matrix.browser }}

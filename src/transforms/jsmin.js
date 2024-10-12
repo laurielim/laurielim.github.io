@@ -1,6 +1,6 @@
-const minify = require("terser").minify;
+import { minify } from "terser";
 
-module.exports = async (content, outputPath) => {
+export default async (content, outputPath) => {
   const minified = await minify(content, {});
   return minified.code;
 };

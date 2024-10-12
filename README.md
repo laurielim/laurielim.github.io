@@ -4,7 +4,7 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 ## Requirement
 
-- Node v16
+- Node v22
 
 ## Commands
 
@@ -33,6 +33,8 @@ You can see the web design [here on figma](https://www.figma.com/file/gMQCgsHCOB
 - [Learn Eleventy from scratch](https://learneleventyfromscratch.com)
 - [Optimizing Images with the 11ty Image Plugin by Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/)
 - [How to deploy your Eleventy website to GitHub Pages with GitHub Actions by Maarten Tibau](https://maarten.be/blog/20220730/how-to-deploy-your-eleventy-website-to-github-pages-with-github-actions/)
+- [Testing a static SvelteKit site with Cypress on GitHub Actions](https://medium.com/dropzone/testing-a-static-sveltekit-site-with-cypress-on-github-actions-5ba86f6a0897)
+- [Adding Dark Theme to Cypress.Tips Site](https://glebbahmutov.com/blog/dark-cypress-tips/)
 
 ## Tools
 

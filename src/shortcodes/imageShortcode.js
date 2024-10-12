@@ -1,7 +1,8 @@
-const Image = require('@11ty/eleventy-img');
-const { outdent } = require('outdent');
+import Image from "@11ty/eleventy-img";
+import { outdent } from 'outdent'
+import stringifyAttributes from '../utils/stringify-attributes.js'
 
-module.exports = async (
+export default async (
   src,
   alt = '',
   isLazy = true,
@@ -16,8 +17,6 @@ module.exports = async (
       outputDir: 'public/static/images/optimized',
       urlPath: '/static/images/optimized',
     });
-
-  const stringifyAttributes = require('../utils/stringify-attributes');
 
   // Map each format to the source HTML markup
   const sourceHtmlString = Object.values(imageMetadata).map((images) => {
