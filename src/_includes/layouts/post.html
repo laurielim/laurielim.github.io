@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+{% set pageStyles = "css/post.css" %}
+
+{% block content %}
+  <article class="post">
+    <section class="post__content">
+      <h1>{{ title }}</h1>
+      <time datetime="{{ helpers.getISODate(page.date) }}">{{ helpers.getReadableDate(page.date) }}</time>
+      {{ content | safe }}
+      {% if originalPost %}
+        <p><em>
+          This post was originally published on <a href="{{ originalPost.link }}">{{ originalPost.source }}</a>.
+        </em></p>
+      {% endif %}
+    </section>
+  </article>
+{% endblock %}

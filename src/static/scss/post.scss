@@ -1,0 +1,26 @@
+@use 'spacing' as *;
+
+.post {
+  h2, h3 {
+
+  }
+
+  h2 {
+    font-size: var(--step-2);
+    line-height: 1.6;
+    max-width: 32ch;
+  }
+
+  h3 {
+    font-size: var(--step-1);
+    max-width: 45ch;
+  }
+
+  * + p {
+    margin-top: $spacing-medium;
+  }
+
+  li {
+    margin-left: $spacing;
+  }
+}
