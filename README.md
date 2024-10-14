@@ -8,9 +8,30 @@ Welcome to my github page repo where I will be showcasing my projects. Most are 
 
 ## Commands
 
-Start development server with `npm start`
+Start development server
+```bash
+npm start
+```
 
-Get a production build with `npm run build`
+Get a development build
+```bash
+npm run build
+```
+
+Get a production build
+```bash
+npm run build:prod
+```
+
+Serve the public dir
+```bash
+npm run serve
+```
+
+Run tests
+```bash
+npm run tests
+```
 
 ## Technologies used
 

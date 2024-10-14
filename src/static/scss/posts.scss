@@ -3,5 +3,14 @@
 .posts {
   li {
     margin-left: $spacing;
+    max-width: unset;
+
+    a {
+      font-size: var(--step-1);
+    }
+
+    time {
+      margin-top: 0;
+    }
   }
 }

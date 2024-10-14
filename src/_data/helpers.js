@@ -1,3 +1,5 @@
+import { DateTime } from 'luxon'
+
 export default {
   /**
    * Returns back some attributes based on whether the
@@ -83,5 +85,13 @@ export default {
     }
 
     return filteredItems;
+  },
+
+  getReadableDate(dateObj) {
+    return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
+  },
+
+  getISODate(dateObj) {
+    return DateTime.fromJSDate(dateObj).toISODate();
   },
 };

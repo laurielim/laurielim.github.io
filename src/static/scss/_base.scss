@@ -88,6 +88,7 @@ li,
 a,
 p {
 	font-size: var(--step-0);
+	letter-spacing: 0.5px;
 	line-height: 1.8;
 	max-width: 60ch;
 }
@@ -115,6 +116,13 @@ hr {
 	border-style: solid;
 	color: transparent;
 	clear: both;
+}
+
+time {
+	display: block;
+	font-size: var(--step-0);
+	font-style: italic;
+	margin-top: $spacing-small;
 }
 
 :focus-visible {
