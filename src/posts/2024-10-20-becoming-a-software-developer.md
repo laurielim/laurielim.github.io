@@ -1,0 +1,18 @@
+---
+title: Becoming a software developer
+---
+My journey as a software developer started in 2020. During the COVID-19 pandemic, Mauritius was in lockdown mode for 3 months which was the perfect opportunity for me to learn programming. A couple of years prior, I was a marketing intern at a tech startup. It gave me a glimpse of software development but it was still very much unknown territory. With so much information available online, relying on structured online courses was what worked best for me in the beginning.
+
+## Learning to code
+
+The first course I did was [MITx: Introduction to Computer Science and Programming Using Python](https://www.edx.org/learn/computer-science/massachusetts-institute-of-technology-introduction-to-computer-science-and-programming-using-python). Coming from a business background, I thought that data analytics was the logical path for me and python is a popular programming language for data science. I soon found out however that I had little interest in algorithms and big data. Still, I continued to learn and the next course I did was [CS50x , Harvard's Introduction to Computer Science](https://cs50.harvard.edu/x/2020/), which I highly recommend. At the end of the course you could choose between different tracks; Android, Gaming, iOS or Web. I chose the Web track which lead me to where I am today.
+
+Once I got into web development, it was easier to figure out what to focus on. HTML, CSS and JavaScript were the logical choice. [freeCodeCamp](https://www.freecodecamp.org) was and still is an invaluable resource; first for the certified courses available, and second for the tutorials they regularly publish covering all aspects of the software development. Another useful resource was the developer roadmaps by [Kamran Ahmed](https://kamranahmed.info), which I just found out, are now interactive and avaialble at [roadmap.sh](https://roadmap.sh/get-started).
+
+## Working as a developer
+
+After a year of self-learning, I enrolled in the [full-stack web development program](https://en.bc.fi/qualifications/full-stack-web-developer-program/) at Business College Helsinki. The program was ideal for me as it is geared towards people who wish to change career. I assumed that having some formal education would make finding a job easier. This assumption proved to be right as I [landed an internship that turned into a full-time job](/posts/how-to-succeed-in-your-internship/).
+
+Since I started working, I realised that coding is only a fraction of a software developer's responsibility. Communicating plays _at least_ an equal part. I have regular meetings with clients and dailies wtih my team mates. I also use email, messaging services, tickets, code reviews and documentation to communicate effectively. Additionally, when it comes to coding, a lot of time is spent on planning how to implement solutions. When problem solving, or debugging code, I spend more time researching and reading code than writing it.
+
+With 3 years of working experience, I feel comfortable as a software developer. I trust that I can fulfill my responsibilities. However, there is still so much for me to learn. Recently I have been reading about design patterns and exploring software design and architecture. Furthermore, the tech industry is constantly evolving and it is important to stay up to date. My journey has really just begun, and I am excited to be on this path.
