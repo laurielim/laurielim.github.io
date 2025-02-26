@@ -80,18 +80,6 @@ experience:
             - Performed quality assurance for every app update.
             - Assisted in the recruitment process of new interns.
             - Participated in business development meetings with clients.
-    - company: Norme Design LLC
-      desc: Architectural and interior solutions provider, Architects
-      year: 07/17 - 12/17
-      location: Kiev, Ukraine
-      roles:
-        - title: Marketing Executive, part-time
-          desc:
-            - Defined and implemented marketing and branding strategy of company.
-            - Created social media profiles and managed content.
-            - Worked on SEO, and created content to attract leads.
-            - Worked on a real estate development project.
-            - Carried out preliminary financial analysis, market research, site analysis, connectivity study, and competitor analysis.
     - company: Performance Plastics Ltd
       desc: Manufacturer of plastic bags and plastic packagings
       year: 02/14 - 07/14

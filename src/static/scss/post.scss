@@ -13,11 +13,14 @@
 
   h3 {
     font-size: var(--step-1);
+    margin-top: $spacing-medium;
     max-width: 45ch;
   }
 
-  * + p {
-    margin-top: $spacing-medium;
+  time, p {
+    + p {
+      margin-top: $spacing-medium;
+    }
   }
 
   li {
