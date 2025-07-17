@@ -29,7 +29,7 @@ tags: ['work']
 <h2 id="overview">Overview</h2>
 
 ### Purpose & Goal
-Kreolingo is a language learning app for Mauritian Creole, inspired by [Duolingo](https://www.duolingo.com). My goal was to build an application to help my partner learn my mother tongue. This was the perfect opportunity to learn [Svelte](https://svelte.dev), which I had been considering for some time.
+Kreolingo is a language learning app for Mauritian Creole, inspired by [Duolingo](https://www.duolingo.com). Go to [https://kreolingo.netlify.app](https://kreolingo.netlify.app) to see it live, however note that this is a development project. My goal was to build an application to help my partner learn my mother tongue. This was the perfect opportunity to learn [Svelte](https://svelte.dev), which I had been considering for some time.
 
 Svelte is a JS framework with a reputation for offering a great developer experience and remarkable ease of use. The framework's user-friendly documentation provides clear, concise, and comprehensive resources that made learning Svelte a breeze.
 
