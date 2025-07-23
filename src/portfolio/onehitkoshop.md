@@ -13,7 +13,7 @@ quickLinks:
   url: "#result"
 - title: "Live Site"
   url: "https://ohkshop.netlify.app/"
-tags: ['selected']
+tags: ['work']
 ---
 
 <figure>

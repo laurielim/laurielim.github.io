@@ -46,11 +46,11 @@ experience:
             - Conduct regular check-ins to gauge progress and well-being.
         - title: Software Developer, summer trainee then full-time
           desc:
-            - Contribute to software maintenance and security.
-            - Perform code reviews of peers.
-            - Carry out accessibility audits and improvements.
-            - Transform designs into front end code.
-            - Develop new features for existing projects.
+            - Maintain and improve software systems with a focus on long-term stability, security, and accessibility.
+            - Review peer code for quality, readability, and maintainability across diverse projects and stacks.
+            - Translate UI/UX designs into responsive, accessible front-end code.
+            - Develop and extend features in existing codebases.
+            - Collaborate closely with stakeholders to understand needs, clarify requirements, and deliver meaningful solutions.
     - company: Performance Plastics Ltd
       desc: Manufacturer of plastic bags and plastic packagings
       year: 01/19 - 12/20
