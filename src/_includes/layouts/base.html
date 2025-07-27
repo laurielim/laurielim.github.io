@@ -25,5 +25,8 @@
     <script>
       {{ js | safe }}
     </script>
+    {%- if eleventy.env.runMode == "build" %}
+      <script data-goatcounter="https://laurielim.goatcounter.com/count" async src="//gc.zgo.at/count.js" crossorigin="anonymous"></script>
+    {%- endif %}
   </body>
 </html>

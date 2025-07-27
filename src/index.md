@@ -4,7 +4,7 @@ layout: "layouts/home.html"
 metaDesc: "Laurie Lim Sam's portfolio website."
 ---
 
-Hi, I’m a Software Developer and [Apprentice Initiator](/posts/what-is-an-apprentice-initiator/) based in Helsinki. I build accessible websites and help new developers grow.
+Hi, I’m a [Software Developer](/posts/becoming-a-software-developer/) and [Apprentice Initiator](/posts/what-is-an-apprentice-initiator/) based in Helsinki. I build accessible websites and help new developers grow.
 
 I’m currently working at [Druid Oy](https://druid.fi/). Outside of work, I like to read webtoons, listen to DnD podcasts and rock climbing.
 

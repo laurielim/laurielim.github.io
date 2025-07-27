@@ -1,5 +1,8 @@
 {% extends "layouts/base.html" %}
 {% set pageStyles = "css/post.css" %}
+{% set previousPost = collections.writing | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.writing | getNextCollectionItem(page) %}
+
 
 {% block content %}
   <article class="post">
@@ -13,5 +16,18 @@
         </em></p>
       {% endif %}
     </section>
+    <hr>
+    <footer class="post__footer">
+      <h2>Read more posts:</h2>
+      <ul>
+        {% if previousPost %}
+          <li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+        {% endif %}
+        {% if nextPost %}
+          <li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>
+        {% endif %}
+      </ul>
+    </footer>
+     <hr>
   </article>
 {% endblock %}
